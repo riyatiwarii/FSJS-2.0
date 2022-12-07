@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements</title>
+</head>
+<body>
+    <h1> Lorem Ipsum</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi ex labore officia, illum odio quisquam consectetur numquam quo, cumque ad repudiandae sed? Repellendus quam ad ea quae adipisci rem minus maxime! Veritatis asperiores magni ea numquam consequuntur! Libero, nostrum voluptatem illum officia architecto laboriosam, cum quod dolorum debitis quisquam a?</p>
+    <hr></hr>
+    <p><i>Genre in Reading:</i></p>
+    <ol>
+    <li>Thriller</li>
+    <li>Poetry</li>
+    <li>Military Operations</li>
+    <li>Fiction</li>
+    <li>Humour</li>
+    <li>Web Development</li>
+    </ol>
+    <hr>
+    <p>In my web development journey, <b>my best friends are:</b></p>
+    <ul>
+    <li><a href="https://www.google.co.in">Google</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/">MDN</a></li>
+    </ul>
+    <hr>
+    <h2> We are going to make a simple basic fill-up form below: </h2>
+    <form>
+        <h3>Please enter basic information about you.</h3>
+        <label for="fname">Enter your first name:</label>
+        <input type="text"placeholder ='First Name' required><br>
+        <label for="fname">Enter your last name:</label>
+        <input type="text"placeholder ='Last Name'><br>
+        <label for="DOB">Date of birth:</label>
+        <input type="date" value=""min="1960-01-01" max="2004-11-11"><br>
+        <label for="gender">Gender:</label>
+        <input type="radio"name="phone" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female <br>
+        <label for="country">Country:</label>
+        <select>
+          <option value="India">India</option>
+          <option value="Russia">Russia</option>
+          <option value="Israel">Insrael</option>
+          <option value="Australia">Australia</option>
+          <option value="New Zealand">New Zealand</option>
+        </select><br>
+        <label for="fname">Mobile No: </label>
+        <input type="text" placeholder="Enter phone number"name="numbrone" value="+91" pattern="+91[7-9]{1}[0-9]{9}"> <br>
+        <label for="email">Enter your email address:</label>
+        <input type="email" id="email"pattern=".+@gmail.com" required><br>
+        <label for="pass">Password (8 characters minimum):</label>
+        <input type="password" id="pass" name="password" minlength="8" required><br>
+        <label for="pass">Confirm password:</label>
+        <input type="password" id="pass" name="password" minlength="8" required><br>
+        <label for="url">Enter the profile url (socialmedia, linkedin, your own portfolio, github)
+        <input type="url" name="url" id="url" placeholder="Enter the url"pattern="https://.*" size="30"><br>
+        <label for="avatar">Choose a profile picture:</label>
+        <input type="file"id="avatar" name="avatar"accept="image/png, image/jpeg"><br>
+        <label for="file">Upload the file (adhar/passport/pancard) in pdf format:</label>
+        <input type="file" id="file" name="file" accept=".pdf"><br>
+        <input type="submit"/>
+        <input type="reset" /><br>
+    </form>
+</body>
+</html>

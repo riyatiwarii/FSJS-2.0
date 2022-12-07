@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <style>
+        table{border: 1px black solid; margin-left: auto;
+  margin-right: auto;}
+        th,td {border: 1px solid black;padding: 4px 6px;}
+        td:hover {background-color: #d1d7d7;}
+        thead{
+            color: white;
+            background-color: rgb(86, 84, 84);
+        }
+        tfoot{
+            color: white;
+            background-color: rgb(86, 84, 84);
+        }
+        tfoot td:hover{
+            background-color: rgb(86, 84, 84);
+        }
+
+    </style>
+</head>
+<body>
+    <table cellspacing="0" width="70%" height="170px" style="text-align:center" >
+        <caption>"You can write here any caption."</caption>
+        <thead>
+            <tr>
+                <th colspan="8">Time Table</th>
+            </tr>
+                <tr>
+                    <th>Day/Hours</th>
+                    <th>7:30-8:30</th>
+                    <th>8:30-9:00</th>
+                    <th>9:00-9:30</th>
+                    <th>10:00-10:30</th>
+                    <th>10:30-11:30</th>
+                    <th>11:30-12:00</th>
+                    <th>12:30-13:00</th>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Monday</th>
+                <td>Science</td>
+                <td>English</td>
+                <td>P.T</td>
+                <td rowspan="6">Lunch Break</td>
+                <td>S.S.T</td>
+                <td>Maths</td>
+                <td>Lab</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td colspan="2">Lab</td>
+                <td>Maths</td>
+                <td>Hindi</td>
+                <td>English</td>
+                <td>S.S.T</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td>English</td>
+                <td>S.S.T</td>
+                <td>Science</td>
+                <td>Maths</td>
+                <td colspan="2">Lab</td>
+            </tr>
+            <tr>
+                <th>Thursday</th>
+                <td>Maths</td>
+                <td>S.S.T</td>
+                <td>Hindi</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td colspan="2">Lab</td>
+                <td>English</td>
+                <td colspan="2">P.T</td>
+                <td>Maths</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="8">This table is made by Riya.</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
