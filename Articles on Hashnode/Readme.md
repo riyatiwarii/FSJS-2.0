@@ -21,3 +21,7 @@
 ### 5. Making CSS Positions Easy Once & For All.
 
 [Link](https://riyatiwari.hashnode.dev/making-css-positions-easy-once-for-all)
+
+### 6. How learning CSS Grid Layout would be helpful?
+
+[Link](https://riyatiwari.hashnode.dev/how-learning-css-grid-layout-would-be-helpful)
