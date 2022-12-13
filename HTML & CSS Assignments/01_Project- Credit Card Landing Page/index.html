@@ -8,7 +8,7 @@
     <title>Credit Card Page</title>
 </head>
 <body>
-    <div class="flex flex-wrap h-screen">
+    <div>
         <section class="relative mx-auto">
             <!-- navbar -->
           <nav class="flex justify-between bg-black text-white w-screen">
@@ -21,7 +21,7 @@
                 <li><a class="hover:text-gray-200" href="#">Pricing</a></li>
                 <li><a class="hover:text-gray-200" href="#">About Us</a></li>
               </ul>
-              <div class="hidden md:flex items-center space-x-12">
+              <div class="hidden md:flex items-center space-x-2">
                 <span class="dropdown relative">
                     <button class=" dropdown-toggle px-1 py-1 bg-black text-white font-semibold font-heading flex items-center" type="button" id="dropdownMenuButton1tx" data-bs-toggle="dropdown"aria-expanded="false">Eng
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="w-2 ml-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" >
@@ -29,7 +29,23 @@
                         </svg>
                     </button>
                 </span>
-                <a class="hover:text-gray-200 font-semibold font-heading" href="#">Contact Us</a>
+                <span class="flex">
+                    <svg class="translate-x-6" width="44" height="22" viewBox="0 0 44 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="2.82031" width="25.1429" height="15.7949" fill="#F637EC"/>
+                        <g filter="url(#filter0_b_1_131)">
+                        <rect x="4.71094" width="39.2857" height="22" fill="#F637EC" fill-opacity="0.4"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_b_1_131" x="-0.289062" y="-5" width="49.2857" height="32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="2.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_131"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_131" result="shape"/>
+                        </filter>
+                        </defs>
+                    </svg>
+                    <button class="z-40 " >Contact Us </button> 
+                </span>             
               </div>
             </div>
             <!-- Responsive navbar -->
@@ -39,6 +55,30 @@
                 </svg>
             </a>
           </nav>
+        </section>
+        <section>
+            <!-- <div class="bg-black text-white w-full h-screen bg-[url('./Assets/Photos/frontCards.png')]
+            bg-[url('./Assets/Photos/backCards.png')]" style="background-image: url('./Assets/Photos/backCards.png'), url('./Assets/Photos/frontCards.png')" > -->
+                <h1>Simplify All Transactions in One Card</h1>
+                <p>Hurry up and join now, with this you can manage your daily finances easily and safely.</p>
+                <span class="flex">
+                    <svg class="translate-x-6" width="44" height="22" viewBox="0 0 44 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="2.82031" width="25.1429" height="15.7949" fill="#F637EC"/>
+                        <g filter="url(#filter0_b_1_131)">
+                        <rect x="4.71094" width="39.2857" height="22" fill="#F637EC" fill-opacity="0.4"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_b_1_131" x="-0.289062" y="-5" width="49.2857" height="32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="2.5"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_131"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_131" result="shape"/>
+                        </filter>
+                        </defs>
+                    </svg>
+                    <button class="z-40">GET STARTED</button> 
+                </span> 
+            </div>
         </section>
     </div>
 </body>
