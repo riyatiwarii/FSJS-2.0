@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Credit Card Page</title>
 </head>
 <body>
     <div>
         <section class="relative mx-auto">
             <!-- navbar -->
-          <nav class="flex justify-between bg-black text-white w-screen">
+          <nav class="flex justify-between bg-black text-white">
             <div class="px-5 xl:px-24 py-6 flex w-full items-center  ">
               <img  src="./Assets/Icons/Logo.svg" alt="">
               <!-- Nav Links -->
@@ -57,10 +58,10 @@
           </nav>
         </section>
         <section>
-            <!-- <div class="bg-black text-white w-full h-screen bg-[url('./Assets/Photos/frontCards.png')]
-            bg-[url('./Assets/Photos/backCards.png')]" style="background-image: url('./Assets/Photos/backCards.png'), url('./Assets/Photos/frontCards.png')" > -->
-                <h1>Simplify All Transactions in One Card</h1>
-                <p>Hurry up and join now, with this you can manage your daily finances easily and safely.</p>
+            <div class="text-white bg-black opacity-95 card h-screen" >
+                <div class="ml-24 ">
+                <h1 class="text-[90px] font-normal py-10">Simplify All Transactions <br> in <span class="text-fuchsia-400">One Card</span></h1>
+                <p class=>Hurry up and join now, with this you can manage your daily finances easily and safely.</p>
                 <span class="flex">
                     <svg class="translate-x-6" width="44" height="22" viewBox="0 0 44 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="2.82031" width="25.1429" height="15.7949" fill="#F637EC"/>
@@ -77,7 +78,8 @@
                         </defs>
                     </svg>
                     <button class="z-40">GET STARTED</button> 
-                </span> 
+                </span>
+                </div> 
             </div>
         </section>
     </div>
