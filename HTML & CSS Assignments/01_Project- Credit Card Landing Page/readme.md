@@ -1,5 +1,6 @@
-# Replicate the Following Output
+# Project Credit Card Landing Page
 
-`Assests are Provided!`
+## Task
+- Replicate the below output as a responsive webpage.
 
 ![Project 1](./Credit%20card%20landing%20page.png)
