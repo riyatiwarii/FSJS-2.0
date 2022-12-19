@@ -77,8 +77,36 @@
 
 .heading{
     color: white;
-    font-size: 50px;
-    
+    font-size: 60px;   
+}
+
+.leftmain{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+    height: 560px;
+    justify-content: space-between
+}
+
+.rightmain{
+    width: 50%;
+}
+
+.main-content{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.second-main{
+    padding-bottom: 55px;
+}
+
+.mainbtns{
+    display: flex;
+    gap: 20px;
 }
 
 .highlight{
@@ -88,7 +116,7 @@
 
 .para{
     color: #6e6e6e;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .topleftbtn{
@@ -106,6 +134,14 @@
     cursor: pointer;
     box-shadow: 8px 8px white;
     transition: .3s;
+}
+
+.logos-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1d1c1c;
+    flex-wrap: wrap;
 }
     
 @media only screen and (max-width: 768px) {
