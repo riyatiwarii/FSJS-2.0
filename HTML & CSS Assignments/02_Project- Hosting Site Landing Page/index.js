@@ -1,10 +1,9 @@
-const hamburger = document.getElementById('ham-btn');
-const navoptions = document.getElementById('nav-options');
-console.log(hamburger);
+const hamburger = document.querySelector('hamburger');
+const navoptions = document.querySelectorall('nav-list');
 
-function navToggle(){
-    hamburger.classList.toggle('open');
-    navoptions.classList.toggle('show-options')
-}
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle("active");
+    navoptions.classList.toggle("active");
+})
 
-btn.addEventListener('click', navToggle);
+

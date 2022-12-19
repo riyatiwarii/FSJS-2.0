@@ -54,5 +54,53 @@
     transition: .3s;
 }
 
+.hamburger {
+    display: none;
+  }
 
+.ham{
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
     
+@media only screen and (max-width: 768px) {
+    .nav-list {
+      position: fixed;
+      top: 4.5rem;
+      left: -100%;
+      flex-direction: column;
+      background-color: #daddfc;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+  
+    .nav-list.active {
+      left: 0;
+    }
+  
+    .nav-items {
+      margin: 2.5rem 0;
+    }
+  
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
