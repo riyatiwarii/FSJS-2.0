@@ -13,6 +13,7 @@
     align-items: center;
     padding-top: 25px;
     padding-bottom: 20px;
+    gap: 100px;
 }
 
 .nav-list{
@@ -181,4 +182,46 @@
     .hamburger.active .bar:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg);
     }
+
+    .first-section{
+        display: flex;
+        flex-direction: column;
+     
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    .first-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .heading{
+       font-size: 55px ; 
+    }
+   
+    .para{
+       width: 85%;
+    } 
+    
+    .logo{
+        margin-left: 70px;
+    }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+        html,
+    body{
+    width:100%;
+    overflow-x:hidden;
+    }
+
+
   }
