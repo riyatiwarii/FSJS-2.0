@@ -5,32 +5,26 @@
     font-family:sans-serif
 }
 
-html, body{
-    overflow-x: hidden;
-}
-
 .navbar{
-    max-height: 85px;
     background-color: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 25px;
     padding-bottom: 20px;
-    gap: 100px;
+    gap: 70px;
 }
 
 .nav-list{
     display: flex;
-    gap: 50px;
-    
+    gap: 55px;  
 }
 
 .nav-items{
     color: #bab9b9;
     list-style: none;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1rem;
     font-weight:lighter
 }
 
@@ -75,10 +69,29 @@ html, body{
 .first-section{
     background-color: black;
     display: flex;
-    padding-top: 60px;
     justify-content: center;
     padding-top: 50px;
-    padding-bottom: 45px;
+    padding-bottom: 70px;
+    width: 100%;
+}
+
+.heading{
+    color: white;
+    font-size: 3.8rem;
+    width: 70%;  
+}
+
+.para{
+    color: #6e6e6e;
+    font-size: 1.5rem;
+    width: 70%;
+}
+
+.left-main{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .first-content{
@@ -87,46 +100,15 @@ html, body{
     gap: 30px;
 }
 
-.heading{
-    color: white;
-    font-size: 60px;
-    width: 80%;
-}
-
-.para{
-    color: #6e6e6e;
-    font-size: 20px;
-    width: 70%;
-}
-
-.leftmain{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+.svg-one{
+    height: 95.5%;
+    width: 100%;
 }
 
 .mainbtns{
     display: flex;
     gap: 20px;
-    /* padding-top: 40px; */
 }
-
-.rightmain{
-    width: 50%;
-}
-
-.main-content{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.second-main{
-    padding-bottom: 55px;
-}
-
 
 .highlight{
     color: #0c8bfd;
@@ -155,10 +137,18 @@ html, body{
     justify-content: space-evenly;
     align-items: center;
     background-color: #1d1c1c;
-    flex-wrap: wrap;
+ 
 }
-    
+   
 @media all and (max-width: 768px) {
+
+    html, body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
     .nav-list {
       position: fixed;
       top: 70px;
@@ -196,29 +186,29 @@ html, body{
       transform: translateY(-8px) rotate(-45deg);
     }
 
-    .logo{
-        margin-left: 50px;
-    }
-
     .first-section{
         width: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-content: center;
     }
 
-    .leftmain{
+    .left-main{
         margin-left: 205px;
     }
 
     .heading{
-       font-size: 55px ;
+       font-size: 3rem ;
        text-align: center;
-       width: 350px;
+       width: 80%;
+    
     }
       
     .para{
+       font-size: 1.1rem ;
        text-align: center;
-       width: 350px;
+       width: 80%
     } 
 
     .mainbtns{
@@ -229,71 +219,49 @@ html, body{
     }
     
     .svg-one{
-        margin-left: 177px;
-        height: 395px;
-        width: 400px;
+        margin-left: 200px;
+        height: 45.5%;
+        width: 48%;
     }
 
   }
 
-  @media only screen and (max-width: 500px){
+@media only screen and (max-width: 480px){
 
-    .heading{
-        color: white;
-        font-size: 40px;
-       
-    }
-    
-    .para{
-        color: #6e6e6e;
-        font-size: 20px;
-        width: 70%;
+    html, body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
 
-    .navbar{
-        gap: 20px;
-    }
-
-    first-section{
+    .first-section{
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: column;        
+        /* justify-content: center;
+        /* align-content: center; */  
+        /* commented part is not working, so margin-left percentage is used.  */
+     
     }
 
+    .left-main{
+        margin-left: 30%;
+    }
 
-    /* .first-section{
+    .svg-one{
+        margin-left: 30%;
+        height: 45.5%;
+        width: 48%;
+    }
+
+    .logos-section{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .first-content{
-        margin-left: 107px;
-    }
-    
-
-    .heading{
-        font-size: 40px ;
-        text-align: center;
-        width: 200px;
-    }
-
-    .para{
-        font-size: 16px;
-        text-align: center;
-        width: 200px;
-     } 
-
-    .mainbtns{
-        width: 350px;
-        justify-content: center;
         flex-wrap: wrap;
-        margin-left: 40px;
-        padding-bottom: 70px;
-    } */
+    }
 
   }
-
 
 
 
