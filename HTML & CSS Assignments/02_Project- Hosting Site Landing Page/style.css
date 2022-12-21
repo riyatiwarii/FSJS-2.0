@@ -137,7 +137,7 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: #1d1c1c;
- 
+    margin: auto;
 }
    
 @media all and (max-width: 768px) {
@@ -198,11 +198,17 @@
         margin-left: 205px;
     }
 
+    .first-content{
+        background-color: yellow;
+        width: 100%;
+        margin-left: 5%;
+    }
+
     .heading{
        font-size: 3rem ;
        text-align: center;
        width: 80%;
-    
+        
     }
       
     .para{
@@ -212,17 +218,19 @@
     } 
 
     .mainbtns{
-        width: 350px;
+        /* background-color: red; */
         justify-content: center;
         flex-wrap: wrap;
         padding-bottom: 70px;
+
     }
     
     .svg-one{
-        margin-left: 200px;
+        margin-left: 25%;
         height: 45.5%;
         width: 48%;
     }
+
 
   }
 
@@ -233,7 +241,7 @@
         height: 100%;
         margin: 0;
         padding: 0;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
 
     .first-section{
@@ -247,18 +255,31 @@
     }
 
     .left-main{
-        margin-left: 30%;
+        margin-left: 23%;
+        /* margin-right: 25%; */
     }
 
+    .first-content{
+        width: 100%;
+     
+    }
+
+    
+
     .svg-one{
-        margin-left: 30%;
-        height: 45.5%;
-        width: 48%;
+        margin-left: 22%;
+        height: 55.5%;
+        width: 58%;
     }
 
     .logos-section{
         display: flex;
         flex-wrap: wrap;
+        
+    }
+
+    .mainbtns{
+
     }
 
   }
