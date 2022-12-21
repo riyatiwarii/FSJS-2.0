@@ -118,10 +118,17 @@
 .para{
     color: #6e6e6e;
     font-size: 20px;
+    padding-top: ;
+}
+
+.first-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .topleftbtn{
-    padding: 10px 18px 10px 18px;
+    padding: 10px 18px 10px 18px; 
 }
 
 .toprightbtn{
@@ -185,43 +192,40 @@
 
     .first-section{
         display: flex;
-        flex-direction: column;
-     
+        flex-direction: column;    
     }
 
     .main-content{
         display: flex;
         flex-direction: column;
         margin-left: 50px;
+        gap: 30px;
     }
 
     .first-content{
         display: flex;
+        flex-direction: column;
+        gap: 20px;
         justify-content: center;
         align-items: center;
-        gap: 50px;
     }
 
     .heading{
-       font-size: 55px ; 
+       font-size: 55px ;
+       text-align: center;
+       width: 350px;
+       /* margin-right: 400px; */
     }
-   
+      
     .para{
-       width: 85%;
+       text-align: center;
     } 
     
-    .logo{
-        margin-left: 70px;
-    }
 
   }
 
-  @media only screen and (max-width: 600px) {
-        html,
+/* @media only screen and (max-width: 600px) {
     body{
-    width:100%;
-    overflow-x:hidden;
+        background-color: yellow;
     }
-
-
-  }
+    } */
