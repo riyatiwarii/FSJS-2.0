@@ -73,21 +73,40 @@
     display: flex;
     padding-top: 60px;
     justify-content: center;
-    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 45px;
+}
+
+.first-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .heading{
     color: white;
-    font-size: 60px;   
+    font-size: 60px;
+    width: 80%;
+}
+
+.para{
+    color: #6e6e6e;
+    font-size: 20px;
+    width: 70%;
 }
 
 .leftmain{
     width: 50%;
     display: flex;
     flex-direction: column;
-    /* background-color: yellow; */
-    height: 560px;
-    justify-content: space-between
+    
+    gap: 50px;
+}
+
+.mainbtns{
+    display: flex;
+    gap: 20px;
+    /* padding-top: 40px; */
 }
 
 .rightmain{
@@ -105,26 +124,10 @@
     padding-bottom: 55px;
 }
 
-.mainbtns{
-    display: flex;
-    gap: 20px;
-}
 
 .highlight{
     color: #0c8bfd;
     font-style: italic ;
-}
-
-.para{
-    color: #6e6e6e;
-    font-size: 20px;
-    padding-top: ;
-}
-
-.first-content{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .topleftbtn{
@@ -190,25 +193,7 @@
       transform: translateY(-8px) rotate(-45deg);
     }
 
-    .first-section{
-        display: flex;
-        flex-direction: column;    
-    }
-
-    .main-content{
-        display: flex;
-        flex-direction: column;
-        margin-left: 50px;
-        gap: 30px;
-    }
-
-    .first-content{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-    }
+    
 
     .heading{
        font-size: 55px ;
@@ -219,6 +204,10 @@
     .para{
        text-align: center;
     } 
+
+    .mainbtns{
+        margin-left: 60px;
+    }
     
   }
 
@@ -265,5 +254,18 @@ html,body{
     .first-section{
         padding-right: 40px;     
     }
+
+    .mainbtns{
+
+        width: 300px;
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        background-color: yellow;
+        margin-right: 300px;
+    }
+    
 
     }
