@@ -312,7 +312,9 @@
     }
 
     .mainbtns{
-        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 190px;
     }
 
     .right-main{
