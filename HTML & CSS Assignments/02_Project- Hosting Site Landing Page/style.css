@@ -70,15 +70,13 @@
     background-color: black;
     display: flex;
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 70px;
-    width: 100%;
 }
 
 .heading{
     color: white;
     font-size: 3.8rem;
-    width: 70%;  
+    width: 70%;
+    padding-bottom: 20px;  
 }
 
 .para{
@@ -88,22 +86,13 @@
 }
 
 .left-main{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+   /* padding-left: 100px; */
 }
 
 .first-content{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+   
 }
 
-.svg-one{
-    height: 95.5%;
-    width: 100%;
-}
 
 .mainbtns{
     display: flex;
@@ -186,24 +175,25 @@
       transform: translateY(-8px) rotate(-45deg);
     }
 
+    .first-content{        
+        background-color: red;
+    }
+
     .first-section{
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
+        background-color: yellow;
     }
 
     .left-main{
         margin-left: 205px;
+        background-color: #0c8bfd;
     }
 
-    .first-content{
-        background-color: yellow;
-        width: 100%;
-        margin-left: 5%;
-    }
-
+    
     .heading{
        font-size: 3rem ;
        text-align: center;
@@ -225,16 +215,20 @@
 
     }
     
-    .svg-one{
-        margin-left: 25%;
-        height: 45.5%;
-        width: 48%;
+    
+    .logos-section{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #1d1c1c;
+        margin: auto;
+      
     }
 
 
   }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 600px){
 
     html, body{
         width: 100%;
@@ -244,43 +238,6 @@
         /* overflow-x: hidden; */
     }
 
-    .first-section{
-        width: 100%;
-        display: flex;
-        flex-direction: column;        
-        /* justify-content: center;
-        /* align-content: center; */  
-        /* commented part is not working, so margin-left percentage is used.  */
-     
-    }
-
-    .left-main{
-        margin-left: 23%;
-        /* margin-right: 25%; */
-    }
-
-    .first-content{
-        width: 100%;
-     
-    }
-
-    
-
-    .svg-one{
-        margin-left: 22%;
-        height: 55.5%;
-        width: 58%;
-    }
-
-    .logos-section{
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
-
-    .mainbtns{
-
-    }
 
   }
 
