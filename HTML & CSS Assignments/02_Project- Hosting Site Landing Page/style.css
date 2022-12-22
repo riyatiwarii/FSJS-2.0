@@ -322,6 +322,23 @@
     color: #292828;
 }
 
+.priceheading-container{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 50px;
+    height: 170px;
+}
+
+.hostingprice-heading{
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 1em;
+    max-width: 20em;
+}
+
    
 @media all and (max-width: 768px) {
 
@@ -435,6 +452,17 @@
         width: 20em
     }
 
+    .priceheading-container{
+        gap: 0;
+    }
+
+    .hostingprice-heading{
+        font-size: 2.1rem;
+        color: white;
+        text-align: center;
+        padding-bottom: 1.5em;
+        max-width: 20em;
+    }
   }
 
 @media only screen and (max-width: 600px){
@@ -548,6 +576,14 @@
         width: 90%;
     }
 
+    .hostingprice-heading{
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+        padding-bottom: 3em;
+        max-width: 20em;
+    }
+
   }
 
   @media only screen and (max-width: 380px){
@@ -650,6 +686,11 @@
         /* width: 100% */
         width: 18em;
      
+    }
+
+    .hostingprice-heading{
+        padding-bottom: 2.5em;
+        max-width: 20em;
     }
 
 
