@@ -139,19 +139,26 @@
 
 .cards-section{
     display: flex;
-    gap: 20px;
-    padding-bottom: 40px;
+    justify-content: center;
+    gap: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: yellow;
 }
 
 .card{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 13px;
     border: 1px solid #b8b7b7;
-    height: 200px;
-    width: 200px;
-    border-radius: 13px;
+    height: 240px;
+    width: 250px;
+    border-radius: 15px;
+    cursor: pointer;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .card svg{
@@ -162,20 +169,25 @@
 .card-heading{
     font-family:'Poppins', serif;
     font-weight: 550;
+    font-size: 1.1rem  
 }
 
 .card-para{
     color: gray;
     text-align: center;
-    font-size: 15px;
+    font-size: 0.9rem;
     width: 95%;
-    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .card-two{
+    border: #000000;
     background-color: black;
     color: white;
     box-shadow: 0 18px 10px -2px #e1e1e1;
+    margin-top: -2%;
+
 }
 
 
@@ -266,6 +278,19 @@
         width: 55px;
     }
 
+    .cards-section{
+        gap: 30px;
+    }
+
+    .card{
+        height: 200px;
+        width: 200px;
+    }
+
+    .card-heading{
+        text-align: center;
+    }
+
   }
 
 @media only screen and (max-width: 600px){
@@ -331,6 +356,24 @@
     .card svg{
         height: 55px;
         width: 55px;
+    }
+
+    .cards-section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        height: 200px;
+        width: 200px;
+    }
+
+    .card-heading{
+        text-align: center;
+    }
+
+    .card-two{
+        margin-right: -7%;
     }
 
   }
@@ -406,6 +449,7 @@
         height: 55px;
         width: 55px;
     }
+
 
   }
 
