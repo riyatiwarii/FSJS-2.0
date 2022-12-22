@@ -211,12 +211,6 @@
     padding-bottom: 10px;
 }
 
-.accordions{
-    margin: 3em auto;
-    max-width: 25em;
-    /* background-color: yellow; */
-}
-
 .accordion-item{
     display: block;
     padding: 20px;
@@ -224,6 +218,7 @@
     border: 1px solid #c0c0c0;
     border-radius: 30px;
     margin-top: 15px;
+    padding: 20px;
 }
 
 .accordion-heading{
@@ -245,14 +240,51 @@
     float: right;
 }
 
-.accordlist-item{
-    list-style: none;
-    
+.accordions{
+    margin: 3em auto;
+    /* width: 25em;    */
+    /* background-color: yellow; */
+    width: 35%;
 }
 
-.accordlist-item ::before{
-    
+.accord-section{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
 }
+
+.accord-list-container{
+    margin: 3em auto;
+    /* width: 23em; */
+    width: 35%;
+    background-color: #000000;
+    padding: 10px 10px 20px 10px;
+    border-radius: 15px;
+}
+
+.accordlist-item{
+    list-style: none;
+    background-color: #292828;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 15px;
+    color: #f3f0f0;
+    font-size: 0.8rem;
+}
+
+.accordlist-item:before{
+    display: inline-block;
+    content: '';
+    -webkit-border-radius: 0.375rem;
+    border-radius: 0.375rem;
+    height: 0.75rem;
+    width: 0.75rem;
+    margin-right: 0.5rem;
+    background-color: #d9d9d9;
+}
+
    
 @media all and (max-width: 768px) {
 
@@ -350,6 +382,18 @@
         text-align: center;
     }
 
+    /* .accord-section{
+        flex-direction: column;
+    } */
+
+    .accordions{
+        width: 20em
+    }
+
+    .accord-list-container{
+        width: 20em
+    }
+
   }
 
 @media only screen and (max-width: 600px){
@@ -420,6 +464,7 @@
     .cards-section{
         flex-direction: column;
         align-items: center;
+        margin-top: -12%;
     }
 
     .card{
@@ -437,11 +482,25 @@
 
     .service-heading{
         font-size: 2.3rem;
+        margin-top: -10%;
+        font-weight: bold;
     }
 
     .service-para{
         padding-top: 10px;
         font-size: 1rem;
+    }
+
+    .accord-section{
+        flex-direction: column;
+    }
+
+    .accordions{
+        width: 90%;
+    }
+
+    .accord-list-container{
+        width: 90%;
     }
 
   }
@@ -478,7 +537,6 @@
         display: flex;
         flex-direction: row;
         margin-right: 47px;
-
         flex-wrap: wrap;
         
     }
@@ -530,6 +588,19 @@
         font-size: 1rem;
         margin-left: 40px;
         margin-right: 40px;
+    }
+
+    .accordions{
+        /* width: 100%;
+        padding: 20px; */
+        width: 18em;
+        padding: 10px
+    }
+
+    .accord-list-container{
+        /* width: 100% */
+        width: 18em;
+     
     }
 
 
