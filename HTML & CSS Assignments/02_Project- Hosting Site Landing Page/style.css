@@ -136,6 +136,17 @@
     background-color: #1d1c1c;
     margin: auto;
 }
+
+.card{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.card svg{
+    height: 55px;
+    width: 55px;
+}
    
 @media all and (max-width: 768px) {
 
@@ -215,6 +226,11 @@
         gap: 35px;
     }
 
+    .card svg{
+        height: 55px;
+        width: 55px;
+    }
+
   }
 
 @media only screen and (max-width: 600px){
@@ -275,6 +291,11 @@
     .logos-section img{
         height: 35px;
         
+    }
+
+    .card svg{
+        height: 55px;
+        width: 55px;
     }
 
   }
@@ -339,12 +360,16 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-      
+        align-items: center;     
     }
 
     .logos-section img{
         height: 35px;
+    }
+
+    .card svg{
+        height: 55px;
+        width: 55px;
     }
 
   }
