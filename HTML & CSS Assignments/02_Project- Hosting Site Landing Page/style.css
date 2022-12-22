@@ -163,14 +163,22 @@
 }
 
 .card:hover{
-    transform: scale(1.16);
+    /* transform: scale(1.16); */
     background-color: gainsboro;
+    -webkit-transform: translateY(-20px);
+            -ms-transform: translateY(-20px);
+            transform: translateY(-20px);
+            box-shadow: 0 22px 43px rgba(0, 0, 0, 0.32);
 }
 
 .card-two:hover{
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
     background-color: gainsboro;
     color: black;
+    -webkit-transform: translateY(-20px);
+            -ms-transform: translateY(-20px);
+            transform: translateY(-20px);
+            box-shadow: 0 22px 43px rgba(0, 0, 0, 0.22);
 }
 
 .card svg{
@@ -231,6 +239,11 @@
     border-radius: 30px;
     margin-top: 15px;
     padding: 20px;
+}
+
+.accordions div:hover{
+    background-color: #0c8bfd;
+    color: white;
 }
 
 .accordion-heading{
