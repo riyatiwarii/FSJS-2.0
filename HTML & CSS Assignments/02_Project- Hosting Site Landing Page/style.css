@@ -153,12 +153,24 @@
     align-items: center;
     gap: 13px;
     border: 1px solid #b8b7b7;
-    height: 240px;
-    width: 250px;
+    height: 260px;
+    width: 270px;
     border-radius: 15px;
     cursor: pointer;
     padding-left: 2px;
     padding-right: 2px;
+    transition: transform 0.5s;
+}
+
+.card:hover{
+    transform: scale(1.16);
+    background-color: gainsboro;
+}
+
+.card-two:hover{
+    transform: scale(1.2);
+    background-color: gainsboro;
+    color: black;
 }
 
 .card svg{
