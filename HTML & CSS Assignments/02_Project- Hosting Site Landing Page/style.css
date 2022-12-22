@@ -338,6 +338,44 @@
     max-width: 20em;
 }
 
+.hosting-price{
+    background-color: #000000;
+}
+
+.pricing-carousel{
+    /* padding: 3em auto; */
+    max-width: 18em;
+    /* width: 35%; */
+    background-color: white;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.pricing-info{
+    padding: 10px;
+}
+
+.pricing-deal{
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-bottom: 0.8em;
+}
+
+.pricing{
+    font-family:'Poppins', serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.pricing span{
+    font-size: 0.6em;
+    font-weight: lighter;
+}
+
+.availing-list{
+    list-style-type: none;
+}
    
 @media all and (max-width: 768px) {
 
