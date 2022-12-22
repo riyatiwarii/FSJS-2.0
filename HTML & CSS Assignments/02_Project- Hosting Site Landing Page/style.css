@@ -143,7 +143,7 @@
     gap: 80px;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .card{
@@ -187,7 +187,24 @@
     color: white;
     box-shadow: 0 18px 10px -2px #e1e1e1;
     margin-top: -2%;
+}
 
+.service{
+    /* background-color: orange; */
+    padding-top: 80px;
+}
+
+.service-heading{
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+
+.service-para{
+    text-align: center;
+    padding-top: 10px;
+    color: gray;
+    font-size: 1.1rem;
 }
 
 
@@ -376,6 +393,15 @@
         margin-right: -7%;
     }
 
+    .service-heading{
+        font-size: 2.3rem;
+    }
+
+    .service-para{
+        padding-top: 10px;
+        font-size: 1rem;
+    }
+
   }
 
   @media only screen and (max-width: 380px){
@@ -448,6 +474,20 @@
     .card svg{
         height: 55px;
         width: 55px;
+    }
+
+    .service-heading{
+        /* margin-top: -2%; */
+        margin-left: 70px;
+        margin-right: 70px;
+        padding-bottom: 10px;
+    }
+
+    .service-para{
+        padding-top: 10px;
+        font-size: 1rem;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
 
