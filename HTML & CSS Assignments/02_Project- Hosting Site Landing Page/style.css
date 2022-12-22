@@ -207,9 +207,51 @@
     font-size: 1.1rem;
 }
 
-
 .card-three{
     padding-bottom: 10px;
+}
+
+.accordions{
+    margin: 3em auto;
+    max-width: 25em;
+    /* background-color: yellow; */
+}
+
+.accordion-item{
+    display: block;
+    padding: 20px;
+    cursor: pointer;
+    border: 1px solid #c0c0c0;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+
+.accordion-heading{
+    font-family:'Poppins', serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.one{
+    border: none;
+    background-color: #0c8bfd;
+    border-radius: 30px;
+    color: white;
+}
+
+.accordion-item svg{
+    height: 20px;
+    width: 20px;
+    float: right;
+}
+
+.accordlist-item{
+    list-style: none;
+    
+}
+
+.accordlist-item ::before{
+    
 }
    
 @media all and (max-width: 768px) {
