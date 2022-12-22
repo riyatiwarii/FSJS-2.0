@@ -231,6 +231,13 @@
     padding-bottom: 10px;
 }
 
+.support-heading{
+    font-size: 2.7rem;
+    max-width: 20em;
+    margin-left: 115px;
+    margin-right: auto;
+}
+
 .accordion-item{
     display: block;
     padding: 20px;
@@ -308,6 +315,11 @@
     width: 0.75rem;
     margin-right: 0.5rem;
     background-color: #d9d9d9;
+}
+
+.accordian-list li:hover{
+    background-color: rgb(162, 161, 161);
+    color: #292828;
 }
 
    
@@ -410,6 +422,10 @@
     /* .accord-section{
         flex-direction: column;
     } */
+
+    .support-heading{
+        margin-left: 60px;
+    }
 
     .accordions{
         width: 20em
@@ -516,6 +532,10 @@
         font-size: 1rem;
     }
 
+    .support-heading{
+        margin-left: 50px;
+    }
+
     .accord-section{
         flex-direction: column;
     }
@@ -613,6 +633,10 @@
         font-size: 1rem;
         margin-left: 40px;
         margin-right: 40px;
+    }
+
+    .support-heading{
+        margin-left: 30px;
     }
 
     .accordions{
