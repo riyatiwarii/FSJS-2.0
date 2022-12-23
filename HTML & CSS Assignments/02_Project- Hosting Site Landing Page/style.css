@@ -473,22 +473,6 @@
     /* padding-left: 5.5em; */
 }
 
-.testimonial-carousel{
-    width: 27em;
-    background-color:black;
-    color: white;
-    border-radius: 15px;
-    padding: 10px;
-    margin-left: 50px;
-}
-
-.carousel-two{
-    max-width: 27em;
-    background-color: white;
-    color: #000000;
-    border: 1px solid #c0c0c0;
-}
-
 .about-person{
     color: #bfbfbf;
 }
@@ -503,7 +487,7 @@
 }
 
 .testimonial-person{
-    padding: 1em
+    padding: 1em;
 }
 
 .testimonial-description{
@@ -516,42 +500,7 @@
     padding-bottom: 1em;
 }
 
-.scroll{
-    padding-left: 11em;
-    padding-bottom: 3em;
-}
 
-.all-testimonials{
-    /* display: flex;
-    justify-content: space-around; */
-    /* gap: 0.5em; */
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 45%;
-    padding-left: 0.5em;
-    padding-bottom: 2.5em;
-    overflow-x: scroll;
-    background: #d3fdbe;
-    border-radius: 1em;
-    position: relative;
-} 
-
-.all-testimonials::-webkit-scrollbar{
-    width: 2rem;
-}
-
-.all-testimonials::-webkit-scrollbar-track{
-    background: hsl(120 75% 50% / 1);
-    border-radius: 100vw;
-    margin-block: 0.5em;
-    margin-left: 3.1em;
-}
-
-.all-testimonials::-webkit-scrollbar-thumb {
-    background: hsl(120 100% 20% / 1);
-    border: 0.25em solid hsl(120 75% 50% / 1);
-    border-radius: 100vw;    
-  }
 
 .stars{
     display: flex;
@@ -593,7 +542,13 @@
     /* width: 68em; */
 }
 
+
 @media all and (max-width: 768px) { 
+
+    .horizontal-scroll-bar{
+        display: flex;
+        justify-content: start;
+    }
     
     .signup-input{
         margin: auto;
@@ -765,8 +720,17 @@
         height: 100%;
         margin: 0;
         padding: 0;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
+
+    .all-testimonials{
+        padding-top: 1em;
+        padding-bottom: 3.5em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow-x: scroll;
+    } 
 
     .navbar{
         gap: 20px;
@@ -894,34 +858,6 @@
 
     .testimonial-para{
         text-align: center;
-    } 
-
-    .all-testimonials{
-        flex-direction: column;
-        justify-content: center;
-        gap: 2em;
-    }
-
-    .testimonial-carousel{
-        background-color: #000000;
-        color: white;
-        border: 1px solid #c0c0c0;
-        margin-right: 3.5em;
-    }
-
-    .carousel-two{
-        background-color: white;
-        color: #000000;
-        border: 1px solid #c0c0c0;
-        margin-right: 3.5em;
-    }
-
-    .scrollbar{
-        margin-left: 11%;
-    }
-
-    .scrollflow{
-        width: 6em;
     }
 
   }
