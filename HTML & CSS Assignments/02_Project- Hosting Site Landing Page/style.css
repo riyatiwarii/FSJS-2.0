@@ -460,6 +460,13 @@
     /* padding-left: 5.5em; */
 }
 
+
+
+.stars{
+    display: flex;
+    gap: .2em;
+}
+
 @media all and (max-width: 768px) {   
 
     html, body{
