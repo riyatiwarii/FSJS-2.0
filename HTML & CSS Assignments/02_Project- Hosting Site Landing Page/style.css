@@ -415,6 +415,14 @@
     margin-top: 0.9em;
 }
 
+.pricingbtn:hover{
+    background-color: white;
+    color: #0c8bfd;
+    border: 1px solid #0c8bfd;
+    box-shadow: 8px 8px #0c8bfd;
+    transition: .3s;
+}
+
 .pricing-avail{
     padding-top: 1em;
 }
@@ -432,9 +440,14 @@
     border-bottom: 2px solid #85c5fe;
 }
 
-.mid-btn{
+.midpricingbtn{
     background-color: #ffffff;
     color: #0c8bfd;
+}
+
+.midpricingbtn:hover{
+    box-shadow: 8.5px 8.5px #8ec6f7;
+    transition: .3s;
 }
 
 .testimonial-content{
@@ -461,12 +474,19 @@
 }
 
 .testimonial-carousel{
-    max-width: 27em;
+    width: 27em;
     background-color:black;
     color: white;
     border-radius: 15px;
     padding: 10px;
     margin-left: 50px;
+}
+
+.carousel-two{
+    max-width: 27em;
+    background-color: white;
+    color: #000000;
+    border: 1px solid #c0c0c0;
 }
 
 .about-person{
@@ -496,6 +516,43 @@
     padding-bottom: 1em;
 }
 
+.scroll{
+    padding-left: 11em;
+    padding-bottom: 3em;
+}
+
+.all-testimonials{
+    /* display: flex;
+    justify-content: space-around; */
+    /* gap: 0.5em; */
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 45%;
+    padding-left: 0.5em;
+    padding-bottom: 2.5em;
+    overflow-x: scroll;
+    background: #d3fdbe;
+    border-radius: 1em;
+    position: relative;
+} 
+
+.all-testimonials::-webkit-scrollbar{
+    width: 2rem;
+}
+
+.all-testimonials::-webkit-scrollbar-track{
+    background: hsl(120 75% 50% / 1);
+    border-radius: 100vw;
+    margin-block: 0.5em;
+    margin-left: 3.1em;
+}
+
+.all-testimonials::-webkit-scrollbar-thumb {
+    background: hsl(120 100% 20% / 1);
+    border: 0.25em solid hsl(120 75% 50% / 1);
+    border-radius: 100vw;    
+  }
+
 .stars{
     display: flex;
     gap: 0.4em;
@@ -507,7 +564,45 @@
     width: 16px;
 }
 
-@media all and (max-width: 768px) {   
+.signupbtn{
+    padding: 10px 20px 10px 20px; 
+}
+
+.signup-input input{
+    background-color: #3e3d3d;
+    /* display: block; */
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    color: #afa8a8;
+    font-size: 0.8rem;
+    border: none;
+}
+
+.signup-input{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+    background-color: #292828;
+    border-radius: 15px;
+    margin-left: 10em;
+    margin-right: 10em;
+    flex-wrap: wrap;
+    /* width: 68em; */
+}
+
+@media all and (max-width: 768px) { 
+    
+    .signup-input{
+        margin: auto;
+    }
+
+    .signupbtn{
+        padding: 10px 30px 10px 30px; 
+    }
+    
 
     html, body{
         width: 100%;
@@ -648,7 +743,19 @@
 
     .testimonial-para{
         font-size: 0.9rem;
-    } 
+    }
+    
+    .scrollbar{
+        margin-top: 1%;
+        height: 0.2em;
+        background-color: #f3f3f3;
+        margin-left: 6%;
+    }
+
+    .space{
+        padding-bottom: 5em;
+    }
+    
   }
 
 @media only screen and (max-width: 600px){
@@ -788,6 +895,34 @@
     .testimonial-para{
         text-align: center;
     } 
+
+    .all-testimonials{
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .testimonial-carousel{
+        background-color: #000000;
+        color: white;
+        border: 1px solid #c0c0c0;
+        margin-right: 3.5em;
+    }
+
+    .carousel-two{
+        background-color: white;
+        color: #000000;
+        border: 1px solid #c0c0c0;
+        margin-right: 3.5em;
+    }
+
+    .scrollbar{
+        margin-left: 11%;
+    }
+
+    .scrollflow{
+        width: 6em;
+    }
 
   }
 
