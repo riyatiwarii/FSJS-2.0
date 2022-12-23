@@ -370,7 +370,6 @@
     border-bottom: 2.5px solid #e7e7e7; /* This creates the border. Replace black with whatever color you want. */
 }
 
-
 .pricing-deal{
     font-size: 1.5rem;
     font-weight: 600;
@@ -473,6 +472,49 @@
     /* padding-left: 5.5em; */
 }
 
+.horizontal-scroll-bar {
+    overflow: auto;
+    white-space:nowrap;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-bottom: 50px;   
+    margin-left: 14em;
+    width: 1000px;
+}
+
+.horizontal-scroll-bar::-webkit-scrollbar {
+    height: 5px;
+}
+
+.horizontal-scroll-bar::-webkit-scrollbar-track{
+/* 	margin-left:150px; */
+/* 	margin-right:150px; */
+background:#f3f3f3;
+border-radius: 30vw;
+}
+
+.horizontal-scroll-bar::-webkit-scrollbar-thumb {
+background:#0c8bfd;
+border-radius: 30vw;
+}
+
+.testimonial-carousel{
+    background-color: black;
+    color: white;
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid #c0c0c0;
+}
+
+.carousel-two{
+    color: black;
+    background-color: white;
+    width: 100%;
+    border: 1px solid #d0d0d0;
+    border-radius: 25px; 
+}
+
 .about-person{
     color: #bfbfbf;
 }
@@ -498,14 +540,15 @@
 
 .testimonial{
     padding-bottom: 1em;
+    font-size: 1.2rem;
+    padding-top: 0.5em;
+    /* width: 30%; */
 }
-
-
 
 .stars{
     display: flex;
     gap: 0.4em;
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
 }
 
 .stars img{
@@ -514,7 +557,7 @@
 }
 
 .signupbtn{
-    padding: 10px 20px 10px 20px; 
+    padding: 15px 25px 15px 25px; 
 }
 
 .signup-input input{
@@ -526,6 +569,7 @@
     color: #afa8a8;
     font-size: 0.8rem;
     border: none;
+    padding: 15px 25px 15px 25px; 
 }
 
 .signup-input{
@@ -545,25 +589,13 @@
 
 @media all and (max-width: 768px) { 
 
-    .horizontal-scroll-bar{
-        display: flex;
-        justify-content: start;
-    }
-    
-    .signup-input{
-        margin: auto;
-    }
-
-    .signupbtn{
-        padding: 10px 30px 10px 30px; 
-    }
-    
 
     html, body{
         width: 100%;
         height: 100%;
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
     }
 
     .navbar{
@@ -700,15 +732,22 @@
         font-size: 0.9rem;
     }
     
-    .scrollbar{
-        margin-top: 1%;
-        height: 0.2em;
-        background-color: #f3f3f3;
-        margin-left: 6%;
-    }
-
     .space{
         padding-bottom: 5em;
+    }
+
+    .horizontal-scroll-bar{
+        margin-left: 2em;
+    }
+   
+    .signup-input{
+        margin: auto;
+    }
+
+    .signupbtn{
+        padding: 15px 25px 15px 25px;
+        margin-top: 1.5em;
+        margin-bottom: -4%;
     }
     
   }
@@ -720,17 +759,8 @@
         height: 100%;
         margin: 0;
         padding: 0;
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
     }
-
-    .all-testimonials{
-        padding-top: 1em;
-        padding-bottom: 3.5em;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        overflow-x: scroll;
-    } 
 
     .navbar{
         gap: 20px;
@@ -848,16 +878,46 @@
     }
 
     .testimonial-heading{
-        font-size: 3rem;
+        font-size: 3.2rem;
         text-align: center;
         margin-bottom: -20%;
-        margin-top: -10%;
-        padding-right: 1em;
-        padding-left: 1em;
+        margin-top: -20%;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
     }
 
     .testimonial-para{
         text-align: center;
+    }
+
+    .horizontal-scroll-bar{
+        width: 630px;
+        margin-left: 1%;
+    }
+
+    .testimonial-carousel{
+        width: 100%;
+    }
+
+    .caraousel-two{
+        width: 100%;
+    }
+    
+    .testimonial{
+        font-size: 1.2rem;
+    }
+
+    .signupbtn{
+        padding: 15px 25px 15px 25px; 
+    }
+    
+    .signup-input{
+        flex-direction: column;
+        gap: 1.1em;
+    }
+
+    .signupbtn{
+        margin-top: -0.1%;
     }
 
   }
@@ -986,7 +1046,14 @@
 
     .testimonial-para{
         text-align: center;
-    } 
+    }
+    
+    .testimonial-carousel{
+        width: 100%;
+    }
+    .testimonial{
+        font-size: 0.8rem;
+    }
 
   }
 

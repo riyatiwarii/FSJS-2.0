@@ -4,6 +4,7 @@
     color: white;
     border-radius: 15px;
     padding: 10px;
+    
 }
 
 .carousel-two{
@@ -13,16 +14,7 @@
     border: 1px solid #c0c0c0;
 }
 
-.horizontal-scroll-bar {
-    overflow-x: scroll;
-    white-space:nowrap;
-    /* width: 50vw; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    background-color: yellow;
-}
+
 
 .horizontal-scroll-bar::-webkit-scrollbar {
     height: 5px;
