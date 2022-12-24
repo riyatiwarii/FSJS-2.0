@@ -143,7 +143,6 @@
     gap: 80px;
     padding-top: 100px;
     padding-bottom: 100px;
-    /* background-color: yellow; */
 }
 
 .card{
@@ -163,7 +162,6 @@
 }
 
 .card:hover{
-    /* transform: scale(1.16); */
     background-color: gainsboro;
     -webkit-transform: translateY(-20px);
             -ms-transform: translateY(-20px);
@@ -172,7 +170,6 @@
 }
 
 .card-two:hover{
-    /* transform: scale(1.2); */
     background-color: gainsboro;
     color: black;
     -webkit-transform: translateY(-20px);
@@ -210,7 +207,6 @@
 }
 
 .service{
-    /* background-color: orange; */
     padding-top: 80px;
 }
 
@@ -274,20 +270,16 @@
 
 .accordions{
     margin: 3em auto;
-    /* width: 25em;    */
-    /* background-color: yellow; */
     width: 35%;
 }
 
 .accord-section{
-    /* background-color: red; */
     display: flex;
     justify-content: center;
 }
 
 .accord-list-container{
     margin: 3em auto;
-    /* width: 23em; */
     width: 35%;
     background-color: #000000;
     padding: 10px 10px 20px 10px;
@@ -347,9 +339,7 @@
 }
 
 .pricing-carousel{
-    /* padding: 3em auto; */
     max-width: 18em;
-    /* width: 35%; */
     background-color: white;
     padding: 10px 10px 20px 10px;
     border: 1px solid black;
@@ -367,7 +357,6 @@
 
 .pricing-info{
     padding: 10px;
-    /* border-bottom: 1px solid #e7e7e7; */
 }
 
 .pricing-info:after {
@@ -488,10 +477,8 @@
 .testimonial-para{
     color: #8d8c8c;
     font-size: 1.1rem;
-    /* max-width: 15em; */
     max-width: 24em;
     padding-top: 7em;
-    /* padding-left: 5.5em; */
 }
 
 .horizontal-scroll-bar {
@@ -511,8 +498,6 @@
 }
 
 .horizontal-scroll-bar::-webkit-scrollbar-track{
-/* 	margin-left:150px; */
-/* 	margin-right:150px; */
 background:#f3f3f3;
 border-radius: 30vw;
 }
@@ -565,7 +550,6 @@ border-radius: 30vw;
     padding-bottom: 1em;
     font-size: 1.2rem;
     padding-top: 0.5em;
-    /* width: 30%; */
 }
 
 .stars{
@@ -584,8 +568,7 @@ border-radius: 30vw;
 }
 
 .signup-input input{
-    background-color: #3e3d3d;
-    /* display: block; */
+    background-color: #3e3d3d;  
     padding: 10px;
     cursor: pointer;
     border-radius: 30px;
@@ -606,7 +589,6 @@ border-radius: 30vw;
     margin-left: 10em;
     margin-right: 10em;
     flex-wrap: wrap;
-    /* width: 68em; */
 }
 
 .sign-up-section{
@@ -624,7 +606,6 @@ border-radius: 30vw;
 }
 
 .footer-line{
-    /* border: 1px solid #292828; */
     border: 0;
     height: 3.5px;
     background: #333333;
@@ -639,7 +620,6 @@ border-radius: 30vw;
 
 .line-two{
     padding-top: 3em;
-    /* padding-bottom: 5em; */
 }
 
 footer{
@@ -783,10 +763,6 @@ footer{
     .card-heading{
         text-align: center;
     }
-
-    /* .accord-section{
-        flex-direction: column;
-    } */
 
     .support-heading{
         margin-left: 60px;
@@ -1082,14 +1058,6 @@ footer{
         border: 1px solid white
     }
 
-    /* .topleftbtn{
-        width: 1250px;
-    }
-
-    .toprightbtn{
-        width: 1250px;
-    } */
-
     .right-main{
         width: 100%;
     }
@@ -1116,7 +1084,6 @@ footer{
     }
 
     .service-heading{
-        /* margin-top: -2%; */
         margin-left: 70px;
         margin-right: 70px;
         padding-bottom: 10px;
@@ -1134,14 +1101,11 @@ footer{
     }
 
     .accordions{
-        /* width: 100%;
-        padding: 20px; */
         width: 18em;
         padding: 10px
     }
 
     .accord-list-container{
-        /* width: 100% */
         width: 18em;
      
     }
@@ -1164,8 +1128,6 @@ footer{
         margin: auto;
         margin-top: -10%;
         margin-bottom: -25%;
-        /* padding-right: 1em;
-        padding-left: 1em; */
     }
 
     .testimonial-para{
