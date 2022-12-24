@@ -1,4 +1,9 @@
-# Replicate the Following Output
+# Project Hosting Site Landing Page
+
+## Task
+- Replicate the below output as a responsive webpage.
+
+## **Solution**: [Live link](https://hosting-landing-page-by-riya.netlify.app)
 
 `Assests are Provided!`
 
