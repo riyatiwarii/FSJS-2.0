@@ -3,7 +3,7 @@
 ## Task
 - Replicate the below output as a responsive webpage.
 
-## **Solution**: [Live Link](https://hosting-landing-page-by-riya.netlify.app)
+## **Solution**: [Live link](https://hosting-landing-page-by-riya.netlify.app)
 
 `Assests are Provided!`
 
