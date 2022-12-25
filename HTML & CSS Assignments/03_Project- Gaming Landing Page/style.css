@@ -315,12 +315,14 @@ color: #f4694c;
     .navbar-menu{
         display: block;
         padding-right: 3.1em;
+        background-color: transparent;
+        border: none;
     }
 
     .logo-navlist{
         flex-direction: column;
         position: fixed;
-        inset: 0 70% 0 0;
+        inset: 0 60% 0 0%;
         padding-top: 4.5em;
         background: hsl(0 0% 100% / 0.1);
         backdrop-filter: blur(1rem);
