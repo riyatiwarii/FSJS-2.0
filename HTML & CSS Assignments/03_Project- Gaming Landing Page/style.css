@@ -194,11 +194,114 @@ color: #f4694c;
 .play-svg img{
     height: 60px;
 }
-  
+
+.popular-heading{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    width: 45%;
+    font-family: 'Poppins';
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.card{
+    height: 300px;
+    width: 100%;
+}
+
+.blur-part{
+    background: rgba(216, 211, 211, 0.201);
+    backdrop-filter: blur(1rem);
+    position: relative;
+    top: 162.5px;
+}
+
+.card-one{
+    background-image: url(/Assets/Photos/image\ 2.png);
+    background-position: 80% 75%;;
+}
+
+.card-two{
+    background-image: url(/Assets/Photos/image\ 4.png);
+    background-position: center;
+}
+
+.blur-two{
+    background: rgba(55, 54, 54, 0.116);
+    backdrop-filter: blur(0.5rem);
+}
+
+.card-three{
+    background-image: url(/Assets/Photos/image\ 3.png);
+    background-position: center;
+}
+
+.card-four{
+    background-image: url(/Assets/Photos/Rectangle\ 56.png);
+    background-position: center;
+}
+
+.card{   
+    margin-bottom: 100px;
+    width: 205px;
+    height: 245px;  
+    background-size: cover;
+}
+
+.download{
+    position: relative;
+    left: 125px;
+    bottom: 25px;
+    padding: 6px 10px 6px 10px;
+    background-color: #f4694c;
+    color: white;
+    border: none;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.download:hover{
+    text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
+    background-color: #f73914;
+}
+
+.about-game{
+    position: relative;
+    color: white;
+    top: 10px;
+    left: 10px;
+}
+
+.game-title{
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.game-type{
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+    color: #bebfbf;
+}
+
+.blur-cards{
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+}
+
   @media (max-width: 768px) {
     header{
        height: 100vh;
        background-position: center;
+    }
+
+    .card-three{
+        margin-top: -30%;
+    }
+    .card-four{
+        margin-top: -30%;
     }
 
     nav{
@@ -288,7 +391,16 @@ color: #f4694c;
         padding: 5px 10px 5px 10px; 
      }
 
-      
+    .blur-cards{
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 140px;
+        height: 100vh;
+    }
+
+    .popular-heading{
+        width: 50%;
+    }
   }
 
   @media only screen and (max-width: 600px){
@@ -395,15 +507,33 @@ color: #f4694c;
     .play-svg img{
         height: 50px;
     }
+
+    .blur-cards{
+        align-items: center;
+        flex-wrap: wrap;
+        /* background-color: yellow; */
+        height: 100vh;
+    }
+
+    .card-two{
+        margin-top: -50%;
+    }
+
+    .card-three{
+        margin-top: -48%;
+    }
+
+    .card-four{
+        margin-top: -48%;
+    }
+
+    .popular-heading{
+        width: 90%;
+    }
       
   }
 
   @media only screen and (max-width: 380px){
-    
-    body{
-        overflow: hidden;
-    }
-
     nav{
         padding-left: 2.7em;
     }
@@ -426,6 +556,25 @@ color: #f4694c;
         translate: 125px -12px;
     }
 
+    .card-two{
+        margin-top: -55%;
+    }
+
+    .card-three{
+        margin-top: -55%;
+    }
+
+    .card-four{
+        margin-top: -55%;
+    }
+
+    .popular-heading{
+        width: 90%;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        font-size: 2rem
+    }
+   
   }
 
   @media only screen and (max-width: 355px){
@@ -472,6 +621,24 @@ color: #f4694c;
 
     .mainbtns{
         padding-left: 2em;
+    }
+
+    .popular-heading{
+        width: 100%;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    .card-two{
+        margin-top: -65%;
+    }
+
+    .card-three{
+        margin-top: -65%;
+    }
+
+    .card-four{
+        margin-top: -65%;
     }
 
   }
