@@ -317,6 +317,11 @@ color: #f4694c;
         padding-right: 3.1em;
         background-color: transparent;
         border: none;
+        z-index: 9999;
+    }
+
+    .navbar-menu[aria-expanded="true"]{
+        background: url(./Assets/Icons/icons8-cancel-ios-16-filled-96.png);
     }
 
     .logo-navlist{
@@ -327,6 +332,11 @@ color: #f4694c;
         background: hsl(0 0% 100% / 0.1);
         backdrop-filter: blur(1rem);
         transform: translateX(-100%);
+        transition: 350ms ease-in-out;
+    }
+
+    .logo-navlist[data-visible="true"]{
+        transform: translateX(0%);
     }
 
     .list-item:hover{
