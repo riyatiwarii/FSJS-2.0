@@ -16,7 +16,7 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
 }
   
 .logo-navlist{
@@ -33,15 +33,6 @@ nav{
     display: none;
 }
 
-.ham{
-    display: block;
-    width: 25px;
-    height: 4px;
-    margin: 5px auto;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-}
- 
 .nav-btns{
      padding-left: 360px;   
  }
@@ -317,22 +308,18 @@ color: #f4694c;
         padding-right: 3.1em;
         background-color: transparent;
         border: none;
-        z-index: 9999;
-    }
-
-    .navbar-menu[aria-expanded="true"]{
-        background: url(./Assets/Icons/icons8-cancel-ios-16-filled-96.png);
     }
 
     .logo-navlist{
         flex-direction: column;
         position: fixed;
-        inset: 0 60% 0 0%;
+        inset: 0 63% 0 0%;
         padding-top: 4.5em;
         background: hsl(0 0% 100% / 0.1);
         backdrop-filter: blur(1rem);
         transform: translateX(-100%);
         transition: 350ms ease-in-out;
+        z-index: -1000;
     }
 
     .logo-navlist[data-visible="true"]{
@@ -354,10 +341,10 @@ color: #f4694c;
     .first-section{
         flex-direction: column;
     }
+
     .right-section{
         display: flex;
         flex-direction: column;
-        /* background-color: yellow; */
     }
 
     .play-heading{
@@ -444,7 +431,7 @@ color: #f4694c;
   @media only screen and (max-width: 355px){
 
     .navbar-menu{
-        padding-right: 0em;
+        padding-right: 2.5em;
         padding-left: 2.2em;
     }
 
