@@ -392,7 +392,72 @@ text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
     width: 86%;
 }
 
+.weekly-download{
+    margin-top: 1em;
+    padding: 10px 25px 10px 25px;
+    background-color: #f4694c;
+    color: white;
+    border: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.weekly-download:hover{
+    text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
+    background-color: #f73914;
+}
+
+.recommend-collection{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    margin-top:6%;
+    row-gap: 70px;
+    margin-left: 10%;
+}
+
+.recommend-card{
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    height: 100%;
+}
+
+.game-image{
+    height: 90%;
+    width: 100%;
+}
+
+.game-image img{
+    height: 100%;
+    width: 100%;
+}
+
+.gameabout{
+    width: 100%;
+    font-family: 'Poppins';
+}
+
+
+.gameabout h3{
+    padding-top: 1em;
+    font-size: 1.5rem;
+}
+
+.gameabout span{
+    padding-top: 2em;
+    font-size: 0.9em;
+    color: #f4694c;
+}
+
+.gameabout p{
+    padding-top: 1em;
+    font-size: 0.9em;
+    color: #949595;
+    line-height: 1.5em;
+}
+
   @media (max-width: 768px) {
+
 
     header{
        height: 100vh;
