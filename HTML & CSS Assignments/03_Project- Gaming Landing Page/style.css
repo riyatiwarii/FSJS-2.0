@@ -462,6 +462,7 @@ color: #f4694c;
     background-repeat: no-repeat;
     padding-bottom: 5em;
     overflow: hidden;
+    background-position: 90% 41%;
 }
 
 .most-played-heading{   
@@ -507,6 +508,81 @@ color: #f4694c;
     padding-bottom: 3em;
     padding-left: 3em;
     font-size: 1.2rem;
+}
+
+.unforgettable{
+    height: 500px;
+    background-image: linear-gradient(180deg,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.65)), url(/Assets/Photos/Rectangle\ 606.png);
+    background-position: center;
+    background-size: cover;
+
+} 
+
+.unforgettable-content{
+    margin: auto;
+    text-align: center;
+    width: 26em;
+}
+
+.unforgettable-content h2{
+    color: white;
+    font-family: 'Poppins';
+    padding-top: 3em;
+    font-size: 2.3rem;
+    padding-bottom: 0.5em;
+}
+
+.unforgettable-content p{
+    color: #8d8d8f;
+    width: 24em;
+    padding-left: 1em;
+    padding-bottom: 3em;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+.footer-lists{
+    display: flex;
+    justify-content: center;
+    gap: 9em;
+}
+
+.footer-lists li{
+    font-family: 'Poppins';
+    color: #86878b;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight:lighter;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.footer-listone p{
+    color: #86878b;
+    font-size: 1rem;
+    font-weight:lighter;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.footer-lists h4{
+    font-size: 1.1rem;
+    margin-bottom: 1.5em;
+    /* color: #86878b */
+}
+
+.footer-listone img{
+    margin-bottom: 1em;
+}
+
+.icons img{
+    margin-right: 0.5em;
 }
 
   @media (max-width: 768px) {
@@ -928,7 +1004,7 @@ color: #f4694c;
 
     .most-played-images{
         width: 100%;
-        height: 145vh;
+        height: 130vh;
     }
 
     .right-images{
@@ -949,6 +1025,14 @@ color: #f4694c;
     .right-image-two{
         width: 45%;
         padding-left: 0em;
+    }
+
+    .unforgettable{
+        height: 300px;
+    }
+
+    .unforgettable-content h2{
+        font-size: 1.5rem;
     }
       
   }
@@ -1028,9 +1112,26 @@ color: #f4694c;
     }
 
     .most-played-images{
-        height: 128vh;
+        height: 120vh;
+    }
+
+    .unforgettable-content{
+        width: 15em;
+        margin-right: 4em;
+    }
+
+    .unforgettable-content h2{
+        font-size: 1.2rem;
+    }
+      
+    .unforgettable-content p{
+        padding-left: 0;
+        width: 15rem;
     }
  
+    .last-btn{
+        padding: 10px 15px 10px 15px; 
+    }
   }
 
   @media only screen and (max-width: 355px){
@@ -1133,7 +1234,16 @@ color: #f4694c;
     }
 
     .most-played-images{
-        height: 115vh;
+        height: 105vh;
+    }
+
+    .unforgettable-content{
+        width: 15em;
+        margin-right: 2.5em;  
+    }
+
+    .last-btn{
+        padding: 5px 10px 5px 10px; 
     }
 
   }
