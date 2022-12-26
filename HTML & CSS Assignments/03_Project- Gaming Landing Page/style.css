@@ -598,6 +598,19 @@ footer{
 }
 
   @media (max-width: 768px) {
+
+    .footer-lists{
+        justify-content: space-around;
+        gap: 0em;
+    }
+
+    .footer-lists h4{
+        font-size: 0.9rem;
+    }
+
+    .footer-lists li{
+        font-size: 0.8rem;
+    }
        
     .card-three{
         margin-top: -30%;
@@ -837,6 +850,23 @@ footer{
 
   @media only screen and (max-width: 600px){
 
+    .footer-lists{
+        gap: 1em;
+        flex-wrap: wrap;
+    }
+
+    .get-in{
+        margin-right: 10%;
+    }
+
+    .footer-listone img{
+        width: 100px;
+    }
+
+    .icons img{
+        width: 25px;
+    }
+
     header{
         height: 500px;
         background-position: center;       
@@ -1051,6 +1081,27 @@ footer{
 
   @media only screen and (max-width: 380px){
 
+    .footer-listone{
+        margin-left: 6%;
+    }
+
+    .footer-listone p{
+        width: 11em;
+    }
+
+    .get-in{
+        margin-right: 55%;
+        margin-top: -10%;
+    }
+
+    .articles{
+        margin-right: 3%;
+    }
+
+    .leagues{
+        margin-top: -10%;
+    }
+
     nav{
         padding-left: 2.7em;
     }
@@ -1256,6 +1307,28 @@ footer{
 
     .last-btn{
         padding: 5px 10px 5px 10px; 
+    }
+
+    .footer-listone{
+        margin-left: 6%;
+    }
+
+    .footer-listone p{
+        width: 11em;
+    }
+
+    .get-in{
+        margin-right: 3%;
+        margin-top: 0%;
+    }
+
+    .articles{
+        margin-right: 0%;
+        margin-left: 4%;
+    }
+
+    .leagues{
+        margin-top: 0%;
     }
 
   }
