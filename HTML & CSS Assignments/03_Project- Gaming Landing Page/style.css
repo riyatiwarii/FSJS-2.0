@@ -456,14 +456,12 @@ color: #f4694c;
     line-height: 1.5em;
 }
 
- /* background-image: url(./Assets/Icons/GAMES\ OF\ THE\ WORLD.svg); */
-
 .most-played{
     background-color: black;
-   
+    background-image: url(./Assets/Icons/GAMES\ OF\ THE\ WORLD.svg);
     background-repeat: no-repeat;
     padding-bottom: 5em;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .most-played-heading{   
@@ -505,17 +503,14 @@ color: #f4694c;
 
 .right-para{
     color: #838487;
-    width: 90%;
+    width: 91%;
     padding-bottom: 3em;
     padding-left: 3em;
+    font-size: 1.2rem;
 }
 
   @media (max-width: 768px) {
-
-    .most-played{
-        display: inline-block;
-    }
-    
+       
     .card-three{
         margin-top: -30%;
     }
@@ -713,10 +708,47 @@ color: #f4694c;
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
         margin-left: 20%;
         gap: 0;
+        padding-bottom: 1em;
     }
+
+    .most-played{
+        overflow:visible;
+    }
+
+    .most-played-images{
+        flex-direction: column;
+        height: 170vh;
+    }
+
+    .most-played-left{
+        width: 100%;
+    }
+
+    .right-para{
+        padding-top: 1.5em;
+        padding-bottom: 2em;
+        padding-left: 0em;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    .right-image-one{
+        width: 45%;
+        margin-right: 1em;
+    }
+    .right-image-two{
+        width: 45%;
+        padding-left: 0em;
+    }
+
+    .right-images{
+        padding-bottom: 4em;
+    }
+
   }
 
   @media only screen and (max-width: 600px){
+
     header{
         height: 500px;
         background-position: center;       
@@ -889,10 +921,40 @@ color: #f4694c;
         width: 400px;
         height: 300px;
     }
+
+    .right-para{
+        font-size: 0.9rem;
+    }
+
+    .most-played-images{
+        width: 100%;
+        height: 145vh;
+    }
+
+    .right-images{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        gap: 0.5em;
+        padding-bottom: 0em;
+    }
+
+    .right-image-one{
+        width: 50%;
+        margin-right: 0em;
+        padding-left: 0em;
+    }
+    
+    .right-image-two{
+        width: 45%;
+        padding-left: 0em;
+    }
       
   }
 
   @media only screen and (max-width: 380px){
+
     nav{
         padding-left: 2.7em;
     }
@@ -963,6 +1025,10 @@ color: #f4694c;
 
     .next-arrow{
         margin-left: 0em;
+    }
+
+    .most-played-images{
+        height: 128vh;
     }
  
   }
@@ -1064,6 +1130,10 @@ color: #f4694c;
 
     .rush-para{
         font-size: 0.8rem;
+    }
+
+    .most-played-images{
+        height: 115vh;
     }
 
   }
