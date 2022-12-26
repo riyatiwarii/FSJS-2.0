@@ -664,29 +664,6 @@ color: #f4694c;
   }
 
   @media only screen and (max-width: 600px){
-
-    .recommend-collection{
-        grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
-        gap: 2em;
-        margin-left: 2em;
-    }
-
-    .recommend-card{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;   
-    }
-
-    .gameabout h3{
-        padding-top: 0em;
-        font-size: 1.5rem;
-    }
-
-    .rush-image{
-        width: 400px;
-        height: 300px;
-    }
-
     header{
         height: 500px;
         background-position: center;       
@@ -793,7 +770,6 @@ color: #f4694c;
     .blur-cards{
         align-items: center;
         flex-wrap: wrap;
-        /* background-color: yellow; */
         height: 100vh;
     }
 
@@ -838,14 +814,32 @@ color: #f4694c;
         margin-top: -10%;
         gap: 2em;
     }
+
+    .recommend-collection{
+        grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
+        gap: 2em;
+        margin-left: 2em;
+    }
+
+    .recommend-card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+
+    .gameabout h3{
+        padding-top: 0em;
+        font-size: 1.5rem;
+    }
+
+    .rush-image{
+        width: 400px;
+        height: 300px;
+    }
       
   }
 
   @media only screen and (max-width: 380px){
-    .next-arrow{
-        margin-left: 0em;
-    }
-
     nav{
         padding-left: 2.7em;
     }
@@ -913,28 +907,14 @@ color: #f4694c;
         margin-top: -10%;
         gap: 1em;
     }
+
+    .next-arrow{
+        margin-left: 0em;
+    }
  
   }
 
   @media only screen and (max-width: 355px){
-
-    .rush-image{
-        width: 300px;
-        height: 230px;
-        margin-left: 0.6em;
-    }
-
-    .rush-content{
-        margin-top: 175%;
-    }
-
-    .rush-heading{
-        font-size: 1.8rem;
-    }
-
-    .rush-para{
-        font-size: 0.8rem;
-    }
 
     .navbar-menu{
         padding-right: 2.5em;
@@ -1013,6 +993,24 @@ color: #f4694c;
 
     .heading-arrows{
         margin-top: -15%;
+    }
+
+    .rush-image{
+        width: 300px;
+        height: 230px;
+        margin-left: 0.6em;
+    }
+
+    .rush-content{
+        margin-top: 175%;
+    }
+
+    .rush-heading{
+        font-size: 1.8rem;
+    }
+
+    .rush-para{
+        font-size: 0.8rem;
     }
 
   }
