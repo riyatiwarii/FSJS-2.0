@@ -291,6 +291,67 @@ color: #f4694c;
     gap: 4em;
 }
 
+.war-rush{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 5em;
+}
+
+.rush-image{
+    width: 400px;
+    height: 300px;
+    background-image: url(/Assets/Photos/Rectangle\ 57.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.rush-content{
+    width: 40%;
+}
+
+.rush-heading{
+    font-family: 'Poppins';
+    font-size: 2.3rem;
+    line-height: 1.2em;
+}
+
+.rush-para{
+    color: #949595;
+    font-family: 'Poppins';
+    padding-top: 1em;
+}
+
+.rush-buttons{
+    padding-top: 1em;
+}
+
+.explore-btn {
+    padding: 15px 30px 15px 30px; 
+    background-color: #f4694c;
+    color: white;
+    margin-right: 1em;
+}
+
+.explore-btn:hover {
+    text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
+    background-color: #f73914;
+}
+
+.learn-btn {
+    padding: 15px 30px 15px 30px; 
+    border: 1px solid #f4694c;
+    color: #f4694c;
+    background-color: white;
+    cursor: pointer;
+}
+
+.learn-btn:hover {
+background-color: #f73914;
+color: white;
+text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
+}
+
   @media (max-width: 768px) {
     header{
        height: 100vh;
@@ -401,10 +462,25 @@ color: #f4694c;
     .popular-heading{
         width: 50%;
     }
+
+    .war-rush{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .rush-content{
+        width: 70%;
+        padding-left: 7em;
+        padding-top: 2em;
+    }
+    
+    .rush-image{
+        margin-left: 7em;
+    }
   }
 
   @media only screen and (max-width: 600px){
-
     header{
         height: 500px;
         background-position: center;       
@@ -530,10 +606,26 @@ color: #f4694c;
     .popular-heading{
         width: 90%;
     }
+
+    .war-rush{
+        flex-direction: column-reverse;
+    }
+
+    .rush-image{
+        margin-top: 0%;
+        margin-left: 0.7em;
+    }
+
+    .rush-content{
+        width: 90%;
+        margin-top: 135%;
+        padding-left: 3em;
+    }
       
   }
 
   @media only screen and (max-width: 380px){
+
     nav{
         padding-left: 2.7em;
     }
@@ -574,14 +666,55 @@ color: #f4694c;
         padding-bottom: 0.5em;
         font-size: 2rem
     }
+
+    .rush-content{
+        margin-top: 150%;
+        width: 100%;
+        padding-left: 1em;
+    }
+
+    .rush-image{
+        width: 360px;
+        height: 230px;
+        background-image: url(/Assets/Photos/Rectangle\ 57.png);
+        background-position: center;
+        background-size: cover;
+        margin-left: 0.5em;
+    }
    
   }
 
   @media only screen and (max-width: 355px){
 
+    .rush-image{
+        width: 300px;
+        height: 230px;
+        margin-left: 0.6em;
+    }
+
+    .rush-content{
+        margin-top: 175%;
+    }
+
+    .rush-heading{
+        font-size: 1.8rem;
+    }
+
+    .rush-para{
+        font-size: 0.8rem;
+    }
+
     .navbar-menu{
         padding-right: 2.5em;
         padding-left: 2.2em;
+    }
+
+    .explore-btn{
+        padding: 15px 20px 15px 20px; 
+    }
+
+    .learn-btn{
+        padding: 15px 20px 15px 20px; 
     }
 
     nav{
