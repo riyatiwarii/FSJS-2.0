@@ -351,9 +351,9 @@ color: #f4694c;
 }
 
 .learn-btn:hover {
-background-color: #f73914;
-color: white;
-text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
+    background-color: #f73914;
+    color: white;
+    text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
 }
 
 .recommend-heading{
@@ -387,6 +387,7 @@ text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
 
 .heading-arrows{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin: auto;
     width: 86%;
@@ -437,7 +438,6 @@ text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
     font-family: 'Poppins';
 }
 
-
 .gameabout h3{
     padding-top: 1em;
     font-size: 1.5rem;
@@ -457,7 +457,6 @@ text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
 }
 
   @media (max-width: 768px) {
-
 
     header{
        height: 100vh;
@@ -559,13 +558,13 @@ text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
     }
 
     .blur-part{
-        top: 162.5px;
+        top: 198px;
     }
 
     .card{   
         margin-bottom: 100px;
-        width: 205px;
-        height: 245px;  
+        width: 260px;
+        height: 280px;  
         background-size: cover;
     }
 
@@ -589,6 +588,10 @@ text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
         flex-direction: column-reverse;
         justify-content: center;
         gap: 2em;
+    }
+
+    .rush-heading{
+        margin-top: 1.5em;
     }
 
     .rush-content{
@@ -652,9 +655,32 @@ text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
         margin-bottom: 5px;
         color: #bebfbf;
     }
+
+    .recommend-collection{
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        margin-left: 20%;
+        gap: 0;
+    }
   }
 
   @media only screen and (max-width: 600px){
+
+    .recommend-collection{
+        grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
+        gap: 2em;
+        margin-left: 2em;
+    }
+
+    .recommend-card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+
+    .gameabout h3{
+        padding-top: 0em;
+        font-size: 1.5rem;
+    }
 
     .rush-image{
         width: 400px;
@@ -801,10 +827,24 @@ text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
         margin-top: 135%;
         padding-left: 3em;
     }
+
+    .recommend-heading{
+        font-size: 1.3rem;
+    }
+       
+    .heading-arrows{
+        justify-content: center;
+        width: 100%;
+        margin-top: -10%;
+        gap: 2em;
+    }
       
   }
 
   @media only screen and (max-width: 380px){
+    .next-arrow{
+        margin-left: 0em;
+    }
 
     nav{
         padding-left: 2.7em;
@@ -861,7 +901,19 @@ text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
         background-size: cover;
         margin-left: 0.5em;
     }
-   
+
+    .recommend-heading{
+        font-size: 1.4rem;
+        width: 50%;
+    }
+       
+    .heading-arrows{
+        justify-content: center;
+        width: 100%;
+        margin-top: -10%;
+        gap: 1em;
+    }
+ 
   }
 
   @media only screen and (max-width: 355px){
@@ -952,6 +1004,15 @@ text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
 
     .card-four{
         margin-top: -65%;
+    }
+
+    .recommend-heading{
+        font-size: 1.2rem;
+        margin-right: 1em;
+    }
+
+    .heading-arrows{
+        margin-top: -15%;
     }
 
   }
