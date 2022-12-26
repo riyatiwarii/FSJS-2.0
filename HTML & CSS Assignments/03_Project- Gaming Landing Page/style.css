@@ -572,6 +572,7 @@ footer{
 }
 
 .footer-lists h4{
+    cursor: pointer;
     font-size: 1.1rem;
     margin-bottom: 1.5em;
     /* color: #86878b */
@@ -582,6 +583,7 @@ footer{
 }
 
 .icons img{
+    cursor: pointer;
     margin-right: 0.5em;
 }
 
@@ -894,6 +896,7 @@ footer{
         transform: translateX(-100%);
         transition: 350ms ease-in-out;
         z-index: -1000;
+        height: 500px;
     }
 
     .logo-navlist[data-visible="true"]{
