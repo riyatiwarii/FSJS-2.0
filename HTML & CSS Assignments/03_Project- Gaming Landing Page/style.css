@@ -549,7 +549,7 @@ footer{
 .footer-lists{
     display: flex;
     justify-content: center;
-    gap: 9em;
+    gap: 8em;
 }
 
 .footer-lists li{
@@ -583,6 +583,18 @@ footer{
 
 .icons img{
     margin-right: 0.5em;
+}
+
+.footer-line{
+    border: 0;
+    height: 2px;
+    background: #202d39;
+    margin: auto;
+}
+
+.line{
+    padding-top: 1.5em;
+    padding-bottom: 4em;
 }
 
   @media (max-width: 768px) {
