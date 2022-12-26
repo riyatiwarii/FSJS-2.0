@@ -456,13 +456,66 @@ color: #f4694c;
     line-height: 1.5em;
 }
 
+ /* background-image: url(./Assets/Icons/GAMES\ OF\ THE\ WORLD.svg); */
+
+.most-played{
+    background-color: black;
+   
+    background-repeat: no-repeat;
+    padding-bottom: 5em;
+    overflow-x: hidden;
+}
+
+.most-played-heading{   
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 1.5em;
+    line-height: 2em;
+    padding-bottom: 1.5em;
+}
+
+.most-played-images{
+    height: 70vh;
+    margin: auto;
+    width: 70%;
+    display: flex;
+}
+
+.most-played-left{
+    width: 75%;
+}
+
+.most-played-left img{
+    width: 100%;
+}
+
+.right-image-one{
+    width: 40%;
+    padding-left: 3em;
+}
+.right-image-two{
+    width: 40%;
+    padding-left: 4em;
+}
+
+.most-played-right{    
+    align-self: flex-end;
+}
+
+.right-para{
+    color: #838487;
+    width: 90%;
+    padding-bottom: 3em;
+    padding-left: 3em;
+}
+
   @media (max-width: 768px) {
 
-    header{
-       height: 100vh;
-       background-position: center;
+    .most-played{
+        display: inline-block;
     }
-
+    
     .card-three{
         margin-top: -30%;
     }
