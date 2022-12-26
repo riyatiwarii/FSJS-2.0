@@ -378,6 +378,7 @@ text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
     cursor: pointer;
     padding: 15px 10px 15px 10px;
     background-color: #f4694c;
+    margin-left: 0.5em;
 }
 
 .next-arrow:hover{
@@ -392,58 +393,6 @@ text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
 }
 
   @media (max-width: 768px) {
-
-    .download{
-        position: relative;
-        left: 125px;
-        bottom: 25px;
-        padding: 6px 10px 6px 10px;
-        background-color: #f4694c;
-        color: white;
-        border: none;
-        font-size: 0.7rem;
-        cursor: pointer;
-    }
-    
-    .download:hover{
-        text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
-        background-color: #f73914;
-    }
-
-    .download{
-        position: relative;
-        left: 125px;
-        bottom: 25px;
-        padding: 6px 10px 6px 10px;
-        background-color: #f4694c;
-        color: white;
-        border: none;
-        font-size: 0.7rem;
-        cursor: pointer;
-    }
-    
-    .download:hover{
-        text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
-        background-color: #f73914;
-    }
-    
-    .about-game{
-        position: relative;
-        color: white;
-        top: 10px;
-        left: 10px;
-    }
-    
-    .game-title{
-        font-size: .85rem;
-        margin-bottom: 5px;
-    }
-    
-    .game-type{
-        font-size: 0.7rem;
-        margin-bottom: 5px;
-        color: #bebfbf;
-    }
 
     header{
        height: 100vh;
@@ -585,6 +534,58 @@ text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
     
     .rush-image{
         margin-left: 7em;
+    }
+
+    .download{
+        position: relative;
+        left: 125px;
+        bottom: 25px;
+        padding: 6px 10px 6px 10px;
+        background-color: #f4694c;
+        color: white;
+        border: none;
+        font-size: 0.7rem;
+        cursor: pointer;
+    }
+    
+    .download:hover{
+        text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
+        background-color: #f73914;
+    }
+
+    .download{
+        position: relative;
+        left: 125px;
+        bottom: 25px;
+        padding: 6px 10px 6px 10px;
+        background-color: #f4694c;
+        color: white;
+        border: none;
+        font-size: 0.7rem;
+        cursor: pointer;
+    }
+    
+    .download:hover{
+        text-shadow: 0px 0px 36px rgba(255, 255, 255, 1);
+        background-color: #f73914;
+    }
+    
+    .about-game{
+        position: relative;
+        color: white;
+        top: 10px;
+        left: 10px;
+    }
+    
+    .game-title{
+        font-size: .85rem;
+        margin-bottom: 5px;
+    }
+    
+    .game-type{
+        font-size: 0.7rem;
+        margin-bottom: 5px;
+        color: #bebfbf;
     }
   }
 
