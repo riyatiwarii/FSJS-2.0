@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+main
+{
+    background-color: #f6f8fa;
+}
+
+.card-content{
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 0px 21px -5px #000000; 
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    justify-content: space-around;  
+    align-self: end;
+    padding:7% 0;
+    width: 80%;
+    justify-self: center;
+    margin-bottom: -12%;
+}
+
+.card-detail button{
+    color:#ffffff;
+    background-color: #6663e9;
+    border:none;
+    padding: 10px 25px 10px 25px;    
+    border-radius: 25px;    
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.real-estate-card{
+    border: 3px solid hotpink;
+}
+
+.stacked{
+    display: grid;
+}
+
+.stacked > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.card-img{
+    max-width: 100%;
+    border-radius: 20px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
+}
+
+.card-price{
+    color: #6663e9;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.cards-container{
+    max-width: 100rem;
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
+.cards-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 120px;
+}
