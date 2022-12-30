@@ -11,6 +11,64 @@ header{
     background-position: center;
 }
 
+body{
+    background-color: #f6f8fa;
+}
+
+.real-estate-card{
+    transition: transform 0.1s ease, filter 0.3s ease;
+    
+}
+
+.real-estate-card:hover{
+    cursor: pointer;
+    filter: sepia(0);
+    filter: saturate(2.2);
+}
+
+.featured-img img{
+    transform: scale(1);
+	transition: transform .4s ease-out;
+}
+
+.featured-img img:hover{
+    transform: scale(1.2);
+}
+
+.featured-img-two img{
+    transform: scale(1);
+	transition: transform .4s ease-out;
+}
+
+.featured-img-two img:hover{
+    transform: scale(1.2);
+}
+
+.learn-more:hover{
+    box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+    transform: scale(0.90);
+    background-color: #f6f8fa;
+    color: #5654d1;
+}
+
+.early-bird:hover{
+    box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+    transform: scale(0.90);
+    border: 1px solid #5654d1;
+    font-weight: 600;
+    color: #5654d1;
+    background-color: #f6f8fa;
+}
+
+.subscribe-btn:hover{
+    box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+    transform: scale(0.90);
+}
+
+.icons img{
+    cursor: pointer;
+}
+
 .logo img{
    height: 40px;
 }
@@ -33,6 +91,10 @@ nav{
     list-style-type: none;
     color: #ffffff;
     cursor: pointer;
+}
+
+.list-item:hover{
+    color: #6663e9;
 }
 
 .header-line{
@@ -96,10 +158,6 @@ nav{
 }
 
 .outer-logos{
-    background-color: #f6f8fa;
-}
-
-main{
     background-color: #f6f8fa;
 }
 
@@ -364,6 +422,47 @@ main h1{
     font-weight: 600;
 }
 
+.footer-lists{
+    margin: 6% auto;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.footer-lists li{
+    font-family: 'Poppins';
+    color: #86878b;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight:lighter;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.footer-lists li:hover{
+    color: black;
+}
+
+.footer-lists h4{
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-bottom: 1.5em;
+}
+
+.footer-listone{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: flex-start;
+}
+
+.footer-listone img{
+    height: 3em;
+}
+
 @media (max-width:1024px){
 
     main h1{
@@ -573,6 +672,36 @@ main h1{
 
 @media (max-width:480px){
 
+    .footer-lists{
+        display: flex;
+        justify-content: space-between;
+        width: 82%;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        margin-top: 10%;
+        column-gap: 30px;
+    }
+
+    .footer-listone img{
+        height: 2.5em;
+    }
+
+    .icons img{
+        height: 2em;
+    }
+
+    .footer-listone p{
+        font-size: 0.7rem;
+    }
+
+    .footer-lists li{
+        font-size: 0.7rem;
+    }
+       
+    .footer-lists h4{
+        font-size: 0.9rem;
+    }
+
     .subscribe-btn{
         width: 17em;
     }
@@ -689,6 +818,10 @@ main h1{
 
 @media (max-width:380px){
 
+    .footer-lists{
+        column-gap: 20px;
+    }
+
     main h1{
         font-size: 2rem;
         padding-bottom: 10%;
@@ -774,7 +907,6 @@ main h1{
         font-size: 0.7rem;
         width: 100%
     }
-
 
     .learn-more{
         padding: 10px 20px 10px 20px;
