@@ -20,7 +20,6 @@ nav{
     height: 80px; 
     justify-content: space-between;
     width: 80%;
-    /* background-color: yellow; */
     margin: auto;
 
 }
@@ -56,7 +55,6 @@ nav{
     display: flex;
     width: 80%;
     margin: auto; 
-    /* background-color: yellow; */
     
 }
 
@@ -66,14 +64,11 @@ nav{
 
 .main-img {
     width: 45%;
-    /* background-color: red;  */
     margin-top: -20%;  
  }
  
  .main-img img{
-    /* margin-top: -40%; */
     margin-left: 25%;
-    /* background-color: green; */
  }
  
  .main-img img:hover{
@@ -87,7 +82,6 @@ nav{
 
 .main-content{
     width: 55%;
-    /* background-color: blue; */
 }
 
 .on-ear-img{
@@ -181,7 +175,6 @@ nav{
     }
 
     .main-img{
-        background-color: red;
         margin-top: -40%;
         margin-left: auto;
         margin-right: auto;
