@@ -55,7 +55,9 @@ nav{
 .main-section{
     display: flex;
     width: 80%;
-    margin: auto;   
+    margin: auto; 
+    /* background-color: yellow; */
+    
 }
 
 .logo{
@@ -64,7 +66,7 @@ nav{
 
 .main-img {
     width: 45%;
-    /* background-color: red; */ 
+    /* background-color: red;  */
     margin-top: -20%;  
  }
  
@@ -85,7 +87,6 @@ nav{
 
 .main-content{
     width: 55%;
-    padding-bottom: 20%;
     /* background-color: blue; */
 }
 
@@ -127,15 +128,17 @@ nav{
 .logos-section{
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 75%;
     margin: auto;
+    align-items: center;
 }
 
-.logos-section img{
-    height: 25px;
+.logos-container{
+    margin: 5% auto;
 }
 
 @media (max-width:1024px){
+
 
     nav{
         width: 90%;
@@ -172,6 +175,7 @@ nav{
 }
 
 @media (max-width:850px){
+
     .navlist{
         display: none;
     }
@@ -194,16 +198,57 @@ nav{
 
     .main-section{
         flex-direction: column;
-        /* background-color: yellow; */
     }
+
+    .logos-section{
+        width: 80%;
+     }
+ 
+     .logos-container{
+         margin: 10% auto;
+     }
+ 
     
 }
 
-@media (max-width:480px){}
+@media (max-width:480px){
+
+    .logos-section{
+        flex-wrap: wrap;
+        column-gap: 50px;
+        row-gap: 30px;
+    }
+
+    .logos-section img{
+        width: 25%;
+    }
+ 
+     .logos-container{
+         margin: 10% auto;
+     }
+ 
+
+    .main-content h1{
+        font-size: 2rem;
+    }
+
+    .main-content h2{
+        font-size: 1rem;
+    }
+
+    .main-content{
+        width: 100%;
+    }
+}
 
 @media (max-width:380px){}
 
-@media (max-width:330px){}
+@media (max-width:330px){
+    .main-section{
+        
+        
+    }
+}
 
 
 
