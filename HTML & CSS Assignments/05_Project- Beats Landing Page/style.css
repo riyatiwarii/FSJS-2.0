@@ -38,7 +38,8 @@ nav{
 }
 
 .btn{
-    background-color: #232325;
+    /* background-color: #232325; */
+    background-color: #1e1e21;
     color: #fff;
     font-size: 15px;
     font-weight:lighter;
@@ -142,7 +143,7 @@ nav{
     /* background-color: yellow; */
     justify-content: center;
     gap: 55px;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
 }
 
 .specs{
@@ -152,7 +153,6 @@ nav{
     gap: 15px;
     /* gap: 5%; */
 }
-
 
 .specs-type{
     font-weight: 600;
@@ -180,9 +180,57 @@ nav{
     align-self: flex-end;
 }
 
+.case-container{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.case-logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.case-section{
+    display: flex;
+    /* background-color: yellow; */
+    width: 55%;
+    margin: auto;
+    gap: 80px;
+}
+
+.case-detail{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    width: 48%;
+    margin: auto;
+}
+
+.case-detail p{
+    width: 85%;
+    color: #babdbf;
+    line-height: 1.7rem;
+    margin-bottom: 5%;
+    /* background-color: yellow; */
+}
+
+.info-btn{
+    padding: 10px 18px 10px 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.info-btn img{
+    width: 18%;
+}
+
 
 @media (max-width:1024px){
-
 
     nav{
         width: 90%;
@@ -216,6 +264,14 @@ nav{
         width: 100%;
     }
 
+    .case-section{
+        width: 85%;
+    }
+
+    .case-detail{
+        width: 42.5%;
+    }
+
 }
 
 @media (max-width:850px){
@@ -247,14 +303,41 @@ nav{
         width: 80%;
      }
  
-     .logos-container{
+    .logos-container{
          margin: 10% auto;
-     }
- 
-    
+    }
+
+    .case-section{
+        width: 100%;
+        gap: 60px;
+    }
+  
 }
 
 @media (max-width:480px){
+
+    .case-container{
+        width: 90%;
+    }
+
+    .case-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .case-img img{
+        width: 75%;    
+    }
+
+    .case-section{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .case-detail{
+        width: 90%;
+    }
 
     .logos-section{
         flex-wrap: wrap;
