@@ -5,9 +5,199 @@
     font-family: 'Poppins';
 }
 
-@media (max-width:1024px){}
+body{
+    background-color: black;
+    color:white;
+}
 
-@media (max-width:768px){}
+header{
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    height: 80px; 
+    justify-content: space-between;
+    width: 80%;
+    /* background-color: yellow; */
+    margin: auto;
+
+}
+
+.navlist{
+    display: flex;
+    gap: 81px;
+    align-items: center;
+}
+
+.list-item{
+    list-style-type: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem  
+}
+
+.btn{
+    background-color: #232325;
+    color: #fff;
+    font-size: 15px;
+    font-weight:lighter;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.shop-btn{
+    padding: 10px 50px 10px 50px;
+}
+
+.main-section{
+    display: flex;
+    width: 80%;
+    margin: auto;   
+}
+
+.logo{
+    margin-left: 5%;
+}
+
+.main-img {
+    width: 45%;
+    /* background-color: red; */ 
+    margin-top: -20%;  
+ }
+ 
+ .main-img img{
+    /* margin-top: -40%; */
+    margin-left: 25%;
+    /* background-color: green; */
+ }
+ 
+ .main-img img:hover{
+     animation: rotate 3s
+ }
+     
+ @keyframes rotate{
+     0% { -webkit-transform: rotateY(190deg); }
+     100% { -webkit-transform: rotateY(360deg); }
+ }
+
+.main-content{
+    width: 55%;
+    padding-bottom: 20%;
+    /* background-color: blue; */
+}
+
+.on-ear-img{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.main-content h1{
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.main-content h2{
+    margin-top: 5%;
+    font-weight: 400;
+    margin-bottom: 3%;
+}
+
+.main-content p{
+    width: 60%;
+    color: #babdbf;
+    line-height: 1.7rem;
+    margin-bottom: 5%;
+}
+
+.main-cart-btn{
+    padding: 15px 20px 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.main-cart-btn strong{
+    font-size: 1.1rem;
+}
+
+.logos-section{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.logos-section img{
+    height: 25px;
+}
+
+@media (max-width:1024px){
+
+    nav{
+        width: 90%;
+    }
+     
+    .navlist{
+        gap: 40px;
+    }
+
+    .main-img{
+        margin-top: -25%;
+    }
+    
+    .main-img img{
+        margin-left: 35px;
+    }
+
+    .main-section{
+        width: 90%;
+    }
+
+    .on-ear-img{
+        width: 75%;
+    }
+
+    .main-content{
+        padding-left: 5%;
+    }
+
+    .main-content p{
+        width: 100%;
+    }
+
+}
+
+@media (max-width:850px){
+    .navlist{
+        display: none;
+    }
+
+    .main-img{
+        background-color: red;
+        margin-top: -40%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        width: 55%;
+    }
+
+    .main-img img{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main-section{
+        flex-direction: column;
+        /* background-color: yellow; */
+    }
+    
+}
 
 @media (max-width:480px){}
 
@@ -15,21 +205,7 @@
 
 @media (max-width:330px){}
 
-.main-img {
-    height: 100vh; 
-      display: flex; 
-      align-items: flex-end; 
-      justify-content: flex-start;
-  }
-    
-  @keyframes rotate{
-      0% { -webkit-transform: rotateY(180deg); }
-      100% { -webkit-transform: rotateY(180deg); }
-  }
-  
-.main-img img:hover{
-      animation: rotate 4s ;
-  }
+
 
   /* @keyframes rotate360 {
     to { transform: rotate(360deg); }
