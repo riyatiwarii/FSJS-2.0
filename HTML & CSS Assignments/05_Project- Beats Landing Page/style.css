@@ -529,6 +529,9 @@ footer{
     background-color: #f6f8fa;
 }
 
+.mic{
+    width: 70%;
+}
 
 
 @media (max-width:1024px){
@@ -811,6 +814,32 @@ footer{
 @media (max-width:380px){
 
     .style-grid{
+        margin: auto;
+        justify-content: center;
+        grid-template-columns: fit-content(55%);
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    footer{
+        margin-bottom: 10%;
+    }
+
+    .footer-lists{
+        width: 80%;
+        margin: auto;
+    }
+
+    .subscribe-social{
+        width: 90%;
+        margin: auto;
+    }
+
+    .form-field{
+        width: 60%;
+    }
+
+    .style-grid{
         width: 90%;
         row-gap: 70px;
         column-gap: 20px;
@@ -818,13 +847,29 @@ footer{
 
     .specs-container{
         width: 95%;
+        gap: 0;
     }
+
+    .mic{
+        margin-left: 18%;
+    }
+
     .main-content p{
         font-size: 0.8rem;
     }
+
+    .subscribe-btn{
+        padding: 7px 10px 7px 10px;
+        font-size: 0.7rem;
+    }
+    
+    .subscribe-btn img{
+        width: 20%;
+    }
+
 }
 
-@media (max-width:330px){
+@media (max-width:320px){
 
     .navlist{
         width: 50%;
@@ -878,7 +923,7 @@ footer{
     .main-cart-btn strong{
         font-size: 0.9rem;
     }
-
+ 
     .footer-lists h4{
         font-size: 0.9rem;
     }
@@ -887,29 +932,7 @@ footer{
         font-size: 0.7rem;
     }
 
-    .subscribe-social{
-        width: 100%;
-        margin: auto;
-    }
-
-    .form-field{
-        width: 100%;
-    }
-
-    .subscribe-btn{
-        padding: 7px 21px 7px 10px;
-        font-size: 0.7rem;
-    }
-    
-    .subscribe-btn img{
-        width: 20%;
-    }
-
-    .style-grid{
-        margin: auto;
-        justify-content: center;
-        grid-template-columns: fit-content(55%);
-    }
+   
 
     .style-item{
         width: 100%;
