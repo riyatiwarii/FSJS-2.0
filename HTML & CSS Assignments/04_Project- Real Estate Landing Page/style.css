@@ -253,7 +253,7 @@ main h1{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(26%, 1fr));
     row-gap: 40px;
-    column-gap: 20px;;
+    column-gap: 20px;
 }
 
 .featured-container-one{
