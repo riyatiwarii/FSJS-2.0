@@ -973,8 +973,16 @@ nav{
 
 @media (max-width:380px){
 
+    .header-btns{
+        width: 100%;
+    }
+
     .products-team{
         width: 69%;
+    }
+
+    .products-group{
+        margin: auto;
     }
 
     .products-content h1{
@@ -1047,6 +1055,10 @@ nav{
 
     .google-icon{
         width: 13.8%;
+    }
+
+    .trusted-by-line span{
+        width: 30%;
     }
 
 }
@@ -1139,6 +1151,22 @@ nav{
         width: 70%;
         margin-top: 5%;
         margin-bottom: 5%;
+    }
+
+    .sign-up-container{
+        width: 100%;
+    }
+
+    .trusted-by-line span{
+        width: 30%;
+    }
+
+}
+
+@media (max-width:325px){
+
+    .google-icon{
+        width: 14.8%;
     }
 
 }
