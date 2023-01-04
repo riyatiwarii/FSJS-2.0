@@ -33,6 +33,20 @@ nav{
     cursor: pointer;
     font-weight: 600;
     font-size: 1rem;
+    transition:all 0.2s ease;
+}
+
+.list-item:hover{
+    color:#6012cc;
+    cursor:pointer;
+}
+
+.footer-lists > *{
+    cursor: pointer;
+}
+
+.footer-lists ul li:hover{
+    color: #5c5b5b;
 }
 
 .btn{
@@ -41,6 +55,14 @@ nav{
     border: none;
     cursor: pointer;
     border-radius: 7px;
+}
+
+.card-trial-btn:hover{
+    color: #ffffff;
+    background-color: #6012cc;
+    text-shadow: 0px 0px 16px rgba(255, 255, 255, 1);
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
 }
 
 .free-trial-btn{
@@ -52,6 +74,13 @@ nav{
     font-weight: 400;
 }
 
+.free-trial-btn:hover{
+    color: #ffffff;
+    background-color: #6012cc;
+    text-shadow: 0px 0px 16px rgba(255, 255, 255, 1);
+    transition: all 0.4s ease 0s;
+}
+
 .free-trial-two{
     color: #FFFFFF;
     padding: 8px 18px 8px 18px;
@@ -61,6 +90,11 @@ nav{
     font-weight: 400;
 }
 
+.free-trial-two:hover{
+    background-color: #FFFFFF;
+    color: #6012cc;
+}
+
 .learn-more{
     background-color: #FFFFFF;
     padding: 8px 18px 8px 18px;
@@ -68,6 +102,13 @@ nav{
     border: none;
     border-radius: 30px;
     font-weight: 400;
+}
+
+.learn-more:hover{
+    color: #ffffff;
+    background-color: #6012cc;
+    text-shadow: 0px 0px 16px rgba(255, 255, 255, 1);
+    transition: all 0.4s ease 0s;
 }
 
 .arrow {
@@ -589,6 +630,7 @@ footer{
     background-color: #FFFFFF;
     padding: 3%;
     box-shadow: 2px 2px 6px -1px rgba(124, 122, 122, 0.23);
+    outline: 0;
 }
 
 .newsletter img{
@@ -803,15 +845,14 @@ footer{
         top: 4rem;
         flex-direction: column;
         align-items: center;
-        /* background-color: transparent;
-        backdrop-filter: blur(1rem); */
         background-color: #f7f4fd;
-        width: 40%;
+        width: 50%;
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        z-index: 100000; 
+        z-index: 100000;
+        gap: 30px; 
     }
 
     .list-item{
@@ -820,6 +861,10 @@ footer{
 
     .navlist.active {
         right: 0;
+    }
+
+    .free-trial-btn{
+        margin-bottom: 3%;
     }
 
     .qubly-container{
@@ -1259,6 +1304,10 @@ footer{
 }
 
 @media (max-width:345px){
+
+    .footer-logo{
+        height: 25px;
+    }
 
     .header-right{
         width: 90%;
