@@ -345,6 +345,56 @@ nav{
     margin-top: 5%;
 }
 
+.cto-section{
+    width: 80%;
+    margin: auto;
+}
+
+.cto{
+    clip-path: polygon(0% 18%, 100% 0%, 100% 82%, 0% 100%);
+    background: linear-gradient(to top, #f4f8ff, #f4ecf9);
+}
+
+.cto-section p{
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 10%;
+}
+
+.cto-profile{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.cto-name{
+    margin: 3% auto;
+}
+
+.wrap-line{
+    border-bottom: 3px solid #eae4fa;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.logos-group{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    padding-bottom: 10%;
+}
+
+.logos-group img{
+    width: 10%;
+}
+
 @media (max-width:1024px){
 
     .header-section{
@@ -426,6 +476,22 @@ nav{
 
     .engineering-content p{
         width: 90%;
+    }
+
+    .cto-section p{
+        padding-top: 13%;
+    }
+
+    .wrap-line{
+        margin-top: 3%;
+    }
+
+    .logos-group{
+        padding-bottom: 13%;
+    }
+
+    .logos-group img{
+        width: 12%;
     }
     
 }
@@ -525,6 +591,30 @@ nav{
 
     .pipeline-tools{
         width: 80%;
+    }
+
+    .cto-section{
+        width: 90%;
+    }
+
+    .cto-section p{
+        width: 90%;
+        padding-top: 17%;
+        font-size: 1rem;
+    }
+
+    .wrap-line{
+        width: 100%;
+    }
+
+    .logos-group{
+        width: 90%;
+        justify-content: space-between;
+        padding-bottom: 17%;
+    }
+
+    .logos-group img{
+        width: 12%;
     }
 
 }
@@ -647,6 +737,19 @@ nav{
         width: 95%;
     }
 
+    .cto-section p{
+        padding-top: 30%;
+        font-size: 0.9rem;
+    }
+
+    .logos-group{
+        padding-bottom: 30%;
+    }
+
+    .logos-group img{
+        width: 15%;
+    }
+
 }
 
 @media (max-width:380px){
@@ -706,11 +809,21 @@ nav{
     .qubly-step-one p{
         width: 89%;
     }
+
     .qubly-step-two p{
         width: 89%;
     }
+
     .qubly-step-three p{
         width: 89%;
+    }
+
+    .logos-group{
+        width: 95%;
+    }
+
+    .logos-group img{
+        width: 17%;
     }
 
 }
@@ -788,6 +901,21 @@ nav{
 
     .for-engineers{
         width: 87%;
+    }
+
+    .cto{
+        clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
+        background: linear-gradient(to top, #f4f8ff, #f4ecf9);
+    }
+
+    .cto-section{
+        width: 95%;
+    }
+
+    .cto-profile{
+        width: 70%;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 
 }
