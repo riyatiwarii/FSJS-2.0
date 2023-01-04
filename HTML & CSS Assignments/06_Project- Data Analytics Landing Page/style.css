@@ -280,46 +280,68 @@ nav{
     align-items: center;
     margin-bottom: 10%;
     justify-content: center;
-    /* background-color: yellow; */
 }
 
 .products-group{
     width: 50%;
-    /* background-color: blue; */
 }
 
 .products-group img{
     width: 90%;
-    -webkit-animation: ripple 0.7s linear infinite;
-    animation: ripple 0.7s linear infinite;
 }
-
-@-webkit-keyframes ripple {
-    0% {
-      box-shadow: 0 0 0 0 rgba(77, 68, 93, 0.3), 0 0 0 1em rgba(77, 68, 93, 0.3), 0 0 0 3em rgba(77, 68, 93, 0.3), 0 0 0 5em rgba(77, 68, 93, 0.3);
-    }
-    100% {
-      box-shadow: 0 0 0 1em rgba(77, 68, 93, 0.3), 0 0 0 3em rgba(77, 68, 93, 0.3), 0 0 0 5em rgba(77, 68, 93, 0.3), 0 0 0 8em rgba(77, 68, 93, 0);
-    }
-  }
-
-  @keyframes ripple {
-    0% {
-      box-shadow: 0 0 0 0 rgba(77, 68, 93, 0.3), 0 0 0 1em rgba(77, 68, 93, 0.3), 0 0 0 3em rgba(77, 68, 93, 0.3), 0 0 0 5em rgba(77, 68, 93, 0.3);
-    }
-    100% {
-      box-shadow: 0 0 0 1em rgba(77, 68, 93, 0.3), 0 0 0 3em rgba(77, 68, 93, 0.3), 0 0 0 5em rgba(77, 68, 93, 0.3), 0 0 0 8em rgba(77, 68, 93, 0);
-    }
-  }
 
 .products-content{
     width: 50%;
-    /* background-color: red; */
 }
 
 .products-content p{
     color: #7c8085;
     width: 85%;
+    margin-top: 5%;
+}
+
+.for-engineers{
+    background-color: #f7f1ff;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: 40%;
+    border-radius: 20px;
+    padding: 8px 13px 8px 13px;
+    color: #6012cc;
+    font-size: 1rem;
+    margin-bottom: 2%;
+}
+
+.for-engineers img{
+    height: 20px;
+}
+
+.engineering-teams-container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 5%;
+    justify-content: center;
+}
+
+.pipeline-tools{
+    width: 50%;
+}
+
+.pipeline-tools img{
+    width: 100%;
+}
+
+.engineering-content{
+    width: 50%;
+}
+
+.engineering-content p{
+    color: #7c8085;
+    width: 83%;
     margin-top: 5%;
 }
 
@@ -369,15 +391,41 @@ nav{
     }
 
     .qubly-step-one p{
-        width: 100%;
+        width: 84%;
     }
 
     .qubly-step-two p{
-        width: 100%;
+        width: 87%;
     }
 
     .qubly-step-three p{
-        width: 100%;
+        width: 90%;
+    }
+
+    .products-team-container{
+        width: 95%;
+        gap: 20px;
+    }
+
+    .products-team{
+        width: 45%;
+    }
+
+    .products-content p{
+        width: 90%;
+    }
+
+    .engineering-teams-container{
+        width: 95%;
+        gap: 20px;
+    }
+
+    .for-engineers{
+        width: 53%;
+    }
+
+    .engineering-content p{
+        width: 90%;
     }
     
 }
@@ -431,6 +479,52 @@ nav{
 
     .qubly-step-three p{
         width: 49%;
+    }
+
+    .products-team-container{
+        margin-top: 10%;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        width: 80%;
+    }
+
+    .products-content{
+        width: 85%;
+    }
+
+    .products-content p{
+        width: 95%;
+    }
+
+    .products-team{
+        width: 40%;
+    }
+
+    .products-group{
+        width: 70%;
+    }
+
+    .products-group img{
+        width: 100%;
+    }
+
+    .engineering-teams-container{
+        margin-top: 10%;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80%;
+    }
+
+    .engineering-content{
+        width: 85%;
+    }
+
+    .for-engineers{
+        width: 46%;
+    }
+
+    .pipeline-tools{
+        width: 80%;
     }
 
 }
@@ -497,16 +591,78 @@ nav{
     .qubly-step-one p{
         width: 79%;
     }
+
     .qubly-step-two p{
         width: 79%;
     }
+
     .qubly-step-three p{
         width: 79%;
+    }
+
+    .products-team-container{
+        width: 90%;
+    }
+
+    .products-team{
+        width: 65%;
+    }
+
+    .products-group{
+        width: 80%;
+    }
+
+    .products-content{
+        width: 90%;
+    }
+
+    .products-content h1{
+        font-size: 2.1rem;
+    }
+
+    .products-content p{
+        font-size: 0.9rem;
+    }
+
+    .engineering-teams-container{
+        width: 90%;
+    }
+
+    .engineering-content{
+        width: 95%;
+    }
+
+    .engineering-content h1{
+        font-size: 2.1rem;
+    }
+
+    .engineering-content p{
+        font-size: 0.9rem;
+    }
+
+    .for-engineers{
+        width: 69%;
+    }
+ 
+    .pipeline-tools{
+        width: 95%;
     }
 
 }
 
 @media (max-width:380px){
+
+    .products-team{
+        width: 69%;
+    }
+
+    .products-content h1{
+        font-size: 1.8rem;
+    }
+
+    .for-engineers{
+        width: 74%;
+    }
 
     .version-released{
         width: 75%;
@@ -598,11 +754,29 @@ nav{
     .qubly-step-one p{
         width: 99%;
     }
+
     .qubly-step-two p{
         width: 99%;
     }
+
     .qubly-step-three p{
         width: 99%;
+    }
+
+    .products-team{
+        width: 80%;
+    }
+
+    .products-group img{
+        width: 100%;
+    }
+
+    .engineering-content h1{
+        font-size: 1.8rem;
+    }
+
+    .for-engineers{
+        width: 87%;
     }
 
 }
