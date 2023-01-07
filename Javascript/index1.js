@@ -7,3 +7,4 @@ function multiply(x, y){
 var resultOne = multiply(num1, num2);
 var resultTwo = multiply(7, 7);
 console.log(resultOne, resultTwo);
+gg
