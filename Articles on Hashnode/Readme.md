@@ -25,3 +25,19 @@
 ### 6. How learning CSS Grid Layout would be helpful?
 
 [Link](https://riyatiwari.hashnode.dev/how-learning-css-grid-layout-would-be-helpful)
+
+### 7. A Beginner's Guide To GIT & GITHUB
+
+[Link](https://riyatiwari.hashnode.dev/a-beginners-guide-to-git-github)
+
+### 8. Javascript Array Methods
+
+[Link](https://riyatiwari.hashnode.dev/javascript-array-methods)
+
+### 9. Spare your five minutes under the cover of JAVASCRIPT! ⏰
+
+[Link](https://riyatiwari.hashnode.dev/spare-your-five-minutes-under-the-cover-of-javascript)
+
+### 10. Under the cover of JAVASCRIPT ❤️- (Part: 2)
+
+[Link](https://riyatiwari.hashnode.dev/spare-your-five-minutes-under-the-cover-of-javascript)
