@@ -26,6 +26,9 @@ const student = {
 
 // Creates a new property in the student object
 student.studentMarks = 90;
+
+student.presentAttendanceb = false;
+
 // Remove RollNo property in the object;
 delete student.studentRollNo
 // Printing Object
