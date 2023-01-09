@@ -1,11 +1,18 @@
 // Creating object for storing student details
 
 const studentDetail = {
-    studentName: "Alex",
+    studentName: "Bunny",
     studentRollNo: 7,
     studentCourse: "JavaScript",
-    presentAttendance: true;    
-}
+    presentAttendance: true,
+    getStudentName () {
+        console.log(`Name of student: ${studentDetail.studentName}`)
+    }
+    
+    }    
+
+// To print the name of student
+// console.log(studentDetail.studentName);
+// console.log(studentDetail['studentName']);
 
 
-console.log(studentDetail);
