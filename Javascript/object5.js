@@ -14,18 +14,25 @@
 
 // const candies = new Array ('orange', 'tamarind', 'guava', 'cranberry')
 
+// console.log(typeof 'Riya');
 
+// console.log(typeof 77);
 
-console.log(typeof 'Riya');
+// console.log(typeof true);
 
-console.log(typeof 77);
+// console.log(typeof undeclaredVariable);
 
-console.log(typeof true);
+// console.log(typeof null);
 
-console.log(typeof undeclaredVariable);
+// console.log(typeof function () {});
 
-console.log(typeof null);
+// console.log(typeof Symbol('symbol in JS'));
 
-console.log(typeof function () {});
+String.prototype.firstFour= function(){
+    console.log(`First four letters only: ${this.slice(0, 5)}`);
+}
 
-console.log(typeof Symbol('symbol in JS'));
+let myname = 'Riya Tiwari'
+myname.firstFour();
+
+firstFour.__proto__ == String.prototype;
