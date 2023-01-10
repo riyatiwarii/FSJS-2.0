@@ -35,4 +35,4 @@ String.prototype.firstFour= function(){
 let myname = 'Riya Tiwari'
 myname.firstFour();
 
-firstFour.__proto__ == String.prototype;
+
