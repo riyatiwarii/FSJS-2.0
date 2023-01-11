@@ -4,16 +4,58 @@ let stringVar = "  Riya    ";
 console.log(stringVar.trim())
 
 // Boolean value is either true or false.
-
 // Writing three JavaScript statement examples which provide truthy value.
-
 // First example
 
+if ("notEmpty"){
+    console.log("return true statement")
+}
+else{
+    console.log("can't return true statement")
+}
 
 // Second example
 
-
+if ("7"){
+    console.log("return true statement")
+}
+else{
+    console.log("can't return true statement")
+}
 
 // Third example
 
+if ([]){
+    console.log("return true statement")
+}
+else{
+    console.log("can't return true statement")
+}
 
+// Writing three JavaScript statement examples which provide falsy value.
+// First example
+
+if (""){
+    console.log("return true statement")
+}
+else{
+    console.log("return false statement")
+}
+
+// Second example
+
+if (0){
+    console.log("return true statement")
+}
+else{
+    console.log("return false statement")
+}
+
+// Third example
+
+if (null){
+    console.log("return true statement")
+}
+else{
+    console.log("return false statement")
+}
