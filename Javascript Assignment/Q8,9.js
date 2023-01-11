@@ -7,10 +7,13 @@ console.log(stringVar.trim())
 
 // Writing three JavaScript statement examples which provide truthy value.
 
-const multiplyCheck =  function (num1, num2){
-    if (num1*num2 == 70){
-        return true
-    }
-}
+// First example
 
-console.log(multiplyCheck(7, 10));
+
+// Second example
+
+
+
+// Third example
+
+
