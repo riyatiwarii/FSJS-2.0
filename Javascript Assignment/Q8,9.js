@@ -59,3 +59,7 @@ if (null){
 else{
     console.log("return false statement")
 }
+
+// So, Any value from the below values is literally considered as a falsey value and JS engine will not execute it.
+
+// undefined, null, "", 0, NaN
