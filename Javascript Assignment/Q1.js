@@ -1,4 +1,4 @@
-// Q1.Assigning string, boolean, undefined and null data types, Displaying all the value with their data type.
+// Assigning string, boolean, undefined and null data types, Displaying all the value with their data type.
 
 // console.log(typeof 'Riya');
 
