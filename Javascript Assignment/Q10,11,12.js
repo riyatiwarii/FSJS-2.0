@@ -68,11 +68,29 @@ const minutesNow = current.getMinutes();
 
 // Find out the numbers of seconds elapsed from January 1, 1970 till now.
 
-Date.prototype.secondsElapsed = function (){
-    const today = this.getTime();
-    const secondsFrom = Math.floor(today / 1000)
-    console.log(secondsFrom);
-}
+// Date.prototype.secondsElapsed = function (){
+//     const today = this.getTime();
+//     const secondsFrom = Math.floor(today / 1000)
+//     console.log(secondsFrom);
+// }
 
-const x = new Date ();
-x.secondsElapsed() 
+// const x = new Date ();
+// x.secondsElapsed() 
+
+// Creating a human readable time format using the Date time object.
+
+// YYYY-MM-DD HH:mm
+
+const format1 = current.toISOString();
+console.log(format1);
+
+// DD-MM-YYYY HH:mm
+
+const format2 = current.toLocaleString('en-CA', {year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit'});
+console.log(format2);
+
+
+// DD/MM/YYYY HH:mm
+
+const format3 = current.toLocaleString();
+console.log(format3);
