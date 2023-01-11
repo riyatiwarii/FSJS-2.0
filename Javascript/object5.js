@@ -28,11 +28,16 @@
 
 // console.log(typeof Symbol('symbol in JS'));
 
+// Creating a property to access it independently from String.prototype
 String.prototype.firstFour= function(){
     console.log(`First four letters only: ${this.slice(0, 5)}`);
 }
 
 let myname = 'Riya Tiwari'
+
 myname.firstFour();
+
+// Verifying if String.prototype has that property
+console.log(String.prototype.hasOwnProperty('firstFour'));
 
 
