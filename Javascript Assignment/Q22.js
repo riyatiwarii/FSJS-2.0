@@ -6,6 +6,8 @@
 //     - Find the range of the ages(max minus min)
 //     - Compare the value of (min - average) and (max - average), use abs() method
 
+const { setMaxIdleHTTPParsers } = require("http");
+
 const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
 // Sort the array
 const sorted = ages.sort();
@@ -29,4 +31,11 @@ const sum = sorted.reduce(
 )
 const averageValue = sum/sorted.length
 
-console.log(averageValue);
+// console.log(averageValue);
+
+// range 
+// console.log(max - min);
+
+// abs
+
+
