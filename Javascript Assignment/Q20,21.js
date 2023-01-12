@@ -7,14 +7,18 @@
 
 const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
 
-console.log(shoppingCart.unshift("Meat"));
+// console.log(shoppingCart.unshift("Meat"));
 // console.log(shoppingCart);
 // [ 'Meat', 'Milk', 'Coffee', 'Tea', 'Honey' ]
-console.log(shoppingCart.push("Sugar"));
+// console.log(shoppingCart.push("Sugar"));
 // console.log(shoppingCart);
 // [ 'Meat', 'Milk', 'Coffee', 'Tea', 'Honey', 'Sugar' ]
-console.log(shoppingCart.splice(4, 1));
+// console.log(shoppingCart.splice(4, 1));
 // console.log(shoppingCart);
 // [ 'Meat', 'Milk', 'Coffee', 'Tea', 'Sugar']
-console.log(shoppingCart.splice(3, 1, "Green Tea"));
-console.log(shoppingCart)
+// console.log(shoppingCart.splice(3, 1, "Green Tea"));
+// console.log(shoppingCart)
+
+
+
+

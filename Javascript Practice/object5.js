@@ -40,4 +40,13 @@ myname.firstFour();
 // Verifying if String.prototype has that property
 console.log(String.prototype.hasOwnProperty('firstFour'));
 
+// const webTech = ["react", 'angular', 'express js', 'svelte']
+// const cars = ['audi', 'mercedes']
+// Array.prototype.first = function (){
+//     console.log(`first index: ${this[1]}`)
+// }
+
+// webTech.first();
+// cars.first();
+
 
