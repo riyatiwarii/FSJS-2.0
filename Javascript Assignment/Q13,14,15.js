@@ -21,3 +21,29 @@
 // }else{
 //     console.log('It is an odd number.')
 // }
+
+// Write a program which can give grades to students according to theirs scores:
+//     - 80-100, A
+//     - 70-79, B
+//     - 60-69, C
+//     - 50-59, D
+//     - 0-49, E
+
+let userScore = prompt("Enter your score here to check the grade.")
+
+if (userScore >= 80){
+    if (userScore > 100){
+        console.log(`${userScore}, score above 100 is invalid.`)
+    }
+    else{
+        console.log(`Your grade on ${userScore} is A`)
+    } 
+} else if (userScore >= 70 && userScore <= 79){
+    console.log(`Your grade on ${userScore} is B`)
+} else if (userScore >= 60 && userScore <= 69){
+    console.log(`Your grade on ${userScore} is C`)
+} else if (userScore >= 50 && userScore <= 59){
+    console.log(`Your grade on ${userScore} is D`)
+} else if (userScore >= 0 && userScore <= 49){
+    console.log(`Your grade on ${userScore} is E`)
+}
