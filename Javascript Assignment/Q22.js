@@ -6,3 +6,27 @@
 //     - Find the range of the ages(max minus min)
 //     - Compare the value of (min - average) and (max - average), use abs() method
 
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+// Sort the array
+const sorted = ages.sort();
+// Find min and max
+let min = Math.min(...sorted);
+// console.log(min);
+let max = Math.max(...sorted);
+// console.log(max);
+
+// median
+ 
+let midIndex = sorted.length/2
+median = (sorted[midIndex] + sorted[midIndex-1])/2
+// console.log(median);
+
+// average
+
+const initialValue = 0;
+const sum = sorted.reduce(
+    (accumulator, currentValue) => accumulator + currentValue, initialValue
+)
+const averageValue = sum/sorted.length
+
+console.log(averageValue);
