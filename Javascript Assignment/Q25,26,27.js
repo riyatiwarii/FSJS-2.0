@@ -34,13 +34,24 @@
 // 	2 * 2 = 4
 // 	2 * 3 = 6 and so on till 2 * 10 = 20.
 
-let num = prompt("Enter the number for its multiplication table.")
+// let num = prompt("Enter the number for its multiplication table.")
 
-for (let i = 1; i <= 10; i++){
+// for (let i = 1; i <= 10; i++){
     
-    console.log(`${num} * ${i} = ${num*i}`)
+//     console.log(`${num} * ${i} = ${num*i}`)
+
+// }
+
+
+
+for (let num = 2; num <= 100; num++){
+
+    if (num % 2 != 0){
+         console.log(num)
+    }
 
 }
+
 
 
 
