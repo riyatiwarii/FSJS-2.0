@@ -43,14 +43,37 @@
 // }
 
 
+// Write a program to print all the prime number between 0 to 100 (0 and 100 included).
 
-for (let num = 2; num <= 100; num++){
 
-    if (num % 2 != 0){
-         console.log(num)
-    }
 
-}
+// var isPrime = true;
+// function checkPrimeNumber(num){
+//     if (num <= 1){
+//         isPrime = false
+//     } else if (num == 2){
+//         isPrime = true
+//     } else {
+//         for (let factor = 2; factor <= Math.ceil(Math.sqrt(num)); factor++) {
+//             if (num > 2){
+//                 if (num % factor == 0){
+//                     isPrime = false
+//                     break;
+//                 }
+//             }
+//         }
+//         if (isPrime){
+//             return true
+//         }else {
+//             return false
+//         }
+//     }
+// }
+
+// console.log(checkPrimeNumber(13));
+
+
+// node Q25,26,27.js
 
 
 
