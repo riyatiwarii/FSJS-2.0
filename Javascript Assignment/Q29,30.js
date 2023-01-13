@@ -20,25 +20,23 @@ const num2 = parseFloat(prompt("Enter the second number"))
 switch(operator) {
     case '+':
         result = num1 + num2;
-        console.log(`The result is: ${result}`);
         break;
 
     case '-':
         result = num1 - num2;
-        console.log(`The result is: ${result}`);
         break;
 
     case '*':
         result = num1 * num2;
-        console.log(`The result is: ${result}`);
         break;
 
     case '/':
         result = num1 / num2;
-        console.log(`The result is: ${result}`);
         break;
 
     default:
         console.log('Enter the correct operator, it was invalid.');
         break;
 }
+
+window.alert(`The result is: ${result}`)
