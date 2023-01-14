@@ -47,33 +47,35 @@
 
 // First way
 
-let checkPrimeNumber = true;
-for (let i = 2; i <= 100; i++) {
-    for (let factor = 2; factor < i-1; factor++) {
-        if (i % factor == 0){
-            isPrime = false;
-            break;
-        }
-    }
-    if (checkPrimeNumber){
-        console.log(i)
-    }
-    checkPrimeNumber = true
-}
+// let checkPrimeNumber = true;
+// for (let i = 2; i <= 100; i++) {
+//     for (let factor = 2; factor < i-1; factor++) {
+//         if (i % factor == 0){
+//             isPrime = false;
+//             break;
+//         }
+//     }
+//     if (checkPrimeNumber){
+//         console.log(i)
+//     }
+//     checkPrimeNumber = true
+// }
 
 // Second way
 
-// function checkPrimeNumber(n) {
-//     if (n <= 1) {
-//         return false;
-//     }
-//     for (let i = 2; i < n; i++) {
-//         if (n % i === 0) {
-//             return false;
-//         }
-//     }
-//     return true;
-// }
+function checkPrimeNumber(n) {
+    if (n <= 1) {
+        return false;
+    }
+    for (let i = 2; i < n; i++) {
+        if (n % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+console.log(checkPrimeNumber(2));
 
 // for (let i = 0; i <= 100; i++) {
 //     if (checkPrimeNumber(i)) {
@@ -81,7 +83,27 @@ for (let i = 2; i <= 100; i++) {
 //     }
 // }
 
+// function checkPrimeNumber(num){
+//     if (num <= 1){
+//         return false
+//     } 
+//     for (let factor = 2; factor < num; factor++){
+//         if (num === 2){
+//             return true
+//         } else {
+//             if (num % factor === 0){
+//                 return false
+//             }
+//             return true
+//         }
+//     }
+// }
 
+// for ( let i = 2; i <= 100; i++){
+//     if (checkPrimeNumber(i)){
+//         console.log(i)
+//     }
+// }
 
 
 
