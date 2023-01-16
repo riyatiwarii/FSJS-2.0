@@ -60,15 +60,13 @@ let z = new String("HtmlCSS");
 
 // Setting new properties/methods
 
-// x.length = 15; // console.log( (new String (x)).length)
-// x.check = "We're just checking." //console.log( (new String (x)).check)
+x.length = 15; // console.log( (new String (x)).length)
+x.check = "We're just checking." //console.log( (new String (x)).check)
 
 // console.log(x.length, x.check);
 
-// It x.length 
-
-// z.length = 25; 
-// z.check = "We're just checking z"
+z.length = 25; 
+z.check = "We're just checking z"
 // console.log(z.length, z.check);
 
 // console.log(Object.getOwnPropertyDescriptor(z,'length'));
@@ -82,8 +80,8 @@ let z = new String("HtmlCSS");
 
 // Symbol - it represents a unique value.
 
-// let a = Symbol("unique a");
-// let b = Symbol("unique a");
+let a = Symbol("unique a");
+let b = Symbol("unique a");
 
 // Check if both are same/equal to each other.
 // console.log(a === b);
@@ -91,34 +89,39 @@ let z = new String("HtmlCSS");
 
 // Number - It simply stores a number
 // Range --> (numbers between -(253 − 1) and 253 − 1). In addition to representing floating-point numbers,
-// the number type has three symbolic values: +Infinity, -Infinity, and NaN (Not a Number).
-
-// BigInt - When the range goes above 
-
-// let num = Number(100 / "Riya") 
+let num = Number(100 / "Riya") 
 // console.log(num); 
 // console.log(typeof NaN);
 // console.log(typeof num);
-
 
 // num points to NaN because 100 / "Riya" can not be represented.
 // typeof NaN says it's a number type and so does the typeof num also.
 // NaN simply represents when anything is out of context in numeric values as per Ecmascript. It is not an operator or anything.
 
-// Null
+// BigInt - When the range goes above (253 − 1)  2 raised to the power of 53 - 1 ,
+// it is preferred to use for operation of calculation consistencies.
 
-// let firstName = "Riya";
-// let middleName = null;
-// let lastName = "Tiwari"
+// Null - We have the intention to explicitely defind null value when we want something to put as an option or optional value.
+// Just like, in form fill-up, middle name section is not necessarily filled, so we can keep it as null.
+
+let firstName = "Riya";
+let middleName = null;
+let lastName = "Tiwari"
 
 // console.log(typeof middleName);
 
-// Undefined
+// Undefined - Javascript simply says you have declared the variable but not with any value assigned to it.
+// Just leaving an unassigned declared variable is undefined to JS.
 
-// let favouriteCookie;
+// let favouriteCookie; 
+// we can also assign undefined like this but makes not much sense.
+// let favouriteCookiess = Undefined; it will also have the same output.
 // console.log(typeof favouriteCookie);
 
 // console.log(typeof null);
+
+// Null technically presents itself as an object datatype which is not true and it is a bug.
+// It is a primitive datatype only.
 
 // We have reason to believe typeof null === “object” is a bug that could bite real content,
 // from our spidering of the web. - Brendan Eich
@@ -126,9 +129,11 @@ let z = new String("HtmlCSS");
 // I think it is too late to fix typeof. The change proposed for typeof
 // null will break the existing code. - Crockford 
 
-// Boolean
+// Boolean 
+// Boolean values are true and false which are useful in cases like decision making. 
+// Like if passMarks is true, it will execute the block accordinly only.
 
-// let passMarks = false;
+let passMarks = false;
 
 // if (passMarks){
 //     console.log("You've passed the exam.");
