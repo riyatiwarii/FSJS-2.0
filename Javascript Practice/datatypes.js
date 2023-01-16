@@ -31,7 +31,7 @@ let z = new String("HtmlCSS");
 
 // console.log(typeof z);
 
-// To understand and know more about above, please refer the below MDN link and an article link.
+// To understand and know more about it, please refer the below MDN link and an article link.
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#string_primitives_and_string_objects
 // https://javascriptrefined.io/the-wrapper-object-400311b29151
 
