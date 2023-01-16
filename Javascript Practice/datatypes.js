@@ -29,8 +29,6 @@ let z = new String("HtmlCSS");
 // --> It is referring to a string constructor. String function and String Constructor are two different things and give different output.
 // --> String constructor doesn't create a string primitive. It creates a string object.
 
-// console.log(y);
-
 // console.log(typeof z);
 
 // To understand and know more about above, please refer the below MDN link and an article link.
