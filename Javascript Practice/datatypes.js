@@ -6,23 +6,31 @@
 
 // String
 
+// Just like using dot notation, we access properties/methods from non-primitives (Objects).
+// We do it with primitve datatype also like in string. It is a behind the scene concept.
+
 let x = "Riya";
 // --> The first one is just a simple string primitive, like we generally declare.
 
 let y = String (22); //or we can also do: let y = String ("Javascript");
-// --> This second one will also be treated like the same above one. But the only thing is,
-// --> String() is a function which is taking a parameter and what it will do? 
-// --> It will just coerce/convert this parameter to a string primitive. 
+// --> This second one will also be treated like the same above one. But how it is the same?
+// --> Because, String() is a function which is taking a parameter for doing type conversion.
+// --> It will just coerce/convert this parameter to a string primitive like 22 will be converted into "22" string.
 
-// That's why both first two codes are not different.
+// Check x and y, both datatypes and it will be the same.
 
-let z = new String("HtmlCSS");   
-// --> This code is referring to a string constructor. String function and String Constructor are two different things and give different output.
+// console.log(typeof x);  
+// console.log(typeof y);
+
+// That's why both thr above first two codes are not different.
+
+let z = new String("HtmlCSS");
+// --> This code is different from those two above.   
+// --> It is referring to a string constructor. String function and String Constructor are two different things and give different output.
+// --> String constructor doesn't create a string primitive. It creates a string object.
 
 // console.log(y);
 
-// console.log(typeof x);
-// console.log(typeof y);
 // console.log(typeof z);
 
 // To understand and know more about above, please refer the below MDN link and an article link.
