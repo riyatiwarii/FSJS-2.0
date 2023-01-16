@@ -113,7 +113,7 @@ let lastName = "Tiwari"
 // Undefined - Javascript simply says you have declared the variable but not with any value assigned to it.
 // Just leaving an unassigned declared variable is undefined to JS.
 
-// let favouriteCookie; 
+let favouriteCookie; 
 // we can also assign undefined like this but makes not much sense.
 // let favouriteCookiess = Undefined; it will also have the same output.
 // console.log(typeof favouriteCookie);
