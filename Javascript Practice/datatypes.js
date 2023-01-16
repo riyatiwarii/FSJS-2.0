@@ -38,23 +38,36 @@ let z = new String("HtmlCSS");
 
 // Accessing existing properties/methods
 
-// console.log(x.length); //console.log( (new String (x)).length)
+// console.log(x.length);  
+// --> behind the scene, it does console.log( (new String (x)).length)
+//- -> 
 // console.log(x.toUpperCase()); 
 // console.log(z.length);
 // console.log(z.toUpperCase());
 
-// Wrapper Object concept applies on string, number, boolean primitive types.
-// To understand and know more about it, please refer the below MDN link and an article link.
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#string_primitives_and_string_objects
+// --> We know we could access the existing properties (length) and methods like (toUpperCase). How?
+// --> So, behind the scenes, what it does is --> console.log(x.length);  --> console.log( (new String (x)).length)
+// --> So, as soon as we put dot notation, we see the inbuilt properties. And,
+// --> Javascript automatically converts string primitives into a temporary wrapper objects.
+// --> Just after accesing the property with help of wrapper object, it destroys the wrapper object at the same time there only.
+
+// Wrapper Object concept applies on string, number and boolean primitive types.
+
+// To understand and know more about how wrapper object works, read the below article links.
+
 // https://javascriptrefined.io/the-wrapper-object-400311b29151
+// https://programmingwithmosh.com/javascript/javascript-wrapper-objects/
 
 // Setting new properties/methods
 
-// x.length = 15; //console.log( (new String (x)).length)
+// x.length = 15; // console.log( (new String (x)).length)
 // x.check = "We're just checking." //console.log( (new String (x)).check)
+
 // console.log(x.length, x.check);
 
-// z.length = 25;
+// It x.length 
+
+// z.length = 25; 
 // z.check = "We're just checking z"
 // console.log(z.length, z.check);
 
@@ -62,9 +75,6 @@ let z = new String("HtmlCSS");
 // console.log(Object.getOwnPropertyDescriptor(z, 'check'));
 
 // Refer the below article links for more understanding.
-
-// https://programmingwithmosh.com/javascript/javascript-wrapper-objects/
-
 // https://dev.to/abdelrahmanahmed/javascript-s-primitive-wrapper-objects-4agb
 
 // Check the second article link's comment section because it will tell you  
@@ -79,27 +89,34 @@ let z = new String("HtmlCSS");
 // console.log(a === b);
 // It will be proved.
 
-// Number
+// Number - It simply stores a number
+// Range --> (numbers between -(253 − 1) and 253 − 1). In addition to representing floating-point numbers,
+// the number type has three symbolic values: +Infinity, -Infinity, and NaN (Not a Number).
 
-// BigInt number range for this tomorrow.
+// BigInt - When the range goes above 
 
-let num = Number(Infinity / Infinity) //NaN
-console.log(num );
-console.log(typeof num);
-console.log(typeof NaN);
+// let num = Number(100 / "Riya") 
+// console.log(num); 
+// console.log(typeof NaN);
+// console.log(typeof num);
+
+
+// num points to NaN because 100 / "Riya" can not be represented.
+// typeof NaN says it's a number type and so does the typeof num also.
+// NaN simply represents when anything is out of context in numeric values as per Ecmascript. It is not an operator or anything.
 
 // Null
 
-let firstName = "Riya";
-let middleName = null;
-let lastName = "Tiwari"
+// let firstName = "Riya";
+// let middleName = null;
+// let lastName = "Tiwari"
 
-console.log(typeof middleName);
+// console.log(typeof middleName);
 
 // Undefined
 
-let favouriteCookie;
-console.log(typeof favouriteCookie);
+// let favouriteCookie;
+// console.log(typeof favouriteCookie);
 
 // console.log(typeof null);
 
@@ -111,10 +128,10 @@ console.log(typeof favouriteCookie);
 
 // Boolean
 
-let passMarks = false;
+// let passMarks = false;
 
-if (passMarks){
-    console.log("You've passed the exam.");
-} else {
-    console.log("You have failed.");
-}
+// if (passMarks){
+//     console.log("You've passed the exam.");
+// } else {
+//     console.log("You have failed.");
+// }
