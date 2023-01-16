@@ -25,15 +25,16 @@ let y = String (22); //or we can also do: let y = String ("Javascript");
 // That's why both thr above first two codes are not different.
 
 let z = new String("HtmlCSS");
-// --> This code is different from those two above.   
-// --> It is referring to a string constructor. String function and String Constructor are two different things and give different output.
-// --> String constructor doesn't create a string primitive. It creates a string object.
+// --> This approach of creating a string is different from those two above.   
+// --> It is referring to a string constructor. Also note, a string function and  a string constructor are two different things.
 
 // console.log(typeof z);
+// --> The output says that: it is not a string primitive but an object.
 
-// To understand and know more about it, please refer the below MDN link and an article link.
+// --> String constructor doesn't create a string primitive. It creates a string object.
+// --> With a new keyword here, we have created an object instance from this contructor.
+// --> If you want to more about this, refer the section "String primitives and String Objects" in MDN link given below.
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#string_primitives_and_string_objects
-// https://javascriptrefined.io/the-wrapper-object-400311b29151
 
 // Accessing existing properties/methods
 
@@ -42,7 +43,10 @@ let z = new String("HtmlCSS");
 // console.log(z.length);
 // console.log(z.toUpperCase());
 
-// Wrapper Object concept applies on string, number, boolean.
+// Wrapper Object concept applies on string, number, boolean primitive types.
+// To understand and know more about it, please refer the below MDN link and an article link.
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#string_primitives_and_string_objects
+// https://javascriptrefined.io/the-wrapper-object-400311b29151
 
 // Setting new properties/methods
 
@@ -57,12 +61,23 @@ let z = new String("HtmlCSS");
 // console.log(Object.getOwnPropertyDescriptor(z,'length'));
 // console.log(Object.getOwnPropertyDescriptor(z, 'check'));
 
-// Symbol
+// Refer the below article links for more understanding.
 
-// let a = Symbol("unique a")
-// let b = "unique a";
-// console.log(a, b);
+// https://programmingwithmosh.com/javascript/javascript-wrapper-objects/
 
+// https://dev.to/abdelrahmanahmed/javascript-s-primitive-wrapper-objects-4agb
+
+// Check the second article link's comment section because it will tell you  
+// if wrapper objects are also mutuable just like any other non primitive objects?
+
+// Symbol - it represents a unique value.
+
+// let a = Symbol("unique a");
+// let b = Symbol("unique a");
+
+// Check if both are same/equal to each other.
+// console.log(a === b);
+// It will be proved.
 
 // Number
 
