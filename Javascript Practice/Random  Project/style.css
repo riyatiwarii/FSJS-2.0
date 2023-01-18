@@ -5,15 +5,8 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-body{
-    /* background: url('/9kh3G8L.jpg') no-repeat center center fixed;
-    background-size: cover; */
-    /* background-color:rgb(230, 235, 222); */
-}
-
 :root {
-    --bg-color: rgb(123, 213, 249);
-    --typewriterSpeed: 6s;
+  
     --typewriterCharacters: 24;
   }
 
@@ -38,7 +31,7 @@ h1::after {
 }
 
 h1::before {
-  background: var(--bg-color);
+  background: rgb(123, 213, 249);
   animation: typewriter 6s
     steps(var(--typewriterCharacters)) 1s forwards;
 }
@@ -101,8 +94,6 @@ h1::after {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.15);
     background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(3px);
-    transform: scale3d(1, 1, 1);
-    transition: all 0.2s ease-out, filter 0.75s ease-out;
 }
 
 .profile-card:hover{
@@ -114,23 +105,23 @@ h1::after {
    height: 7em;
 }
 
-.profile-card .profile-body{
+.profile-body{
     background-color: rgba(234, 228, 228, 0.562);
     backdrop-filter: blur(10px);
     padding: 20px 40px 40px 40px;
 }
 
-.profile-card .profile-body .author-img{
-    margin-bottom: 20px;
+.profile-img{
+    margin-bottom: 0.4em;
     width: 60%;
     margin: auto;
 }
 
-.profile-card .profile-body .author-img img{
+.profile-img img{
     width: 100%;
     border-radius: 50%; 
-    padding: 5px;
-    background-color: var(--white);
+    padding: 0.4em;
+    background-color: #fff;
     margin-top: -65%;
 }
 
@@ -153,13 +144,6 @@ img:hover {
    font-size: 14px;
    font-weight: 400;
    line-height: 1.6;
-   margin: 20px  0px 30px  0px;
+   margin: 20px 0px 30px 0px;
 }
 
-.profile-card{
-   
-}
-
-.profile-card:hover{
-    
-}
