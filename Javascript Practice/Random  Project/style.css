@@ -44,7 +44,7 @@ h1::before {
 }
 
 h1::after {
-    margin-top: 0.6em;
+  margin-top: 0.6em;
   width: 0.125em;
   height: 1em;
   background: black;
