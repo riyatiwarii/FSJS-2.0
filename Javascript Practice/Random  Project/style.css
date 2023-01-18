@@ -2,29 +2,100 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body{
-    background: url('/9kh3G8L.jpg') no-repeat center center fixed;
-    background-size: cover;
+    /* background: url('/9kh3G8L.jpg') no-repeat center center fixed;
+    background-size: cover; */
+    /* background-color:rgb(230, 235, 222); */
 }
 
-header h1{
+:root {
+    --bg-color: rgb(123, 213, 249);
+    --typewriterSpeed: 6s;
+    --typewriterCharacters: 24;
+  }
+
+h1{
     text-align: center;
     font-size: 3rem;
-    padding-top: 1em;
+    padding-top: 0.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    width: max-content;
+    margin: auto;
 }
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before {
+  background: var(--bg-color);
+  animation: typewriter 6s
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+h1::after {
+    margin-top: 0.6em;
+  width: 0.125em;
+  height: 1em;
+  background: black;
+  animation: typewriter 6s
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+@keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+        opacity: 0;
+      } 50% {
+        opacity: 1;
+      }
+  }
 
 .wrapper{
     width: 55%;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 4%;
     display: flex;
 }
 
+.wrapper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 12vh;
+    background: rgba(0,173,239,0.5);
+    z-index: -10;
+}
+.wrapper:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 20vh;
+    background: rgba(235,0,138, 0.5);
+}
+
 .profile-card{
-    width: 45%;
+    width: 40%;
     margin: auto;
     border-radius: 1rem;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.15);
@@ -32,6 +103,11 @@ header h1{
     backdrop-filter: blur(3px);
     transform: scale3d(1, 1, 1);
     transition: all 0.2s ease-out, filter 0.75s ease-out;
+}
+
+.profile-card:hover{
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 0, 0, 0.3);
+    filter: grayscale(0) saturate(105%) brightness(100%) contrast(100%);
 }
 
 .profile-card .profile-header{
@@ -78,4 +154,12 @@ img:hover {
    font-weight: 400;
    line-height: 1.6;
    margin: 20px  0px 30px  0px;
+}
+
+.profile-card{
+   
+}
+
+.profile-card:hover{
+    
 }
