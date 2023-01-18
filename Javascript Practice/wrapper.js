@@ -1,39 +1,28 @@
-var Wrapper = defclass({
-    constructor: function (value) {
-        this.value = value;
-    },
-    riya: 7,
-    isString: function () {
-        return typeof this.value === "string";
-    },
-    describe: function () {
-        if (this.isString()) {
-            console.log('"' + this.value + '" is a string.');
-        } else {
-            console.log(this.value + " is not a string.");
-        }
-    }
-});
+// let a = undefined;
 
-var n = new Wrapper(Math.PI);
-var s = new Wrapper("Hello World!");
+// if (typeof a === 'undefined') {
+//     console.log("a is declared");
+//   } else {
+//     console.log("a is declared and initialized");
+//   }
 
-console.log(s.riya);
-console.log(s.length);
-s.length = 77;
-console.log(s.length);
+// if (a === undefined) {
+//     console.log("a is declared");
+//   } else {
+//     console.log("a is declared and initialized");
+//   }
 
 
+var myname = "Riya";
 
-n.describe(); // 3.141592653589793 is not a string.
-s.describe(); // "Hello World!" is a string.
+// console.log(mySurname);
 
-function defclass(prototype) {
-    var constructor = prototype.constructor;
-    constructor.prototype = prototype;
-    return constructor;
+function myScope () {
+    var mySurname = "Tiwari";
+    return mySurname
 }
-
-
+// myScope();
+console.log(myScope());
+console.log(mySurname);
 
 
