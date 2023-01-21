@@ -5,10 +5,10 @@
 // }
 
 // a();
-
-// const a = function sendDadjokes() {
-//         console.log("Riya says: Is JavaScript a piece of cake because it has a slice? haha!");
-//     }
+console.log(a)
+const a = function sendDadjokes() {
+        console.log("Riya says: Is JavaScript a piece of cake because it has a slice? haha!");
+    }
 
 
 // sendDadjokes();
