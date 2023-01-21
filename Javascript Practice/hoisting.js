@@ -1,6 +1,14 @@
-// We can use either let or const in this example
+// sendDadjokes();
 
-console.log(myname);
-let myname = "Riya";
+// function sendDadjokes() {
+//     console.log("Riya says: Is JavaScript a piece of cake because it has a slice? haha!");
+// }
 
+
+
+const sendDadjokes = function () {
+        console.log("Riya says: Is JavaScript a piece of cake because it has a slice? haha!");
+    }
+
+sendDadjokes();
 
