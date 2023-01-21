@@ -1,0 +1,38 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(219, 238, 254);
+    cursor: pointer;
+    overflow: hidden;   
+    height: 100vh;
+    width: 100vw;
+}
+
+button{
+    all: unset;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 1em 2.5em;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(13, 14, 13);
+    color: rgb(255, 254, 254);
+    transition: all 300ms ease-in-out;
+    text-align: center;    
+}
+
+.celebrate{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%; 
+}
+
+.button:active{
+    transform: scale(1.1);
+}
+
+.emoji-pop{
+   position: absolute;
+   font-size: 4rem;
+}
