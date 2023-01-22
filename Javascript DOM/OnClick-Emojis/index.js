@@ -17,6 +17,6 @@ const emojisList = ['😂', '😛', '😁', '😍', '🫡', '😥', '😅','😉
     onBody.appendChild(emoji);
     setTimeout(() => {
         emoji.style.transform = "scale(0)"
-    }, 250)
+    }, 500)
     onBody.removeChild(heading);
 })
