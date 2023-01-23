@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box-wrapper{
+    display: flex;
+    gap: 5em;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    width: 95%;
+    margin: auto;
+    height: 500px;
+    gap: 5em;
+}
+
+.box{
+    border: 2px solid black;
+    width: 10em;
+    height: 10em;
+}
+
+.active{
+    background-color: black;
+}
