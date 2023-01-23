@@ -4,10 +4,10 @@ html {
     margin: 0;
     display: flex;
     justify-content: center;
-    color: #ecf0f1;
-    background-color: rgb(23, 24, 37);
     font-family: 'Fjalla One', sans-serif;
     animation: fadein 1.5s;
+    background-color: rgb(83, 83, 83);
+
 }
 
 @keyframes fadein {
@@ -26,13 +26,13 @@ h1 {
 }
 
 input {
-    background-color: rgba(52, 73, 94, 0.5);
+    background-color: rgba(251, 254, 254, 0.5);
     color: #ecf0f1;
     outline: none;
     text-align: right;
     border: none;
     font-size: 3rem;
-    width: 58vw;
+    width: 66vw;
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
     padding: 0.5rem 1.5rem;
@@ -60,11 +60,12 @@ table {
 
 button {
     border: none;
-    background-color: white;
-    width: 15vw;
+    color: white;
+    background-color: black;
+    width: 17vw;
     height: 10vh;
     padding: 0.5rem 0;
-    margin: 0.25vmax;
+    margin: 0.2vmax;
     font-size: 2rem;
     border-radius: 0.5rem;
     -moz-transition: all ease 0.5s;
