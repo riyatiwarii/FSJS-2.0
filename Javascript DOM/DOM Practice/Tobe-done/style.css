@@ -7,7 +7,6 @@ html {
     font-family: 'Fjalla One', sans-serif;
     animation: fadein 1.5s;
     background-color: rgb(83, 83, 83);
-
 }
 
 @keyframes fadein {
