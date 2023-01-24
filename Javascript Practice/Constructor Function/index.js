@@ -82,6 +82,6 @@
 // that's why the way we have the properties/methods assigned using dot notation with "this" keywrord.
 // At last, JS returns us the object --> 👉 return this 👈
 
-// So, that's how this constructor function is superhandy in creating instances of an object.
+// So, that's how this constructor function is superhandy in creating its instances.
 // We can also say constructor is a kind of blueprint to create same type of objects.
 
