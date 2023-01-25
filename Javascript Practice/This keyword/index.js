@@ -1,6 +1,8 @@
-// "this" keyword refer to an object.
+// "this" is not a variable but a keyword which refers to an object.
 
-// However, it always depends on where "this" has been used. 
+// We can never change "this". Also, to which object "this" points,
+// depends on where it has been used. 
+
 // Let's see
 
 // 1️⃣ "this" keyword used in an object method.
@@ -43,16 +45,25 @@
 // myName.address.getAddress();
 // Address: India
 
-// 2️⃣ "this" keyword used in function
+// 2️⃣ "this" keyword used in function declaration
 
-function printMessage(){
-    console.log(this); // in function, this points to the global object in node and
-    // points to the window object in browser.
-}
+// function printMessage(){
+    // console.log(this); // "this" points to the global object
+// }
 
 // printMessage();
 
-// 3️⃣ "this" keyword used in constructor function 
+// 3️⃣ "this" keyword used in function with "STRICT" mode
+
+// "use strict";
+// function printMessage(){
+    // console.log(this); // in strict mode, "this" points itself as undefined.
+// }
+
+// printMessage();
+// undefined    
+
+// 4️⃣ "this" keyword used in constructor function 
 
 function CourseDetail (courseName, enrolledCount){
     this.courseName = courseName;
@@ -60,11 +71,20 @@ function CourseDetail (courseName, enrolledCount){
     this.showCourseStatus = function (){
         console.log(`Course Status: ${this.enrolledCount} enrollments in ${this.courseName}`);
         // JS is called to create a new empty object and assign it to "this" keyword.
-        // So, "this" will refer to every instance of an object constructor.
-        // Just like here, it is "course1" to which "this" is referring to.
+        // So, "this" will refer to every instance created of an object constructor.
+        // Just like here, it is "course1" instance to which "this" is referring to.
         console.log(this);
     }
 }
 
-let course1 = new CourseDetail ("JavaScript", 60)
-course1.showCourseStatus();
+// let course1 = new CourseDetail ("JavaScript", 60)
+// course1.showCourseStatus();
+
+// 5️⃣
+
+function sayHi () {
+    riya = "riya";
+    console.log(this.riya);
+    // console.log(this);
+}
+sayHi()

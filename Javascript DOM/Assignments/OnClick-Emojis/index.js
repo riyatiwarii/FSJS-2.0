@@ -1,5 +1,5 @@
-const btn = document.getElementsByTagName("button")[0];
 const onBody = document.getElementsByTagName("body")[0];
+
 const heading = document.createElement("h1")
 heading.innerText = "Click anywhere and create the emojies."
 heading.style.textAlign = "center";
