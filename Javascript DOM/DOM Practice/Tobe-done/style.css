@@ -6,7 +6,7 @@ html {
     justify-content: center;
     font-family: 'Fjalla One', sans-serif;
     animation: fadein 1.5s;
-    background-color: rgb(83, 83, 83);
+    background-color: rgb(96, 96, 96);
 }
 
 @keyframes fadein {
@@ -18,26 +18,22 @@ html {
     }
   }
 
-h1 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin-bottom: 0;
-}
+
 
 input {
-    background-color: rgba(251, 254, 254, 0.5);
-    color: #ecf0f1;
+    background-color: rgb(112, 112, 112);
+    color: white;
     outline: none;
     text-align: right;
     border: none;
-    font-size: 3rem;
+    font-size: 3.2rem;
     width: 66vw;
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
     padding: 0.5rem 1.5rem;
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
 }
 
 .container {
@@ -89,7 +85,14 @@ button:hover {
     -o-transition: all ease 0.5s;
 }
 
-a{
+
+h1{  
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #ffcf0f;
+    margin-left: 0.25rem;
+    text-decoration: none;
     outline: none;
     -moz-transition: all ease 0.5s;
     -webkit-transition: all 0.5s ease;
@@ -97,7 +100,7 @@ a{
     -o-transition: all ease 0.5s;
 }
 
-a:hover{
+h1:hover{
     text-shadow: 0px 0px 10px rgba(241, 196, 15, 0.5);
     -moz-transition: all ease 0.5s;
     -webkit-transition: all 0.5s ease;
@@ -111,6 +114,21 @@ a:hover{
     position: fixed;
 }
 
+.equal{
+    background-color: #25db72;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+.dot{
+    font-weight: bold;  
+}
+
+.clear{
+    background-color: #f01600;
+    color: #ecf0f1;
+}
+
 @media (orientation: landscape) and (max-height: 500px) {
     #turn {
         width: 100vw;
@@ -121,5 +139,10 @@ a:hover{
         font-size: 2rem;
         color: rgba(52, 73, 94, 1.0);
         background-color: rgba(236, 240, 241, 1.0);
+    }
+
+    button{
+        width: 17vw;
+        height: 10vh;
     }
 }
