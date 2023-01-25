@@ -34,10 +34,6 @@ operators.forEach(operator => {
 
 
 calculate.addEventListener("click", () => {
-    if (operators.innerText == "x"){
-        operators.innerText = "*"
-        enter.value = operator.innerText
-    }
     enter.value = eval(enter.value)
     console.log(enter.value);
 });
