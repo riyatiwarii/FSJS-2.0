@@ -3,8 +3,6 @@ let numbers = Array.from(document.querySelectorAll('[data-number]'))
 let operators = Array.from(document.querySelectorAll('[data-operator]'))
 let calculate = document.querySelectorAll('[data-equal]')[0]
 let clear = document.querySelectorAll('[data-clear]')[0]
-// console.log(numbers);
-// console.log(operators);
 
 numbers.forEach(num => {
     num.addEventListener("click", () => {
