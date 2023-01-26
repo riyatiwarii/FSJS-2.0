@@ -83,7 +83,7 @@
 // }
 // console.log(arr2);
     
-arr1 = [1, 2, 3, 4, 5, 6, 7, 8];
+// arr1 = [1, 2, 3, 4, 5, 6, 7, 8];
 // arr2 = arr1.map((number) => {
 //         return number*2
 //     }   )
@@ -108,7 +108,7 @@ let ourNames = [
 ]
 
 let filterItem = ourNames.filter(num => num.number < 730);
-console.log(filterItem);
+// console.log(filterItem);
 
 let mapItems = ourNames.map(
     target => {
@@ -120,6 +120,24 @@ let mapItems = ourNames.map(
     }
 )
 
-console.log(mapItems);
+// console.log(mapItems);
+
+// const btn = document.getElementById("btn")
+// btn.addEventListener("click", checkArray)
+// console.log(btn);
+
+// const arr2 = [];
+// function checkArray () {
+//     const input = parseInt(prompt("Enter the number"));
+
+//     const arr1 = [1, 2, 3, 4, 5];    
+
+//     if (arr1.includes(input)){
+//         console.log("Number exists");
+//     } else {
+//         arr2.push(input);
+//         console.log(arr2);
+//     }
+// }
 
 
