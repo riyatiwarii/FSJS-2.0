@@ -38,6 +38,11 @@
 
 // Arrays
 
+const arr1 = [1, 2, 3]
+arr1[90] = 777;
+console.log(arr1.length);
+// console.log(arr1[70]);
+
 // interview question length.
 
     // const arr1 = [10, 20, 30, 40]
@@ -140,4 +145,13 @@ let mapItems = ourNames.map(
 //     }
 // }
 
+// const myname = ["R","I","Y","A"]
+// console.log(myname.slice(0, 2 ));
+
+
+// let count = 5;
+// while(count <= 10){
+//     console.log(count);
+//     count++
+// }
 

@@ -4,6 +4,7 @@ html {
     margin: 0;
     font-family: "Myriad Pro", Arial, sans-serif;
     overflow: hidden;
+    background-image: url(/bg.jpg);
 }
 
 .container{
@@ -30,6 +31,7 @@ html {
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 8px;
+    margin: 3px 10px 10px;
 }
     
 .div2 { 
@@ -43,10 +45,12 @@ html {
 span{
     color: rgb(232, 230, 230);
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    padding: 0.5rem 1.5rem;
 }
 
 input {
+    height: 5vh;
     outline: none;
     text-align: right;
     border: none;
@@ -59,6 +63,7 @@ input {
 	background: -moz-linear-gradient(top, #3e3e3e 0%, #303030 100%);
 	background: -webkit-linear-gradient(top, #3e3e3e 0%, #303030 100%);
 	background: linear-gradient(top, #3e3e3e 0%, #303030 100%);
+    margin: 3px 10px 10px;
 }
 
 button{

@@ -39,4 +39,15 @@ const output = names.reduce( function (acc, curr) {
     return acc
 }, "Congratulations") + "!"
 
-console.log(output);
+// console.log(output);
+
+const arr = [175, 50, 25];
+// 100
+
+const result = arr.reduce(function (acc, curr){
+    acc = acc - curr
+    return acc
+})
+
+// console.log(result);
+

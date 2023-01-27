@@ -60,17 +60,17 @@
 // then why no provide something like a special function called
 // a CONSTRUCTOR function, right? 🤩 LET'S SEE THE SPECIAL GIFT!-->
 
-// function Infoprovider (myName, myTechStack, myCountry ){
-//     this.myName = myName;
-//     this.myTechStack = myTechStack;
-//     this.myCountry = myCountry;
-//     this.showPersonInfo = function () {
-//         console.log(` ${this.myName} | ${this.myTechStack} | ${this.myCountry}`);
-//     }
-// }
+function Infoprovider (myName, myTechStack, myCountry ){
+    this.myName = myName;
+    this.myTechStack = myTechStack;
+    this.myCountry = myCountry;
+    this.showPersonInfo = function () {
+        console.log(` ${this.myName} | ${this.myTechStack} | ${this.myCountry}`);
+    }
+}
 
-// riyaInfo = new Infoprovider("Riya", "MERN", "India")
-// riyaInfo.showPersonInfo();
+riyaInfo = new Infoprovider("Riya", "MERN", "India")
+riyaInfo.showPersonInfo();
 
 // So, this constructor function is just like a special gift but WHY?
 

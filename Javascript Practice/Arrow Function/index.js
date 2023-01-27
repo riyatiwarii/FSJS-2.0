@@ -15,13 +15,15 @@
 // let myTechSkills = {
 //     language : "Javascript",
 //     printLanguage : function () {
-        
+//         console.log(this.language)
 //         setTimeout ( function () {
 //             console.log(this.language);
 //         }, 3000 )
     
 //     }
 // }
+
+// myTechSkills.printLanguage();
 
 // let myTechSkills = {
 //     language : "Javascript",
@@ -74,11 +76,11 @@
 
 // myTechSkills.printLanguage();
 
-// window.document.addEventListener("click", (event) => {
+// window.document.addEventListener("click", () => {
 //     console.log(this);
 // })
 
-// window.document.addEventListener("click", function(event){
+// window.document.addEventListener("click", function(){
 //     console.log(this);
 // })
 

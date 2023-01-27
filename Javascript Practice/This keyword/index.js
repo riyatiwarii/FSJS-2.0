@@ -11,7 +11,7 @@
 //     firstName : "Riya",
 //     lastName : "Tiwari",
 //     showFullname : function () {
-        // console.log(this); 👈 it will print myName object only.
+//         console.log(this); 👈 it will print myName object only.
 //         console.log(`Fullname: ${this.firstName} ${this.lastName}`);
 //     }
 // }
@@ -73,18 +73,12 @@ function CourseDetail (courseName, enrolledCount){
         // JS is called to create a new empty object and assign it to "this" keyword.
         // So, "this" will refer to every instance created of an object constructor.
         // Just like here, it is "course1" instance to which "this" is referring to.
-        console.log(this);
+        // console.log(this);
     }
 }
 
 // let course1 = new CourseDetail ("JavaScript", 60)
 // course1.showCourseStatus();
 
-// 5️⃣
 
-function sayHi () {
-    riya = "riya";
-    console.log(this.riya);
-    // console.log(this);
-}
-sayHi()
+
