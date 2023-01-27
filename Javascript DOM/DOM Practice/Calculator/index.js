@@ -3,12 +3,6 @@ const numbers = Array.from(document.querySelectorAll('[data-number]'))
 const operators = Array.from(document.querySelectorAll('[data-operator]'))
 const calculate = document.querySelector('[data-equal]')
 const clear = document.querySelector('[data-clear]')
-// const decimal = document.querySelector('[data-decimal]')
-
-// let isDecimal = false
-// decimal.addEventListener("click", () => {
-//     enter.value = decimal.innerText
-// })
 
 numbers.forEach(num => {
     num.addEventListener("click", () => {
@@ -52,6 +46,9 @@ function displayResult () {
         enter.value = eval(enter.value)
     } catch (e) {
         enter.value = "Invalid value"
+        setTimeout(() => {
+            enter.value = ""
+        }, 500)
     }
     enter.value += operator.innerText
 }
