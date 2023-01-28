@@ -51,3 +51,24 @@ const result = arr.reduce(function (acc, curr){
 
 // console.log(result);
 
+const text = "my name is riya tiwari."
+// My Name Is Riya Tiwari.
+
+const titleCase = text.split(" ").reduce( function (acc, curr) {
+    acc = acc + curr[0].toUpperCase() + curr.slice(1).toLowerCase() + " ";
+    return acc
+}, "" )
+
+// console.log(titleCase);
+
+const text1 = "my name            is riya          tiwari."
+// "my name is riya tiwari."
+
+const removeSpace = text1.split(" ").reduce( function (acc, curr) {
+    if (curr) {
+        acc = acc + curr + " ";
+    }
+    return acc;
+}, "" )
+
+console.log(removeSpace);

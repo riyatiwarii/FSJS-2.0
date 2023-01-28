@@ -47,7 +47,8 @@ function displayResult () {
         enter.value = eval(enter.value)
     } catch (e) {
         enter.value = "Invalid value"     
-    }
+    } 
+    
     
 }
 
