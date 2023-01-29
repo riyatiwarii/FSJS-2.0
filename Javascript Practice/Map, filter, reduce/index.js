@@ -71,4 +71,53 @@ const removeSpace = text1.split(" ").reduce( function (acc, curr) {
     return acc;
 }, "" )
 
-console.log(removeSpace);
+// console.log(removeSpace);
+
+// Creating my own Polyfill for filter
+
+const arr1 = [1, 2, 3, 4, 5, 6]
+
+function greaterThan2 (num) {
+    if (num > 2){
+        return num
+    } 
+}
+
+Array.prototype.myFilter = function (callback) {
+    const arr = [];
+    for (let i=0; i < this.length; i++){
+        if(callback(this[i])){
+            arr.push(callback(this[i]))
+        }
+    }
+    return arr
+};
+
+// console.log(arr1.myFilter(greaterThan2));
+
+// Creating my own Polyfill for Reduce
+
+const ourNames = [
+    {name : "Riya", love: "JavaScript", number : "727"},
+    {name : "Preeti", love: "Maths", number: "511"},
+    {name : "Ambika", love: "Alex", number: "899"}
+]
+
+// {Ambika: 899}
+
+function nameMaxNumber (acc, curr) {
+    if(curr.number > acc){
+        acc = curr.number
+    }
+    return acc
+}
+
+Array.prototype.myReduce = function (callback, initial) {
+    let acc = initial
+    for (let i=0; i < this.length; i++){
+        callback(this[i], acc)
+    }
+    return acc
+}
+
+console.log(ourNames.myReduce(nameMaxNumber, {}));
