@@ -15,7 +15,11 @@ body{
    transition: transform 200ms ease-in-out;
 }
 
-.fade-out{
+/* .fade-out{
     opacity:0;
     transition:opacity 500ms;
+} */
+
+.heading{
+    text-align: center;
 }
