@@ -120,4 +120,5 @@ Array.prototype.myReduce = function (callback, initial) {
     return acc
 }
 
-console.log(ourNames.myReduce(nameMaxNumber, {}));
+// console.log(ourNames.myReduce(nameMaxNumber, {}));
+
