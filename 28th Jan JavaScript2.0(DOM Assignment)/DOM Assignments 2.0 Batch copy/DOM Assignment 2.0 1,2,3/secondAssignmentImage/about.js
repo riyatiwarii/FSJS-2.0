@@ -1,5 +1,5 @@
-let accordian = document.querySelectorAll(".accordian h3");
-accordian.forEach((element) => {
+let accordians = document.querySelectorAll(".accordian h3");
+accordians.forEach((element) => {
   element.addEventListener("click", () => {
     let para = element.nextElementSibling;
     if (para.style.display === "block") {
@@ -9,3 +9,4 @@ accordian.forEach((element) => {
     }
   });
 });
+
