@@ -6,16 +6,18 @@
 
 // console.log(sum(10, 20));
 
+  // function sum (x) {
+  //   function inner (y) {
+  //     return x + y 
+  //   }
+  //   return inner
+  // }
 
-// function sum (x) {
-//   function inner (y) {
-//     return x + y 
-//   }
-//   return inner
-// }
+  // let store = sum(10);
+  // console.log(store(20));
 
-// let store = sum(10);
 // console.log(store(20));
+// console.log(sum());
 
 // console.log(sum(10)(20));
 
@@ -91,32 +93,12 @@
 
 // E-commerce website
 
-function cartCounter () {
-  let _count = 0
-  function _updateCount (val) {
-      _count += val
-  }
-  return {
-    increment () {
-        _updateCount(1);
-    },
-    decrement () {
-      _updateCount(-1);
-    },
-    value () {
-
-    }
-
-  }
-}
-
-
-function sum (x) {
-  function inner (y) {
-    return x + y
-  }
-  return inner
-}
+// function sum (x) {
+//   function inner (y) {
+//     return x + y
+//   }
+//   return inner
+// }
 
 // console.log(sum(10)(20));
 
@@ -135,23 +117,36 @@ function sum (x) {
 // counter();
 
 
-function countWrapper (){
-  let count = 0;
-  function counter (y) {
-    count = count + y
-    console.log(count);
-  }
-  return counter
-}
+// function countWrapper (){
+//   let count = 0;
+//   function counter (y) {
+//     count = count + y
+//     console.log(count);
+//   }
+//   return counter
+// }
 
-let updateCount = countWrapper();
-console.log(updateCount);
-updateCount(20);
-updateCount(20);
+// let updateCount = countWrapper();
+// console.log(updateCount);
+// updateCount(20);
+// updateCount(20);
 
 // Something unusual- it is not storing the reference.
 // countWrapper()(20);
 // countWrapper()(20);
+
+  // function sum () {
+  //   var x = 20
+  //   function inner () {
+  //     var y = 10
+  //     x = 30
+  //     return x + y 
+  //   }
+  //   return inner
+  // }
+
+  // let store = sum();
+  // console.log(store());
 
 
 
