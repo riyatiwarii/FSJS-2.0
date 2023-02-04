@@ -6,7 +6,6 @@
 //   }
 //   console.log('The loop is done!');
 
-
 // callback function
 // function multiply (x, y){
 //     console.log(x*y);
@@ -102,15 +101,15 @@
 //  myFunction2()
 //  myFunction3()
 
-for(var i = 1; i < 6; i++) {
-    function timer(){ // create a unique function (scope) each time
-       var k = i; // save i to the variable k which
-       setTimeout(()=>{
-          console.log(k);
-       },1000);
-    }
-    timer();
- }
+// for(var i = 1; i < 6; i++) {
+//     function timer(){ // create a unique function (scope) each time
+//        var k = i; // save i to the variable k which
+//        setTimeout(()=>{
+//           console.log(k);
+//        },1000);
+//     }
+//     timer();
+//  }
 
 // function variableDemo() {
 //     var i = 'Hello World!';

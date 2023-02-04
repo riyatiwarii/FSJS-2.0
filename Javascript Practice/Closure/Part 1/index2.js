@@ -2,7 +2,7 @@
 
 // var myname = "Riya";
 
-// function callName (i) {
+// function callName () {
 //     var myname = "JavaScript"
 //     console.log(myname);
 // }
@@ -45,14 +45,14 @@
 // callLove(myname);
 // callNumber(myname);
 
-// var myname = "Riya";
-// for (var i = 0; i < 5; i++){
-//     console.log(i, myname);
-// }
-// console.log(i, myname);
 
-// let myname = "Riya";
-// for (let i = 0; i < 5; i++){
-//     console.log(i, myname);
+// for (var i = 0; i < 5; i++){
+//     console.log(i);
 // }
-// console.log(i, myname);
+// console.log(i);
+
+
+// for (let i = 0; i < 5; i++){
+//     console.log(i);
+// }
+// console.log(i);
