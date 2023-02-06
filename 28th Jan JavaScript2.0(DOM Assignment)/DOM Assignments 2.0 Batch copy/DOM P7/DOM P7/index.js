@@ -12,19 +12,14 @@ aTag.forEach(ele => {
 })
 
 submit.addEventListener("click", doSumbit)
+
+function doSumbit(){
 input.value = "Riya"
 const a = document.createElement("a")
-    a.innerText = input.value
-    // location.reload();
-    mainLanguages.appendChild(a)
-    console.log(a);
-
-
-function doSumbit(){   
-    const a = document.createElement("a")
-    a.innerText = input.value
-    // location.reload();
-    mainLanguages.appendChild(a)
-    console.log(a);
-
+a.setAttribute("href","https://www.ineuron.ai")
+a.setAttribute("target","_blank")
+a.innerText = input.value
+console.log(a);
+mainLanguages.appendChild(a)
 }
+
