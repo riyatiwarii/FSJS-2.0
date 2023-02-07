@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>To Do App</title>
     <link rel="stylesheet" href="/style.css">
+    <script defer src="/index.js"></script>
 </head>
 <body>  
     <ul class="background">
@@ -19,14 +20,21 @@
                 </button>
             </div>
         </div>
-        <div>
-            
-        </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <form action="">
-                <input type="text" class="input_title_desc"/>  
-                <textarea name="" id="" rows="5"></textarea>
-            </form>
+        <form action="">
+            <h2>To Do Title</h2>
+            <input type="text" class="input_title_desc"/>  
+            <textarea name="" id="" rows="5"></textarea>
+        </form>
+        <div class="accordion-container">
+            <button class="accordion">Section 1 
+                <div class="fa-fa">
+                <i class="fas fa-pen"></i>
+                <i class="fas fa-trash"></i>
+                </div>
+           </button>
+            <div class="panel">
+            <p>Love JavaScript.</p>
+            </div>
         </div>
         <li></li>
         <li></li>
