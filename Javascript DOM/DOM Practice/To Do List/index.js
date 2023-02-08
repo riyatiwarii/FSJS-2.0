@@ -1,19 +1,18 @@
-let acc = document.getElementsByClassName("accordion");
-let i;
 
+const titleInput = document.getElementsByClassName("input-title")[0];
+const detailInput = document.getElementsByTagName("textarea")[0];
+const downArrow = Array.from(document.getElementsByClassName('fa-chevron-down'))
+const panel = document.getElementsByClassName('panel')
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
+downArrow.forEach(btn => {
+  btn.addEventListener("click", (e) => {
 
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
+  btn.classList.toggle("fa-chevron-up")
+  if (e.target.classList.contains("fa-chevron-up")){
+      e.target.parentElement.nextElementSibling.style.display = "block"
+  } else {
+      e.target.parentElement.nextElementSibling.style.display = "none"
+  }
+   
+  })
+})
