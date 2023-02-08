@@ -15,7 +15,7 @@ h1{
     flex-direction: column;
     justify-content:space-around;
     align-items: center;
-    width: 80%;
+    width: 100%;
     margin: 3% auto;
     gap: 20px;
 }
@@ -52,7 +52,7 @@ textarea{
     transition: 0.4s;
   }
 
-.fa-fa{
+.icons{
 display: flex;
 gap: 10px;
 }
@@ -61,19 +61,32 @@ gap: 10px;
 background-color: #4e54c8;
 color: #fff;
 }
-  
-/* Style the accordion panel. Note: hidden by default */
+
+
+ 
+.title-wrap{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.fa-plus-square{
+    color: #fff;
+    width: 30px;
+}
+
 .panel {
 padding: 0 18px;
-background-color: white;
+background-color: #4e54c8;
+color: #fff;
 display: none;
 overflow: hidden;
 }
 
 .search {
-    width: 25%;
-    position: relative;
-    display: flex;
+width: 30%;
+position: relative;
+display: flex;
 }
   
 .searchTerm {

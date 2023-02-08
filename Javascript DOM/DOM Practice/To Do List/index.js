@@ -1,13 +1,6 @@
-// const clearInput = () => {
-//     const input = document.getElementsByTagName("input")[0];
-//     input.value = "";
-//   }
-  
-//   const clearBtn = document.getElementById("clear-btn");
-//   clearBtn.addEventListener("click", clearInput);
+let acc = document.getElementsByClassName("accordion");
+let i;
 
-var acc = document.getElementsByClassName("accordion");
-var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
