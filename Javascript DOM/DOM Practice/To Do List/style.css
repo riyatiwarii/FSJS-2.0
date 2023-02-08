@@ -107,6 +107,47 @@ text-align: center;
 /* border: 1px solid red; */
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+.popcard {
+background-color: white;
+margin: 10% auto;
+padding: 40px;
+width: 40%;
+text-align: center;
+font-size: 0.8rem;
+box-shadow: 0 2px 15px 0 black;
+animation: popup 0.5s;
+}
+
+.fa-regular{
+    color: red;
+    background-color: yellow;
+}
+
+.popcard h1{
+    color: red;
+}
+  
+  @keyframes popup {
+    from {
+      opacity: 0;
+    }
+    to { 
+      opacity: 1;
+    }
+  }
+
 .search {
 width: 30%;
 position: relative;

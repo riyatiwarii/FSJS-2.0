@@ -12,7 +12,6 @@ aTags.forEach(ele => {
 })
 
 let inputStore;
-
 if(localStorage.getItem("inputs")){
     inputStore = JSON.parse(localStorage.getItem("inputs"))
 } else {
