@@ -4,7 +4,6 @@ const downArrow = Array.from(document.getElementsByClassName('fa-chevron-down'))
 const panel = document.getElementsByClassName('panel')
 const addToDo = document.getElementsByClassName("fa-plus-square")[0]
 
-
 downArrow.forEach(btn => {
   btn.addEventListener("click", (e) => {
   btn.classList.toggle("fa-chevron-up")
