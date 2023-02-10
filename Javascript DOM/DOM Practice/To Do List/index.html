@@ -28,78 +28,52 @@
                 <h2>📝 Add To Do Item</h2>
                 <i class="fa fa-plus-square"></i>
             </div>
-            <input type="text" class="input-title" placeholder="Enter Title"/>  
-            <textarea name="" id="" rows="5" placeholder="Enter Task Detail"></textarea>
+            <input type="text" id="input-title" placeholder="Enter Title"/>  
+            <textarea id="input-description" rows="4" placeholder="Enter Task Detail"></textarea>
         </form>
         <div class="accordion-container">
             <h2>Your To Do List</h2>
-            <div>
-                <button class="accordion">
-                    <i class="fa fa-chevron-down"></i>
-                    <label>Title</label>
-                    <div class="icons">
-                    <input type="checkbox">
-                    <i class="fas fa-pen"></i>
-                    <i class="fas fa-trash"></i>
-                    </div>
-               </button>
-               <p class="panel">We eat, sleep, love JavaScript.</p>
-            </div>
-            <button class="accordion">
-                <i class="fa fa-chevron-down"></i>
-                <label>Title</label>
-                <div class="icons">
-                <input type="checkbox">
-                <i class="fas fa-pen"></i>
-                <i class="fas fa-trash"></i>
+            <div id="incomplete">
+           <!-- <div class="editmode">
+                    <button class="accordion">
+                        <i class="fa fa-chevron-down"></i>
+                        <input type="text" value="Title">
+                        <div class="icons">
+                        <input type="checkbox">
+                        <i class="fas fa-save"></i>
+                        <i class="fas fa-trash"></i>
+                        </div>
+                   </button>
+                   <textarea class="panel" type="text" rows="3">We eat, sleep, love JavaScript.</textarea>
                 </div>
-           </button>
-           <p class="panel">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque esse, quos quod officia expedita sequi quisquam, at corrupti tempora tenetur fugit voluptatibus cumque.</p>
-        </div>
-        <!-- <div class="accordion-container">
-            <button class="accordion">Section 1 
-                <div class="fa-fa">
-                    <i class="fas fa-save"></i>
-                </div>
-           </button>
-            <div class="panel">
-            <p>Love JavaScript.</p>
+                <div>
+                    <button class="accordion" id="incomplete">
+                        <i class="fa fa-chevron-down"></i>
+                        <label>Title</label>
+                        <div class="icons">
+                        <input type="checkbox">
+                        <i class="fas fa-pen"></i>
+                        <i class="fas fa-trash"></i>
+                        </div>
+                   </button>
+                   <p class="panel">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque esse, quos quod officia expedita sequi quisquam, at corrupti tempora tenetur fugit voluptatibus cumque.</p>
+                </div> -->
             </div>
-        </div> -->
-        <div class="accordion-container">
             <h2>Completed</h2>
-            <div>
-                <button class="accordion" id="completed">
-                    <i class="fa fa-chevron-down"></i>
-                    <label>Wash Clothes</label>
-                    <div class="icons">
-                    <input type="checkbox">
-                    <i class="fas fa-pen"></i>
-                    <i class="fas fa-trash"></i>
-                    </div>
-               </button>
-                <p class="panel">Love JavaScript.</p>
-            </div>
-            <button class="accordion">
-                <i class="fa fa-chevron-down"></i>
-                <label>Title</label>
-                <div class="icons">
-                <input type="checkbox">
-                <i class="fas fa-pen"></i>
-                <i class="fas fa-trash"></i>
+            <!-- <div id="complete">
+                <div>
+                    <button class="accordion">
+                        <i class="fa fa-chevron-down"></i>
+                        <label>Wash Clothes</label>
+                        <div class="icons">
+                        <input type="checkbox" checked>
+                        <i class="fas fa-pen"></i>
+                        <i class="fas fa-trash"></i>
+                        </div>
+                   </button>
+                    <p class="panel">Love JavaScript.</p>
                 </div>
-           </button>
-           <p class="panel">Love JavaScript.</p>
-            <button class="accordion">
-                <i class="fa fa-chevron-down"></i>
-                <label>Title</label>
-                <div class="icons">
-                <input type="checkbox">
-                <i class="fas fa-pen"></i>
-                <i class="fas fa-trash"></i>
-                </div>
-           </button>
-           <p class="panel">Love JavaScript.</p>
+            </div> -->
         </div>
         
         <li></li>

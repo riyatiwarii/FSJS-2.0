@@ -36,6 +36,7 @@ form{
 textarea{
     outline: none;
     resize: none;
+    font-size: 1rem;
 }
 
 .accordion-container{
@@ -50,11 +51,12 @@ textarea{
     width: 100%;
     display: flex;
     justify-content:space-between;
+    align-items: center;
     background-color: #6e74de;
     color: #fff;
     cursor: pointer;
     padding: 18px;
-    text-align: left;
+    /* text-align: left; */
     border: none;
     outline: none;
     transition: 0.4s;
@@ -73,15 +75,22 @@ textarea{
 
 .fa-plus-square{
     color: #fff;
-    width: 30px;
+    font-size: 20px;
 }
 
 .fa-pen{
-    color: #0ffa52
+    color: #0ffa52;
+    font-size: 15px;
 }
 
 .fa-trash{
     color: #fd5151;
+    font-size: 15px;
+}
+
+.fa-save{
+    color: #162f6b;
+    font-size: 17px;
 }
 
 label{
@@ -90,54 +99,74 @@ label{
     letter-spacing: 0.1em;
 }
 
+
+.editMode input[type=text] {
+    display:block;
+  }
+
+.editmode label{
+    display:none;
+}
+
+.editmode textarea{
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #eee;
+    color: #444;
+    display: none;
+    overflow: hidden;
+    /* margin-left: 8%; */
+    text-align: center
+}
+
+.editmode textarea:focus{
+    color: #333;
+    outline: none;
+}
+
+input[type="text"] {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 35px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #888;
+  }
+  input[type="text"]:focus {
+    color: #333;
+    outline: none;
+  }
+
 #completed label {
   text-decoration: line-through;
   color: #01ff49c3
 }
 
+i{
+    cursor: pointer;
+}
+
 .panel {
-padding-top: 20px;
-padding-bottom: 20px;
+/* padding-top: 20px;
+padding-bottom: 20px; */
+padding: 2% 15% 5% 10%;
 background-color: #eee;
 color: #444;
 display: none;
 overflow: hidden;
 /* margin-left: 8%; */
-text-align: center;
+/* text-align: center; */
 /* border: 1px solid red; */
 }
 
-.popup {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-  }
-  
-.popcard {
-background-color: white;
-margin: 10% auto;
-padding: 40px;
-width: 40%;
-text-align: center;
-font-size: 0.8rem;
-box-shadow: 0 2px 15px 0 black;
-animation: popup 0.5s;
-}
-
-.fa-regular{
-    color: red;
-    background-color: yellow;
-}
-
-.popcard h1{
-    color: red;
-}
   
   @keyframes popup {
     from {
