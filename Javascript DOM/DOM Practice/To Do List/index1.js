@@ -49,6 +49,7 @@ function addToDo(a, b){
 // toggleItem();
 editItem();
 saveItem();
+// deleteToDo()
 }
 
 storeToDo = JSON.parse(data)
@@ -152,6 +153,7 @@ function saveItem (a, b) {
             console.log(store);
             toggleItem();
             editItem();
+            deleteToDo();
         })
     })
 }
