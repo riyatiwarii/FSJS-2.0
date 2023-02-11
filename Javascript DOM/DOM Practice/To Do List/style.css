@@ -8,6 +8,7 @@
 
 body{
     background: linear-gradient(30deg, #0891B2, #B5EEF0, #5EEAD4) fixed;
+    overflow-x: hidden;
 }
 
 h1, h2{
@@ -279,6 +280,20 @@ font-size: 20px;
         margin: 15px 10px;
         width: 70%;
     }
+}
+
+@media (max-width:530px){
+
+    .editmode > .accordion{
+        justify-content: center;
+        gap: 10px
+    }
+
+    .editmode > .accordion > input{
+        /* background-color: yellow; */
+        width: 70%;
+    }
+
 }
 
 @media (max-width:480px){
