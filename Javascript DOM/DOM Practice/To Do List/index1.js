@@ -39,7 +39,6 @@ function addToDo(a, b){
         <i class="fa fa-chevron-down"></i>
         <label>${a}</label>
         <div class="icons">
-        <input type="checkbox">
         <i class="fas fa-pen"></i>
         <i class="fas fa-trash"></i>
         </div>
@@ -108,7 +107,6 @@ function editItem() {
                 <i class="fa fa-chevron-down"></i>
                 <input type="text" value="${title}">
                 <div class="icons">
-                <input type="checkbox">
                 <i class="fas fa-save"></i>
                 <i class="fas fa-trash"></i>
                 </div>
@@ -144,7 +142,6 @@ function saveItem (a, b) {
                 <i class="fa fa-chevron-down"></i>
                 <label>${title}</label>
                 <div class="icons">
-                <input type="checkbox">
                 <i class="fas fa-pen"></i>
                 <i class="fas fa-trash"></i>
                 </div>
