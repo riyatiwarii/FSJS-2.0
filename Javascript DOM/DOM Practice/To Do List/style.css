@@ -7,7 +7,7 @@
 }
 
 h1, h2{
-    color: #d3dbdb;
+    color: #3d3b3b;
 }
 
 .container{
@@ -39,6 +39,7 @@ textarea{
     font-size: 1rem;
 }
 
+
 .accordion-container{
     width: 30%;
     margin: 3% auto;
@@ -52,7 +53,8 @@ textarea{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    background-color: #6e74de;
+    background: #ffffff;
+    box-shadow: 0 10px 80px #0e74909f, 0 10px 10px #0E749020;
     color: #fff;
     cursor: pointer;
     padding: 18px;
@@ -73,13 +75,28 @@ textarea{
     justify-content:space-between;
 }
 
-.fa-plus-square{
-    color: #fff;
-    font-size: 20px;
+#submit-btn {
+    all: unset;
+    padding: 5px 10px;
+   background: #155E75;
+   border-radius: 1rem;
+   cursor: pointer;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#submit-btn * {
+color: #ffffff;
+}
+
+#submit-btn:hover {
+    filter: contrast(1.5);
 }
 
 .fa-pen{
-    color: #0ffa52;
+    color: #34a473;
     font-size: 15px;
 }
 
@@ -93,12 +110,20 @@ textarea{
     font-size: 17px;
 }
 
+.fa-chevron-down{
+    color: #3d3b3b
+}
+
 label{
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.1em;
+    color: #3d3b3b;
 }
 
+.fa-search{
+    color: white;
+}
 
 .editMode input[type=text] {
     display:block;
@@ -119,7 +144,6 @@ label{
     color: #444;
     display: none;
     overflow: hidden;
-    /* margin-left: 8%; */
     text-align: center
 }
 
@@ -145,26 +169,21 @@ input[type="text"] {
     outline: none;
   }
 
-#completed label {
+/* #completed label {
   text-decoration: line-through;
-  color: #01ff49c3
-}
+  color: #00ff48c3
+} */
 
 i{
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .panel {
-/* padding-top: 20px;
-padding-bottom: 20px; */
 padding: 2% 15% 5% 10%;
 background-color: #eee;
 color: #444;
 display: none;
 overflow: hidden;
-/* margin-left: 8%; */
-/* text-align: center; */
-/* border: 1px solid red; */
 }
 
   
@@ -192,17 +211,18 @@ height: 36px;
 border-radius: 5px 0 0 5px;
 outline: none;
 color: #9DBFAF;
+font-size: 17px;
 }
 
 .searchTerm:focus{
-color: #4e54c8;
+color: #0891B2;
 }
 
 .searchButton {
 width: 40px;
 height: 36px;
 border: 1px solid #fff;
-background: #4e54c8;
+background: #0891B2;
 text-align: center;
 color: #fff;
 border-radius: 0 5px 5px 0;
@@ -231,98 +251,9 @@ font-size: 20px;
     left: 0;
     margin: 0;
     padding: 0;
-    background: #4e54c8;
-    /* overflow: hidden; */
-    overflow-x: hidden;
+    overflow: hidden;
+    background: linear-gradient(30deg, #0891B2, #B5EEF0, #5EEAD4) fixed;
 }
 
-.background li {
-    position: absolute;
-    display: block;
-    list-style: none;
-    width: 20px;
-    height: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    animation: animate 17s linear infinite;
-}
 
-.background li:nth-child(0) {
-    left: 12%;
-    width: 126px;
-    height: 126px;
-    bottom: -126px;
-    animation-delay: 1s;
-}
-
-.background li:nth-child(1) {
-    left: 36%;
-    width: 104px;
-    height: 104px;
-    bottom: -104px;
-    animation-delay: 2s;
-}
-
-.background li:nth-child(2) {
-    left: 73%;
-    width: 113px;
-    height: 113px;
-    bottom: -113px;
-    animation-delay: 6s;
-}
-
-.background li:nth-child(3) {
-    left: 73%;
-    width: 124px;
-    height: 124px;
-    bottom: -124px;
-    animation-delay: 4s;
-}
-
-.background li:nth-child(4) {
-    left: 64%;
-    width: 129px;
-    height: 129px;
-    bottom: -129px;
-    animation-delay: 10s;
-}
-
-.background li:nth-child(5) {
-    left: 13%;
-    width: 143px;
-    height: 143px;
-    bottom: -143px;
-    animation-delay: 3s;
-}
-
-.background li:nth-child(6) {
-    left: 47%;
-    width: 150px;
-    height: 150px;
-    bottom: -150px;
-    animation-delay: 2s;
-}
-
-.background li:nth-child(7) {
-    left: 27%;
-    width: 157px;
-    height: 157px;
-    bottom: -157px;
-    animation-delay: 1s;
-}
-
-.background li:nth-child(8) {
-    left: 48%;
-    width: 110px;
-    height: 110px;
-    bottom: -110px;
-    animation-delay: 2s;
-}
-
-.background li:nth-child(9) {
-    left: 63%;
-    width: 185px;
-    height: 185px;
-    bottom: -185px;
-    animation-delay: 3s;
-}
 

@@ -1,7 +1,9 @@
 const taskTitle = document.getElementById("input-title")
 const taskDescription = document.getElementById("input-description")
-const addBtn = document.getElementsByClassName("fa-plus-square")[0]
+const addBtn = document.getElementById("submit-btn")
 const incompleteTasks = document.getElementById("incomplete")
+const searchInput = document.querySelector(".searchTerm")
+const searchButton = document.querySelector(".searchButton")
 
 let data = localStorage.getItem("data")
 // console.log(data);
@@ -156,3 +158,43 @@ function saveItem (a, b) {
     })
 }
 
+// function searchItem() {
+//    searchButton.addEventListener("click", (e) => {
+//     searchQuery = searchInput.value.toLowerCase();
+//     console.log(e.target);
+//     // console.log(searchQuery);
+//     const filterItems = Array.from(incompleteTasks.children)
+//     filterItems.forEach((item) => {
+//         if(item.innerHTML.toLowerCase().includes(searchQuery)){
+//             item.style.display = "block"
+//         } else {
+//             item.style.display = "none"
+//         }
+//     })
+//     searchInput.value = ""
+
+//    })
+// }
+
+
+// searchItem();
+
+
+function searchItem() {
+    searchInput.addEventListener("input", (e) => {
+     searchQuery = searchInput.value.toLowerCase();
+     console.log(e.target);
+     const filterItems = Array.from(incompleteTasks.children)
+     filterItems.forEach((item) => {
+         if(item.innerHTML.toLowerCase().includes(searchQuery)){
+             item.style.display = "block"
+         } else {
+             item.style.display = "none"
+         }
+     })
+     
+ 
+    })
+ }
+ 
+ searchItem();

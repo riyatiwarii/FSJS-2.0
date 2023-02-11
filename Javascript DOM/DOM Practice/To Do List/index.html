@@ -13,11 +13,11 @@
     <script defer src="/index1.js"></script>
 </head>
 <body>  
-    <ul class="background">
+    <div class="background">
         <div class="container">
             <h1>🎯Get Your Things Done Quickly</h1>           
             <div class="search">
-                <input type="text" class="searchTerm" placeholder="Search To Do Task">
+                <input type="search" class="searchTerm" placeholder="Search To Do Task">
                 <button type="submit" class="searchButton">
                     <i class="fa fa-search"></i>
                 </button>
@@ -26,13 +26,16 @@
         <form action="">
             <div class="title-wrap">
                 <h2>📝 Add To Do Item</h2>
-                <i class="fa fa-plus-square"></i>
+                <button id="submit-btn">
+                    <p>Add</p>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
             </div>
             <input type="text" id="input-title" placeholder="Enter Title"/>  
             <textarea id="input-description" rows="4" placeholder="Enter Task Detail"></textarea>
         </form>
         <div class="accordion-container">
-            <h2>Your To Do List</h2>
+            <h2>📃Your To Do List</h2>
             <div id="incomplete">
            <!-- <div class="editmode">
                     <button class="accordion">
@@ -75,17 +78,6 @@
                 </div>
             </div> -->
         </div>
-        
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        </ul>
+    </div>
 </body>
 </html>
