@@ -22,6 +22,7 @@ addBtn.addEventListener("click", () => {
         console.log(store);
         localStorage.setItem("data", JSON.stringify(store))
         addToDo(taskTitle.value, taskDescription.value)
+        toggleItem()
     }
     taskTitle.value = ""
     taskDescription.value = ""
@@ -81,12 +82,12 @@ function toggleItem () {
             } else {
                 btn.parentElement.nextElementSibling.style.display = "none"
             } 
-            deleteToDo();          
+                     
         })
     })
 }
 
-// toggleItem()
+toggleItem()
 
 function editItem() {
     const editBtns = Array.from(document.querySelectorAll(".fa-pen"))
@@ -96,8 +97,6 @@ function editItem() {
         btn.addEventListener("click", () => {
             title = btn.parentElement.parentElement.querySelector('label').innerText
             description = btn.parentElement.parentElement.parentElement.querySelector('p').innerText
-            // console.log(title, description);
-            // console.log(btn.parentElement.parentElement.parentElement);
             btn.parentElement.parentElement.parentElement.innerHTML = `<div class="editmode">
             <button class="accordion">
                 <i class="fa fa-chevron-down"></i>
@@ -111,7 +110,6 @@ function editItem() {
            <textarea class="panel" type="text" rows="3">${description}</textarea>
         </div>`
         toggleItem();
-        deleteToDo();
         saveItem(title, description);
         })
     })
@@ -121,7 +119,6 @@ function editItem() {
 
 function saveItem (a, b) {
     const saveBtns = Array.from(document.querySelectorAll(".fa-save"))
-    console.log(saveBtns);
     saveBtns.forEach((btn, index) => {
         btn.addEventListener("click", () => {
             // console.log(store);
@@ -131,18 +128,12 @@ function saveItem (a, b) {
             // console.log(btn.parentElement.parentElement.parentElement);
             // console.log(title, description);
             index = store.findIndex(i => i.title === a & i.description === b)
-            console.log(index);
-            // console.log(titleI);
-            // console.log(store[titleI].description);
-            // store[titleI].title = title
-            // store[titleI].description = description
-            // localStorage.setItem("data", JSON.stringify(store))
-            // console.log(store);
-            
-            console.log(store);
             store[index].title = title
             store[index].description = description
             localStorage.setItem("data", JSON.stringify(store))
+            console.log(index);       
+            console.log(store);
+            toggleItem();
         })
     })
 }
