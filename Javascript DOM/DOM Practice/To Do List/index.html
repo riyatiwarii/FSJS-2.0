@@ -13,71 +13,69 @@
     <script defer src="/index1.js"></script>
 </head>
 <body>  
-    <div class="background">
-        <div class="container">
-            <h1>🎯Get Your Things Done Quickly</h1>           
-            <div class="search">
-                <input type="search" class="searchTerm" placeholder="Search To Do Task">
-                <button type="submit" class="searchButton">
-                    <i class="fa fa-search"></i>
-                </button>
-            </div>
+    <div class="container">
+        <h1>🎯Get Your Things Done Quickly</h1>           
+        <div class="search">
+            <input type="search" class="searchTerm" placeholder="Search To Do Task">
+            <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+            </button>
         </div>
-        <form action="">
-            <div class="title-wrap">
-                <h2>📝 Add To Do Item</h2>
-                <button id="submit-btn">
-                    <p>Add</p>
-                    <i class="fas fa-arrow-right"></i>
+    </div>
+    <form action="">
+        <div class="title-wrap">
+            <h2>📝 Add To Do Item</h2>
+            <button id="add-btn">
+                <p>Add</p>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        <input type="text" id="input-title" placeholder="Enter Title"/>  
+        <textarea id="input-description" rows="4" placeholder="Enter Task Detail"></textarea>
+    </form>
+    <div class="accordion-container">
+        <h2>👇Your To Do List📃</h2>
+        <div id="incomplete">
+        <!-- <div class="editmode">
+                <button class="accordion">
+                    <i class="fa fa-chevron-down"></i>
+                    <input type="text" value="Title">
+                    <div class="icons">
+                    <input type="checkbox">
+                    <i class="fas fa-save"></i>
+                    <i class="fas fa-trash"></i>
+                    </div>
                 </button>
+                <textarea class="panel" type="text" rows="3">We eat, sleep, love JavaScript.</textarea>
             </div>
-            <input type="text" id="input-title" placeholder="Enter Title"/>  
-            <textarea id="input-description" rows="4" placeholder="Enter Task Detail"></textarea>
-        </form>
-        <div class="accordion-container">
-            <h2>📃Your To Do List</h2>
-            <div id="incomplete">
-           <!-- <div class="editmode">
-                    <button class="accordion">
-                        <i class="fa fa-chevron-down"></i>
-                        <input type="text" value="Title">
-                        <div class="icons">
-                        <input type="checkbox">
-                        <i class="fas fa-save"></i>
-                        <i class="fas fa-trash"></i>
-                        </div>
-                   </button>
-                   <textarea class="panel" type="text" rows="3">We eat, sleep, love JavaScript.</textarea>
-                </div>
-                <div>
-                    <button class="accordion" id="incomplete">
-                        <i class="fa fa-chevron-down"></i>
-                        <label>Title</label>
-                        <div class="icons">
-                        <input type="checkbox">
-                        <i class="fas fa-pen"></i>
-                        <i class="fas fa-trash"></i>
-                        </div>
-                   </button>
-                   <p class="panel">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque esse, quos quod officia expedita sequi quisquam, at corrupti tempora tenetur fugit voluptatibus cumque.</p>
-                </div> -->
-            </div>
-            <h2>Completed</h2>
-            <!-- <div id="complete">
-                <div>
-                    <button class="accordion">
-                        <i class="fa fa-chevron-down"></i>
-                        <label>Wash Clothes</label>
-                        <div class="icons">
-                        <input type="checkbox" checked>
-                        <i class="fas fa-pen"></i>
-                        <i class="fas fa-trash"></i>
-                        </div>
-                   </button>
-                    <p class="panel">Love JavaScript.</p>
-                </div>
+            <div>
+                <button class="accordion" id="incomplete">
+                    <i class="fa fa-chevron-down"></i>
+                    <label>Title</label>
+                    <div class="icons">
+                    <input type="checkbox">
+                    <i class="fas fa-pen"></i>
+                    <i class="fas fa-trash"></i>
+                    </div>
+                </button>
+                <p class="panel">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque esse, quos quod officia expedita sequi quisquam, at corrupti tempora tenetur fugit voluptatibus cumque.</p>
             </div> -->
         </div>
+        <!-- <h2>Completed</h2> -->
+        <!-- <div id="complete">
+            <div>
+                <button class="accordion">
+                    <i class="fa fa-chevron-down"></i>
+                    <label>Wash Clothes</label>
+                    <div class="icons">
+                    <input type="checkbox" checked>
+                    <i class="fas fa-pen"></i>
+                    <i class="fas fa-trash"></i>
+                    </div>
+                </button>
+                <p class="panel">Love JavaScript.</p>
+            </div>
+        </div> -->
     </div>
 </body>
 </html>

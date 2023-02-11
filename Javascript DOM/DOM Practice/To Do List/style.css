@@ -6,6 +6,10 @@
     font-family: 'PT Serif', serif;
 }
 
+body{
+    background: linear-gradient(30deg, #0891B2, #B5EEF0, #5EEAD4) fixed;
+}
+
 h1, h2{
     color: #3d3b3b;
 }
@@ -64,6 +68,10 @@ textarea{
     transition: 0.4s;
 }
 
+#incomplete div{
+    margin-top: 7px;
+}
+
 .icons{
     display: flex;
     gap: 10px;
@@ -75,7 +83,7 @@ textarea{
     justify-content:space-between;
 }
 
-#submit-btn {
+#add-btn {
     all: unset;
     padding: 5px 10px;
    background: #155E75;
@@ -87,11 +95,11 @@ textarea{
     gap: 10px;
 }
 
-#submit-btn * {
+#add-btn * {
 color: #ffffff;
 }
 
-#submit-btn:hover {
+#add-btn:hover {
     filter: contrast(1.5);
 }
 
@@ -186,16 +194,6 @@ display: none;
 overflow: hidden;
 }
 
-  
-  @keyframes popup {
-    from {
-      opacity: 0;
-    }
-    to { 
-      opacity: 1;
-    }
-  }
-
 .search {
 width: 30%;
 position: relative;
@@ -229,31 +227,94 @@ border-radius: 0 5px 5px 0;
 cursor: pointer;
 font-size: 20px;
 }
-  
-@keyframes animate {
-    0%{
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-        border-radius: 0;
+ 
+
+@media (max-width:1024px){
+
+    .accordion-container{
+        width: 45%;
     }
-    100%{
-        transform: translateY(-1000px) rotate(720deg);
-        opacity: 0;
-        border-radius: 50%;
+
+    form{
+        width: 45%;
+    }
+
+    .search{
+        width: 45%;
+    }
+
+}
+
+@media (max-width:850px){
+
+    h1{
+        font-size: 1.7rem;
+    }
+    
+    h2{
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width:850px){
+
+    h1{
+        font-size: 1.5rem;
+    }
+    
+    h2{
+        font-size: 1.2rem;
+    }
+
+    .accordion-container{
+        width: 70%;
+    }
+
+    form{
+        width: 70%;
+    }
+
+    .search{
+        margin: 15px 10px;
+        width: 70%;
     }
 }
 
-.background {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: linear-gradient(30deg, #0891B2, #B5EEF0, #5EEAD4) fixed;
+@media (max-width:480px){
+
+    h1{
+        width: 80%;
+        text-align: center;
+    }
+
 }
 
+@media (max-width:380px){
+   
+    .accordion-container{
+        width: 80%;
+    }
 
+    form{
+        width: 80%;
+    }
 
+    .search{
+        margin: 15px 10px;
+        width: 80%;
+    }
+}
+
+@media (max-width:345px){
+
+    h1{
+        width: 90%;
+        text-align: center;
+    }
+
+    #add-btn {
+        padding: 4px 8px;
+    }
+
+}

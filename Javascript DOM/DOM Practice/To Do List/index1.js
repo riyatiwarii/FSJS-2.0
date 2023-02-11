@@ -1,6 +1,6 @@
 const taskTitle = document.getElementById("input-title")
 const taskDescription = document.getElementById("input-description")
-const addBtn = document.getElementById("submit-btn")
+const addBtn = document.getElementById("add-btn")
 const incompleteTasks = document.getElementById("incomplete")
 const searchInput = document.querySelector(".searchTerm")
 const searchButton = document.querySelector(".searchButton")
