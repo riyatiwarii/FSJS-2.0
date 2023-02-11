@@ -52,8 +52,14 @@ saveItem();
 // deleteToDo()
 }
 
-storeToDo = JSON.parse(data)
-storeToDo.forEach((item) => {
+if (data === null){
+    store = []
+} else {
+    store = JSON.parse(data)
+}
+
+// store = JSON.parse(data)
+store.forEach((item) => {
     // console.log(item);
     addToDo(item.title, item.description)
 })
@@ -133,6 +139,7 @@ function saveItem (a, b) {
             description = btn.parentElement.parentElement.parentElement.querySelector('textarea').value
             // console.log(btn.parentElement.parentElement.parentElement);
             // console.log(title, description);
+
             index = store.findIndex(i => i.title === a & i.description === b)
             store[index].title = title
             store[index].description = description
@@ -181,12 +188,12 @@ function saveItem (a, b) {
 
 
 function searchItem() {
-    searchInput.addEventListener("input", (e) => {
+    searchInput.addEventListener("input", () => {
      searchQuery = searchInput.value.toLowerCase();
-     console.log(e.target);
+     
      const filterItems = Array.from(incompleteTasks.children)
      filterItems.forEach((item) => {
-         if(item.innerHTML.toLowerCase().includes(searchQuery)){
+         if(item.innerText.toLowerCase().includes(searchQuery)){
              item.style.display = "block"
          } else {
              item.style.display = "none"

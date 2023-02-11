@@ -25,7 +25,7 @@ h1, h2{
     gap: 20px;
 }
 
-form{
+.add-box{
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -236,7 +236,7 @@ font-size: 20px;
         width: 45%;
     }
 
-    form{
+    .add-box{
         width: 45%;
     }
 
@@ -272,7 +272,7 @@ font-size: 20px;
         width: 70%;
     }
 
-    form{
+    .add-box{
         width: 70%;
     }
 
@@ -311,7 +311,7 @@ font-size: 20px;
         width: 80%;
     }
 
-    form{
+    .add-box{
         width: 80%;
     }
 
