@@ -22,11 +22,11 @@ addBtn.addEventListener("click", () => {
         console.log(store);
         localStorage.setItem("data", JSON.stringify(store))
         addToDo(taskTitle.value, taskDescription.value)
-        
+        toggleItem()
     }
     taskTitle.value = ""
     taskDescription.value = ""
-    toggleItem()
+    
 })
 
 function addToDo(a, b){
@@ -43,7 +43,7 @@ function addToDo(a, b){
    <p class="panel">${b}</p>
 </div>`
 deleteToDo();
-toggleItem();
+// toggleItem();
 editItem();
 saveItem();
 }
@@ -64,7 +64,7 @@ function deleteToDo(){
             store.splice(index, 1)
             localStorage.setItem("data", JSON.stringify(store))
         })
-        
+
     })
 }
 
@@ -82,8 +82,9 @@ function toggleItem () {
             } else {
                 btn.parentElement.nextElementSibling.style.display = "none"
             } 
-          
-                     
+        editItem()
+        saveItem()
+                
         })
     })
 }
@@ -112,7 +113,7 @@ function editItem() {
         </div>`
         toggleItem();
         saveItem(title, description);
-        deleteToDo();
+        deleteToDo()
         })
     })
 }
@@ -129,16 +130,29 @@ function saveItem (a, b) {
             description = btn.parentElement.parentElement.parentElement.querySelector('textarea').value
             // console.log(btn.parentElement.parentElement.parentElement);
             // console.log(title, description);
+            
             index = store.findIndex(i => i.title === a & i.description === b)
             store[index].title = title
             store[index].description = description
             localStorage.setItem("data", JSON.stringify(store))
+            console.log(btn.parentElement.parentElement.parentElement);
+            btn.parentElement.parentElement.parentElement.innerHTML = `<div>
+            <button class="accordion" id="incomplete">
+                <i class="fa fa-chevron-down"></i>
+                <label>${title}</label>
+                <div class="icons">
+                <input type="checkbox">
+                <i class="fas fa-pen"></i>
+                <i class="fas fa-trash"></i>
+                </div>
+           </button>
+           <p class="panel">${description}</p>
+        </div>`
             console.log(index);       
             console.log(store);
             toggleItem();
-            deleteToDo()
+            
         })
     })
 }
 
-saveItem();

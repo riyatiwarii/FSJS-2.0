@@ -105,7 +105,7 @@ label{
   }
 
 .editmode label{
-    display:none;
+    /* display:none; */
 }
 
 .editmode textarea{
