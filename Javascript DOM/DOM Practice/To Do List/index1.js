@@ -22,11 +22,11 @@ addBtn.addEventListener("click", () => {
         console.log(store);
         localStorage.setItem("data", JSON.stringify(store))
         addToDo(taskTitle.value, taskDescription.value)
-        toggleItem()
+        
     }
     taskTitle.value = ""
     taskDescription.value = ""
-     
+    toggleItem()
 })
 
 function addToDo(a, b){
@@ -64,7 +64,7 @@ function deleteToDo(){
             store.splice(index, 1)
             localStorage.setItem("data", JSON.stringify(store))
         })
-
+        
     })
 }
 
@@ -82,6 +82,7 @@ function toggleItem () {
             } else {
                 btn.parentElement.nextElementSibling.style.display = "none"
             } 
+          
                      
         })
     })
@@ -111,6 +112,7 @@ function editItem() {
         </div>`
         toggleItem();
         saveItem(title, description);
+        deleteToDo();
         })
     })
 }
@@ -134,6 +136,7 @@ function saveItem (a, b) {
             console.log(index);       
             console.log(store);
             toggleItem();
+            deleteToDo()
         })
     })
 }
