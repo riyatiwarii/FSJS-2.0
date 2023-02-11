@@ -138,9 +138,6 @@ label{
     display:block;
   }
 
-.editmode label{
-    /* display:none; */
-}
 
 .editmode textarea{
     width: 100%;
