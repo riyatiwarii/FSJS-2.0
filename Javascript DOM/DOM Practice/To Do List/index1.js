@@ -43,7 +43,7 @@ function addToDo(a, b){
    <p class="panel">${b}</p>
 </div>`
 deleteToDo();
-toggleItem();
+// toggleItem();
 editItem();
 saveItem();
 }
