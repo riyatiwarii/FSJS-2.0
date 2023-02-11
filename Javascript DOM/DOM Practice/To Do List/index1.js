@@ -2,9 +2,6 @@ const taskTitle = document.getElementById("input-title")
 const taskDescription = document.getElementById("input-description")
 const addBtn = document.getElementById("add-btn")
 const incompleteTasks = document.getElementById("incomplete")
-const searchInput = document.querySelector(".searchTerm")
-const searchButton = document.querySelector(".searchButton")
-
 
 let data = localStorage.getItem("data")
 // console.log(data);
@@ -187,21 +184,25 @@ function saveItem (a, b) {
 // searchItem();
 
 
-function searchItem() {
-    searchInput.addEventListener("input", () => {
-     searchQuery = searchInput.value.toLowerCase();
-     
-     const filterItems = Array.from(incompleteTasks.children)
-     filterItems.forEach((item) => {
-         if(item.innerText.toLowerCase().includes(searchQuery)){
-             item.style.display = "block"
-         } else {
-             item.style.display = "none"
-         }
-     })
-     
- 
-    })
- }
- 
- searchItem();
+const searchText = document.getElementsByClassName('searchTerm')[0];
+searchText.addEventListener('input', (e) => {
+    const text = e.target.value.toLowerCase();
+    console.log(text)
+    const arrTitle = Array.from(document.querySelectorAll('.accordion > label'))
+    const arrTitle1 = arrTitle.map(x => x.innerText.toLowerCase())
+    const arrDes = Array.from(document.querySelectorAll('.panel'))
+    const arrDes1 = arrDes.map(x => x.innerText.toLowerCase())
+    console.log(arrDes1, arrTitle1)
+
+    for (let i = 0; i < arrTitle.length; i++) {
+        if (arrTitle1[i].includes(text) || arrDes1[i].includes(text)) {
+            // arrDes[i].parentElement.style.display = "block"
+            console.log(arrDes[i].parentElement)
+            arrDes[i].parentElement.style.display = "block"
+
+        } else {
+            arrDes[i].parentElement.style.display = "none"
+        }
+    }
+    console.log(arrTitle, arrDes)
+})
