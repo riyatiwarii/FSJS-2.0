@@ -5,6 +5,7 @@ const incompleteTasks = document.getElementById("incomplete")
 const searchInput = document.querySelector(".searchTerm")
 const searchButton = document.querySelector(".searchButton")
 
+
 let data = localStorage.getItem("data")
 // console.log(data);
 
@@ -25,6 +26,7 @@ addBtn.addEventListener("click", () => {
         localStorage.setItem("data", JSON.stringify(store))
         addToDo(taskTitle.value, taskDescription.value)
         toggleItem()
+        deleteToDo()
     }
     taskTitle.value = ""
     taskDescription.value = ""
@@ -44,7 +46,7 @@ function addToDo(a, b){
    </button>
    <p class="panel">${b}</p>
 </div>`
-deleteToDo();
+;
 // toggleItem();
 editItem();
 saveItem();
@@ -70,7 +72,7 @@ function deleteToDo(){
     })
 }
 
-// deleteToDo();
+deleteToDo();
 
 function toggleItem () {
     const downArrows = Array.from(document.querySelectorAll('.fa-chevron-down'))
@@ -132,7 +134,6 @@ function saveItem (a, b) {
             description = btn.parentElement.parentElement.parentElement.querySelector('textarea').value
             // console.log(btn.parentElement.parentElement.parentElement);
             // console.log(title, description);
-            
             index = store.findIndex(i => i.title === a & i.description === b)
             store[index].title = title
             store[index].description = description
@@ -153,7 +154,7 @@ function saveItem (a, b) {
             console.log(index);       
             console.log(store);
             toggleItem();
-            
+            editItem();
         })
     })
 }
