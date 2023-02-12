@@ -106,20 +106,6 @@ const addTask = () => {
       console.log(btn.parentElement.parentElement.parentElement.querySelector('textarea').value);
     })
 
-  // const downArrow = Array.from(document.getElementsByClassName('fa-chevron-down'))
-
-  // downArrow.forEach(btn => {
-  //   btn.addEventListener("click", (e) => {
-  //   console.log(e.target);
-  //   btn.classList.toggle("fa-chevron-up")
-  //   if (e.target.classList.contains("fa-chevron-up")){
-  //       e.target.parentElement.nextElementSibling.style.display = "block"
-  //   } else {
-  //       e.target.parentElement.nextElementSibling.style.display = "none"
-  //   }  
-  //   })
-  // })
-
   })
 
 
@@ -138,7 +124,6 @@ const addTask = () => {
   })
 
   
-
   const deleteBtn = Array.from(document.getElementsByClassName('fa-trash'))
 
   const deleteTask = (e) => {
@@ -163,8 +148,6 @@ const addTask = () => {
       takeInput();
     })
     
-    
-
 }
 
 

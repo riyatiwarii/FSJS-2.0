@@ -1,3 +1,4 @@
+// Rebuilt logic
 const taskTitle = document.getElementById("input-title")
 const taskDescription = document.getElementById("input-description")
 const addBtn = document.getElementById("add-btn")
@@ -124,7 +125,6 @@ function editItem() {
     })
 }
 
-// editItem();
 
 function saveItem (a, b) {
     const saveBtns = Array.from(document.querySelectorAll(".fa-save"))
@@ -136,7 +136,6 @@ function saveItem (a, b) {
             description = btn.parentElement.parentElement.parentElement.querySelector('textarea').value
             // console.log(btn.parentElement.parentElement.parentElement);
             // console.log(title, description);
-
             index = store.findIndex(i => i.title === a & i.description === b)
             store[index].title = title
             store[index].description = description
@@ -162,6 +161,7 @@ function saveItem (a, b) {
     })
 }
 
+// old search logic
 // function searchItem() {
 //    searchButton.addEventListener("click", (e) => {
 //     searchQuery = searchInput.value.toLowerCase();
@@ -179,7 +179,6 @@ function saveItem (a, b) {
 
 //    })
 // }
-
 
 // searchItem();
 
