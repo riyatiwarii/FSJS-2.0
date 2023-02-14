@@ -6,6 +6,22 @@
 //   }
 //   console.log('The loop is done!');
 
+function firstLine() {
+    console.log("First line of the code.");
+}
+
+setTimeout(function() {
+    console.log("This line will be executed after 4 seconds.");
+}, 4000)
+
+function lastLine () {
+    console.log("Like Time and Tide wait for none, JavaScript also doesn't wait for setTimeout to execute the last line.");
+}
+
+firstLine();
+lastLine();
+
+
 // callback function
 // function multiply (x, y){
 //     console.log(x*y);
