@@ -3,7 +3,7 @@
 // We can never change "this". Also, to which object "this" points,
 // depends on where it has been used. 
 
-// Let's see
+// Let's see..
 
 // 1️⃣ "this" keyword used in an object method.
 
