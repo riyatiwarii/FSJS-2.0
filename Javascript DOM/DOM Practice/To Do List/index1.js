@@ -103,7 +103,7 @@ function editItem() {
     const editBtns = Array.from(document.querySelectorAll(".fa-pen"))
     // console.log(editBtns);
     editBtns.forEach((btn, index) => {
-        // console.log(btn, index);
+        // console.log(btn, index)
         btn.addEventListener("click", () => {
             title = btn.parentElement.parentElement.querySelector('label').innerText
             description = btn.parentElement.parentElement.parentElement.querySelector('p').innerText
