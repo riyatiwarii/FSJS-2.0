@@ -33,8 +33,8 @@
 //     lastName : "Tiwari",
 // }
 
-// let printFullName = function () {
-//     console.log(`Full name: ${this.firstName} ${this.lastName}`);
+// let printFullName = function (hometown, state) {
+//     console.log(`Full name: ${this.firstName} ${this.lastName}, ${hometown}, ${state}`);
 // }
 
 // let person2 = {
@@ -42,30 +42,57 @@
 //     lastName : "Tiwari"
 // }
 
-// printFullName.apply(person)
-// printFullName.apply(person2)
+// printFullName.call(person, "Jaipur", "Raj")
+// printFullName.call(person2, "Jaipur", "Raj")
+
+// printFullName.apply(person, ["Jaipur", "Raj"])
+// printFullName.apply(person2, ["Jaipur", "Raj"])
 
 // Apply completed
+
+// let person = {
+//     firstName : "Riya",
+//     lastName : "Tiwari",
+// }
+
+// let printFullName = function (hometown, state) {
+//     console.log(`Full name: ${this.firstName} ${this.lastName}, ${hometown}, ${state}`);
+// }
+
+// let person2 = {
+//     firstName : "Preeti",
+//     lastName : "Tiwari"
+// }
+
+// let printPerson = printFullName.bind(person, "Jaipur", "Raj")
+// let printPerson2 = printFullName.bind(person2, "Jaipur", "Raj")
+// printPerson();
+// printPerson2();
+
+// Bind completed
+
+// Creating own polyfill for bind method.
 
 let person = {
     firstName : "Riya",
     lastName : "Tiwari",
 }
 
-let printFullName = function () {
-    console.log(`Full name: ${this.firstName} ${this.lastName}`);
+let printFullName = function (hometown, state) {
+    console.log(`Full name: ${this.firstName} ${this.lastName}, ${hometown}, ${state}`);
 }
 
-let person2 = {
-    firstName : "Preeti",
-    lastName : "Tiwari"
+let printPerson = printFullName.bind(person, "Jaipur");
+console.log(printPerson);
+printPerson("Raj");
+
+Function.prototype.loveBinding = function (...args) {
+    let main = this
+    let params = args.slice(1)
+    return function(...args2) {
+        main.apply(args[0], [...params, ...args2])
+    }
 }
 
-let printPersonName = printFullName.bind(person)
-
-let printPerson2Name = printFullName.bind(person2)
-
-printPersonName();
-printPerson2Name();
-
-// Bind completed
+let printPerson1 = printFullName.loveBinding(person, "Jaipur")
+printPerson1("Raj");
