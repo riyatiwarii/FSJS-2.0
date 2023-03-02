@@ -96,3 +96,29 @@
 
 // let printPerson1 = printFullName.loveBinding(person, "Jaipur", "India")
 // printPerson1()
+
+// const obj = {
+//     myName : "Riya",
+//     firstLove : "JavaScript",
+//     secondLove : "React and Parcel",
+//     happyPlace : "Telling dad jokes",
+//     printFirstLove : function () {
+//         console.log(`Riya's first love: ${this.firstLove}`);
+//     },
+//     printSecondLove : function () {
+//         console.log(`Her second love: ${this.secondLove}`);
+//     },
+//     printHerLove : function () {
+//         this.printFirstLove();
+//         this.printSecondLove();
+//         function printHappyPlace () {
+//             console.log(`Her happy place lies in ${this.happyPlace}`);           
+//         }
+//         printHappyPlace();
+//         const bindLove = printHappyPlace.bind(this);
+//         bindLove();
+//     }
+
+// }
+
+// obj.printHerLove();
