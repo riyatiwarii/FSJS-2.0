@@ -93,9 +93,9 @@
 //     }
 // }
 
-// let printPerson1 = printFullName.bindLove(person,"Jaipur");
+// let printPerson1 = printFullName.bindLove(person,"Jaipur", "India");
 // console.log(printPerson1);
-// printPerson1("Raj");
+// printPerson1();
 
 // Function.prototype.loveBinding = function (...args) {
 //     let main = this
@@ -105,5 +105,5 @@
 //     }
 // }
 
-// let printPerson1 = printFullName.loveBinding(person, "Jaipur", "vvvv")
-// printPerson1("Raj","ffgg");
+// let printPerson1 = printFullName.loveBinding(person, "Jaipur", "India")
+// printPerson1()

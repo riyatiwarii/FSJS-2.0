@@ -1,3 +1,9 @@
+// Closures are functions that remember the environment in which they have been created.
+// It is a feature of JavaScript.
+
+// Currying is the process of transforming a function, which takes in multiple arguments,
+// in one that takes a single parameter and returns another function.
+
 // Question 1 - sum(2)(6)(1)
 
 // function sum (a){
@@ -104,8 +110,32 @@ function sum (a, b, c){
 
 // console.log(sum(1)(2)(3));
 
-function curry (func){
-   return func
-}
+// function curry (fn){
+//     return function curried (...args) {
 
-console.log(curry(sum));;
+//         if (fn.length !== args.length){
+//             return curried.bind(null, ...args)
+//         } else {
+//             return fn(...args);
+//         }
+    
+//     };
+// }
+
+// function curry (fn) {
+//     return function curried(...args){
+//         // console.log(fn.length, args.length);
+//         if(args.length !== fn.length){
+//             return curried.bind(null, ...args)
+//         } else {
+//             return fn(...args);
+//         }
+//     }
+// }
+
+// const totalNum=(x,y,z) => {
+//     return x+y+z 
+// } 
+
+// const curriedTotal = curry(totalNum);
+// console.log(curriedTotal(10)(20)(30));
