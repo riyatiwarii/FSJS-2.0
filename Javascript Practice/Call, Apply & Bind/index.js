@@ -73,26 +73,37 @@
 
 // Creating own polyfill for bind method.
 
-let person = {
-    firstName : "Riya",
-    lastName : "Tiwari",
-}
+// let person = {
+//     firstName : "Riya",
+//     lastName : "Tiwari",
+// }
 
-let printFullName = function (hometown, state) {
-    console.log(`Full name: ${this.firstName} ${this.lastName}, ${hometown}, ${state}`);
-}
+// let printFullName = function (hometown, state) {
+//     console.log(`Full name: ${this.firstName} ${this.lastName}, ${hometown}, ${state}`);
+// }
 
-let printPerson = printFullName.bind(person, "Jaipur");
-console.log(printPerson);
-printPerson("Raj");
+// let printPerson = printFullName.bind(person, "Jaipur");
+// console.log(printPerson);
+// printPerson("Raj");
 
-Function.prototype.loveBinding = function (...args) {
-    let main = this
-    let params = args.slice(1)
-    return function(...args2) {
-        main.apply(args[0], [...params, ...args2])
-    }
-}
+// Function.prototype.bindLove = function (person, ...args) {
+//     let func = this
+//     return function (...args2) {
+//         func.apply(person, [...args, ...args2])
+//     }
+// }
 
-let printPerson1 = printFullName.loveBinding(person, "Jaipur")
-printPerson1("Raj");
+// let printPerson1 = printFullName.bindLove(person,"Jaipur");
+// console.log(printPerson1);
+// printPerson1("Raj");
+
+// Function.prototype.loveBinding = function (...args) {
+//     let main = this
+//     let params = args.slice(1)
+//     return function(...args2) {
+//         main.apply(args[0], [...params, ...args2])
+//     }
+// }
+
+// let printPerson1 = printFullName.loveBinding(person, "Jaipur", "vvvv")
+// printPerson1("Raj","ffgg");
