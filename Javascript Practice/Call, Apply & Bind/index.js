@@ -1,14 +1,3 @@
-// let brainStormers = {
-//     namesList : 'Riya',
-//     count : this,
-//     printInfo : function () {
-//         console.log(`Names: ${this.namesList} and the count: ${this.count}, ${this}`);
-//     }
-// }
-
-// console.log(brainStormers.count);
-// brainStormers.printInfo();
-
 // let person = {
 //     firstName : "Riya",
 //     lastName : "Tiwari",
