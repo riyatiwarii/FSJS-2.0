@@ -122,3 +122,21 @@
 // }
 
 // obj.printHerLove();
+
+let person = {
+    firstName : "Riya",
+    lastName : "Tiwari"
+}
+
+let printFullName = function () {
+    console.log(`Full name: ${this.firstName} ${this.lastName}`);
+}
+
+printFullName.call(person)
+
+Function.prototype.myCall = function (obj) {
+    
+}
+
+printFullName.myCall(person)
+
