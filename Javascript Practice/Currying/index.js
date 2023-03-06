@@ -108,34 +108,19 @@ function sum (a, b, c){
     return a + b + c
 }
 
-// console.log(sum(1)(2)(3));
+function curryfn(fn) {
+    return function curriedfn(...args){
+        console.log(args.length, fn.length);
+        if(args.length >= fn.length){    
+            console.log(args);       
+            return fn(...args)
+        } else {
+            return function (...next) {
+                return curriedfn(...args, ...next)
+            }
+        }
+    }
+}
 
-// function curry (fn){
-//     return function curried (...args) {
-
-//         if (fn.length !== args.length){
-//             return curried.bind(null, ...args)
-//         } else {
-//             return fn(...args);
-//         }
-    
-//     };
-// }
-
-// function curry (fn) {
-//     return function curried(...args){
-//         // console.log(fn.length, args.length);
-//         if(args.length !== fn.length){
-//             return curried.bind(null, ...args)
-//         } else {
-//             return fn(...args);
-//         }
-//     }
-// }
-
-// const totalNum=(x,y,z) => {
-//     return x+y+z 
-// } 
-
-// const curriedTotal = curry(totalNum);
-// console.log(curriedTotal(10)(20)(30));
+const sumCurried = curryfn(sum);
+console.log(sumCurried(10)(20)(30));
